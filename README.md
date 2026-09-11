@@ -27,3 +27,8 @@ Output lands in `out/<input>.md` (readable) plus `.variants.json` and `.scores.j
 ## Extending
 - New input shape: edit `load_input()` in `generate.py`.
 - New output shape: edit the JSON schema in `prompts/generate.md` and `render()`.
+
+## Fallback backend
+`python generate.py inputs/x.md --backend cli` runs the same pipeline through `claude -p`
+(Claude Code subscription) instead of the API. Requires `claude` to be logged in. Set
+`CLAUDE_CLI` if the binary is somewhere else.

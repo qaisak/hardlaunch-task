@@ -15,7 +15,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -58,8 +60,28 @@ def extract_json(text: str):
         raise
 
 
+CLAUDE_CLI = os.getenv(
+    "CLAUDE_CLI",
+    r"C:\Users\Qais\AppData\Roaming\Claude\claude-code\2.1.266\claude.exe",
+)
+
+
+def call_cli(system: str, user: str) -> str:
+    """Fallback backend: `claude -p` on the Claude Code subscription (needs `claude` logged in)."""
+    proc = subprocess.run(
+        [CLAUDE_CLI, "-p", "--output-format", "text", "--model", "opus",
+         "--system-prompt", system],
+        input=user, capture_output=True, text=True, encoding="utf-8", timeout=900,
+    )
+    if proc.returncode != 0:
+        raise RuntimeError(f"claude CLI failed: {proc.stderr.strip()}")
+    return proc.stdout
+
+
 def call(client, system: str, user: str, effort: str = "high") -> str:
     """One streamed call, returns the text. Streaming avoids timeouts on long outputs."""
+    if client == "cli":
+        return call_cli(system, user)
     with client.messages.stream(
         model=MODEL,
         max_tokens=32000,
@@ -153,13 +175,18 @@ def main() -> None:
     ap.add_argument("--top", type=int, default=3, help="how many to mark SHIP")
     ap.add_argument("--out", type=Path, default=ROOT / "out")
     ap.add_argument("--dry-run", action="store_true", help="no API calls, placeholder output")
+    ap.add_argument("--backend", choices=["api", "cli"], default="api",
+                    help="api = Anthropic SDK with ANTHROPIC_API_KEY; cli = claude -p on the Claude Code subscription")
     args = ap.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
 
     client = None
     if not args.dry_run:
-        import anthropic
-        client = anthropic.Anthropic()
+        if args.backend == "cli":
+            client = "cli"
+        else:
+            import anthropic
+            client = anthropic.Anthropic()
 
     taste = read(PROMPTS / "taste.md")
 
