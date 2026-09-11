@@ -1,0 +1,10 @@
+post_id,hook_text,format,views,completion_rate,shares
+1,"I tried cold showers for 30 days",challenge,900,0.31,4
+2,"Stop doing this in the gym",mistake-callout,14200,0.58,210
+3,"My morning routine as a nurse",day-in-life,1100,0.29,6
+4,"Nobody talks about this gym mistake",mistake-callout,9800,0.52,140
+5,"3 things I wish I knew before starting",listicle,2300,0.40,22
+6,"Rating my coworkers' lunches",ranking,17600,0.61,380
+7,"Day 12 of learning to run",challenge,700,0.27,2
+8,"Ranking every protein bar in Tesco",ranking,22100,0.64,510
+Task: generate new posts for a fitness creator that would beat the account average of 8,600 views.
