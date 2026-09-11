@@ -42,3 +42,7 @@ Optimise for those, in that order.
   lacks a number, use a specific but honest phrasing ("the one thing that actually changed").
 - Never mention a competitor by name unless the input does.
 - Keep to platform norms: no medical/financial guarantees, nothing that reads as harassment.
+
+## Style
+- No em dashes anywhere. Use a comma, a full stop, or a new line. Em dashes read as AI-written.
+- British spelling unless the input is clearly US.

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "v1",
+    "format": "dry-run format 1",
+    "hook": {
+      "visual": "placeholder",
+      "audio": "placeholder",
+      "text_overlay": "placeholder"
+    },
+    "script": [
+      "line 1",
+      "line 2",
+      "line 3"
+    ],
+    "on_screen_text": [],
+    "caption": "placeholder caption",
+    "duration_s": 20,
+    "share_reason": "placeholder",
+    "comment_trigger": "placeholder",
+    "why_views": "placeholder"
+  },
+  {
+    "id": "v2",
+    "format": "dry-run format 2",
+    "hook": {
+      "visual": "placeholder",
+      "audio": "placeholder",
+      "text_overlay": "placeholder"
+    },
+    "script": [
+      "line 1",
+      "line 2",
+      "line 3"
+    ],
+    "on_screen_text": [],
+    "caption": "placeholder caption",
+    "duration_s": 20,
+    "share_reason": "placeholder",
+    "comment_trigger": "placeholder",
+    "why_views": "placeholder"
+  },
+  {
+    "id": "v3",
+    "format": "dry-run format 3",
+    "hook": {
+      "visual": "placeholder",
+      "audio": "placeholder",
+      "text_overlay": "placeholder"
+    },
+    "script": [
+      "line 1",
+      "line 2",
+      "line 3"
+    ],
+    "on_screen_text": [],
+    "caption": "placeholder caption",
+    "duration_s": 20,
+    "share_reason": "placeholder",
+    "comment_trigger": "placeholder",
+    "why_views": "placeholder"
+  }
+]

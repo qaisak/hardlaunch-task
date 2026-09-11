@@ -19,6 +19,7 @@
 - Run end to end on their sample input. `git add -A` then `git commit -m "v0 end to end"`.
 
 ## 12:00 to 14:00  Make the output good
+- First candidate improvement: a revise pass that applies each variant's 'Editor fix' and re-scores. Cheap, visible quality jump.
 - Read the output like Matt would. Fix `prompts/taste.md` before touching code.
 - Keep the loop: generate variants, critique, rank. Add whatever the brief needs on top.
 - Commit after each working improvement.
