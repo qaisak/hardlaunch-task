@@ -1,20 +1,58 @@
 [
   {
     "id": "v1",
-    "scores": {},
-    "overall": 10,
-    "fix": "placeholder fix"
+    "scores": {
+      "hook_strength": 5,
+      "specificity": 5,
+      "retention": 4,
+      "share_trigger": 4,
+      "native": 4,
+      "honesty": 5,
+      "reusability": 4
+    },
+    "overall": 8,
+    "fix": "Cut \"Here's the bit I can prove\" and land the 11% vs 3% by second 8, the factory backstory is the flattest part and currently sits in the middle where scroll happens."
   },
   {
     "id": "v2",
-    "scores": {},
-    "overall": 9,
-    "fix": "placeholder fix"
+    "scores": {
+      "hook_strength": 4,
+      "specificity": 4,
+      "retention": 4,
+      "share_trigger": 4,
+      "native": 5,
+      "honesty": 5,
+      "reusability": 4
+    },
+    "overall": 7,
+    "fix": "The two-line definition of \"the last\" is a lecture beat, compress it to one on-screen label and get to the 400 scanned feet faster so the middle doesn't sag."
   },
   {
     "id": "v3",
-    "scores": {},
-    "overall": 8,
-    "fix": "placeholder fix"
+    "scores": {
+      "hook_strength": 4,
+      "specificity": 4,
+      "retention": 3,
+      "share_trigger": 4,
+      "native": 3,
+      "honesty": 3,
+      "reusability": 4
+    },
+    "overall": 6,
+    "fix": "Strip the invented specifics (Black Friday, 20% creator codes) and stop the brand-manifesto tone, then show the shoe in the first second so it isn't 26 seconds of a man defending his pricing to camera."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "hook_strength": 3,
+      "specificity": 4,
+      "retention": 4,
+      "share_trigger": 4,
+      "native": 4,
+      "honesty": 5,
+      "reusability": 5
+    },
+    "overall": 7,
+    "fix": "Black screen kills the first 1.5s, open on the foot going into the shoe with \"This feels weird\" already on screen so there's something to look at while the quote lands."
   }
 ]

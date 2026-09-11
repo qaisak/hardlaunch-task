@@ -1,62 +1,125 @@
 [
   {
     "id": "v1",
-    "format": "dry-run format 1",
+    "format": "3-item ranking with the controversial pick last (worst-to-first, one pick withheld)",
     "hook": {
-      "visual": "placeholder",
-      "audio": "placeholder",
-      "text_overlay": "placeholder"
+      "visual": "Phone-shot, hand slaps the seat of a seated twist machine, fast whip-pan across the gym floor",
+      "audio": "Ranking gym machines by how much of your time they're stealing.",
+      "text_overlay": "Worst gym machines, ranked"
     },
     "script": [
-      "line 1",
-      "line 2",
-      "line 3"
+      "Ranking gym machines by how much of your time they're stealing.",
+      "Number three, the seated twist machine. Your spine isn't a door hinge.",
+      "Number two, the abductor machine. Perfect if the goal is looking busy.",
+      "Number one is the one there's always a queue for.",
+      "The chest press. It's a bench press with training wheels bolted on.",
+      "Same weight on dumbbells and you'll feel where your chest actually stops working.",
+      "I left the treadmill out because that one's on you, not the machine.",
+      "And yes, I still use one of these three every week. Guess which one."
     ],
-    "on_screen_text": [],
-    "caption": "placeholder caption",
-    "duration_s": 20,
-    "share_reason": "placeholder",
-    "comment_trigger": "placeholder",
-    "why_views": "placeholder"
+    "on_screen_text": [
+      "#3 seated twist",
+      "#2 abductor",
+      "#1 always a queue",
+      "swap it: dumbbell press",
+      "guess which one I still use"
+    ],
+    "caption": "Which one am I wrong about?",
+    "duration_s": 30,
+    "share_reason": "Gym regulars send it to the mate who lives on the machines, as a soft insult with plausible deniability",
+    "comment_trigger": "A ranking people will defend, plus the withheld admission that one of the three is still in my programme",
+    "why_views": "Ranking format is the account's strongest performer and the hook promises a fight in the first second instead of context."
   },
   {
     "id": "v2",
-    "format": "dry-run format 2",
+    "format": "Mistake-callout with instant wrong-rep / right-rep visual proof",
     "hook": {
-      "visual": "placeholder",
-      "audio": "placeholder",
-      "text_overlay": "placeholder"
+      "visual": "Tight shot on a lat pulldown bar freezing at forehead height mid-rep, then frozen frame",
+      "audio": "That rep stopped early, so the whole set just did nothing.",
+      "text_overlay": "you stopped three inches early"
     },
     "script": [
-      "line 1",
-      "line 2",
-      "line 3"
+      "That rep stopped early, so the whole set just did nothing.",
+      "Watch the bar. It never reaches the chest.",
+      "Now the same weight, full range, and watch the face.",
+      "Half the reps, and it feels twice as heavy.",
+      "The mistake isn't the weight you picked, it's where you decided to stop.",
+      "If you have to shorten the rep to move it, it isn't your weight yet.",
+      "Take a plate off, finish the rep, then tell me your back didn't wake up.",
+      "Then go and check if you're doing the exact same thing on rows."
     ],
-    "on_screen_text": [],
-    "caption": "placeholder caption",
-    "duration_s": 20,
-    "share_reason": "placeholder",
-    "comment_trigger": "placeholder",
-    "why_views": "placeholder"
+    "on_screen_text": [
+      "wrong",
+      "right",
+      "same weight",
+      "range of motion > numbers",
+      "now check your rows"
+    ],
+    "caption": "Ego lifting, or nobody ever told you? Be honest.",
+    "duration_s": 26,
+    "share_reason": "Sent from one training partner to another as a call-out mid-week, and saved by beginners who suspect they do it",
+    "comment_trigger": "Half the comments will insist partial reps are fine, the other half will tag someone",
+    "why_views": "Mistake-callouts already outperform on this account and the error is visible before a single word lands, so the first frame carries the hook."
   },
   {
     "id": "v3",
-    "format": "dry-run format 3",
+    "format": "Supermarket shelf walk-ranking, one item deliberately left unnamed, winner from the wrong aisle",
     "hook": {
-      "visual": "placeholder",
-      "audio": "placeholder",
-      "text_overlay": "placeholder"
+      "visual": "Handheld walk down a Tesco aisle, hand grabs a tub off the shelf without stopping",
+      "audio": "Best high protein snack in Tesco isn't in the protein section.",
+      "text_overlay": "Best protein snack in Tesco"
     },
     "script": [
-      "line 1",
-      "line 2",
-      "line 3"
+      "Ranking Tesco protein snacks by whether I'd actually eat them twice.",
+      "Bottom of the list, the chalky bar in the gold wrapper. Great macros, tastes like a candle.",
+      "Middle, the protein yoghurts. Boring, does the job, no notes.",
+      "Top three is where it gets annoying.",
+      "Third, tinned tuna. Cheapest protein in the building and nobody wants to hear it.",
+      "Second, the chicken skewers in the chilled bit by the tills.",
+      "First isn't in the protein aisle at all. It's cottage cheese.",
+      "Call it grim in the comments and I'll show you the only way I eat it."
     ],
-    "on_screen_text": [],
-    "caption": "placeholder caption",
-    "duration_s": 20,
-    "share_reason": "placeholder",
-    "comment_trigger": "placeholder",
-    "why_views": "placeholder"
+    "on_screen_text": [
+      "last: the gold wrapper one",
+      "mid: protein yoghurt",
+      "#3 tinned tuna",
+      "#2 chicken skewers",
+      "#1 not in the protein aisle"
+    ],
+    "caption": "Cottage cheese, grim or elite?",
+    "duration_s": 32,
+    "share_reason": "Sent to whoever does the weekly shop, because it turns into a list they actually use",
+    "comment_trigger": "The unnamed gold wrapper bar plus a cottage cheese take people cannot leave alone",
+    "why_views": "It reuses the highest performing format on the account with a new shelf, and the hook denies the obvious answer in the first line."
+  },
+  {
+    "id": "v4",
+    "format": "Silent POV text-overlay hot take over trending audio, one plain opinion per beat",
+    "hook": {
+      "visual": "Close, slow shot of hands sliding a plate onto a barbell, gym mirror behind, no face",
+      "audio": "silent / trending audio",
+      "text_overlay": "Soreness is not progress"
+    },
+    "script": [
+      "Soreness is not progress.",
+      "It only means the session was new.",
+      "Progress is the same lift, one more rep, next week.",
+      "If you need pain to feel like it counted, you'll keep starting over.",
+      "The thing that actually changed for me was writing the numbers down.",
+      "Boring weeks are the ones doing the building.",
+      "Now tell me the most overrated feeling in the gym."
+    ],
+    "on_screen_text": [
+      "new ≠ effective",
+      "same lift, one more rep",
+      "no notes, no progress",
+      "boring = working",
+      "most overrated gym feeling?"
+    ],
+    "caption": "Most overrated feeling in the gym? Go.",
+    "duration_s": 22,
+    "share_reason": "Sent by lifters to the friend who brags about not being able to walk after leg day",
+    "comment_trigger": "A hot take stated flatly, and a direct question that invites a ranking in the replies",
+    "why_views": "Silent text hook removes the ad feel entirely and the opinion is a contradiction of common belief in six words, which is read before the thumb moves."
   }
 ]

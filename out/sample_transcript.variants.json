@@ -1,62 +1,126 @@
 [
   {
     "id": "v1",
-    "format": "dry-run format 1",
+    "format": "Number-first cost confession, single take to camera",
     "hook": {
-      "visual": "placeholder",
-      "audio": "placeholder",
-      "text_overlay": "placeholder"
+      "visual": "Founder holding one shoe, sole facing the lens, warehouse behind",
+      "audio": "It costs us ninety pounds more per pair to make this shoe, and we eat most of it.",
+      "text_overlay": "£90 more per pair"
     },
     "script": [
-      "line 1",
-      "line 2",
-      "line 3"
+      "It costs us ninety pounds more per pair to make this shoe, and we eat most of it.",
+      "Everyone asks why we don't just make them in Vietnam like everyone else.",
+      "The factory we use is in Portugal. Family owned, third generation, forty people.",
+      "They've made shoes for brands you'd recognise. They're not allowed to tell me which.",
+      "Here's the bit I can prove.",
+      "Industry return rate on running shoes is around eleven percent.",
+      "Ours is under three.",
+      "That gap is the ninety quid. We just moved it to the front of the process instead of the refund queue."
     ],
-    "on_screen_text": [],
-    "caption": "placeholder caption",
-    "duration_s": 20,
-    "share_reason": "placeholder",
-    "comment_trigger": "placeholder",
-    "why_views": "placeholder"
+    "on_screen_text": [
+      "Third generation. 40 people.",
+      "Industry returns: ~11%",
+      "Ours: under 3%",
+      "Same money. Different end of the process."
+    ],
+    "caption": "Would you rather we spent it on the shoe or the returns team?",
+    "duration_s": 27,
+    "share_reason": "People who follow manufacturing and supply chain content send this to friends who bang on about where things are made",
+    "comment_trigger": "The unnamed big brands made in the same factory. People will guess in the comments",
+    "why_views": "A precise cost number spoken as a confession in the first second creates an immediate why, and the return rate pays it off before anyone can scroll."
   },
   {
     "id": "v2",
-    "format": "dry-run format 2",
+    "format": "Object as proof, result before the story",
     "hook": {
-      "visual": "placeholder",
-      "audio": "placeholder",
-      "text_overlay": "placeholder"
+      "visual": "Beaten shoe dropped onto a table, camera pushes into the sole tread",
+      "audio": "This one's done twelve hundred kilometres.",
+      "text_overlay": "1,200 km. Look at the sole."
     },
     "script": [
-      "line 1",
-      "line 2",
-      "line 3"
+      "This one's done twelve hundred kilometres.",
+      "That's the sole. Flip it over, that's the upper.",
+      "I'm not going to tell you it looks new, it doesn't. But it's still fine.",
+      "The reason isn't the rubber, it's the last.",
+      "The last is the foot shaped mould the shoe gets built on.",
+      "Most big brands run a handful of lasts across their entire range.",
+      "We scanned about four hundred runners' feet and built our own.",
+      "Wider toe box than you're used to. Nothing in the shoe is fighting your foot.",
+      "That's why this one's still here after twelve hundred kilometres."
     ],
-    "on_screen_text": [],
-    "caption": "placeholder caption",
-    "duration_s": 20,
-    "share_reason": "placeholder",
-    "comment_trigger": "placeholder",
-    "why_views": "placeholder"
+    "on_screen_text": [
+      "The 'last' = the mould the shoe is built on",
+      "Big brands: a handful of lasts for everything",
+      "Us: 400 runners' feet, scanned",
+      "Wider toe box"
+    ],
+    "caption": "How far has your current pair actually gone?",
+    "duration_s": 30,
+    "share_reason": "Runners send this to the friend who replaces their shoes every six months on principle",
+    "comment_trigger": "Everyone posts their own mileage and argues about when shoes are 'dead'",
+    "why_views": "A worn object on screen is instant evidence, and opening with the result means the explanation feels earned rather than pitched."
   },
   {
     "id": "v3",
-    "format": "dry-run format 3",
+    "format": "Stated hot take, audience split live",
     "hook": {
-      "visual": "placeholder",
-      "audio": "placeholder",
-      "text_overlay": "placeholder"
+      "visual": "Founder mid shrug, close crop, no product visible yet",
+      "audio": "Forty percent of you are going to hate this, and that's fine.",
+      "text_overlay": "40% of you will hate this"
     },
     "script": [
-      "line 1",
-      "line 2",
-      "line 3"
+      "Forty percent of you are going to hate this, and that's fine.",
+      "We don't do sales. Ever. No Black Friday, no twenty percent off code in a creator's bio.",
+      "The price is the price.",
+      "Here's why I can't move it.",
+      "The factory's in Portugal, family run, third generation, forty people.",
+      "It costs about ninety pounds more per pair than making them elsewhere, and we absorb most of that.",
+      "There's no margin sitting there waiting to be discounted off.",
+      "A sale would just mean I'd been overcharging you in November.",
+      "So, forty percent of you, off you go. Genuinely fine."
     ],
-    "on_screen_text": [],
-    "caption": "placeholder caption",
-    "duration_s": 20,
-    "share_reason": "placeholder",
-    "comment_trigger": "placeholder",
-    "why_views": "placeholder"
+    "on_screen_text": [
+      "No sales. No codes. No Black Friday.",
+      "+£90 per pair to make",
+      "A discount = you were overcharged before",
+      "Still here?"
+    ],
+    "caption": "Never discounting: principled or just annoying?",
+    "duration_s": 26,
+    "share_reason": "Sent between people who argue about pricing ethics and the discount treadmill, plus founders sending it to other founders",
+    "comment_trigger": "A plainly stated hot take that splits the room, and the video literally invites the 40% to say so",
+    "why_views": "Naming a percentage of the audience who will disagree in the first second makes both camps stay to find out which one they're in."
+  },
+  {
+    "id": "v4",
+    "format": "Two contradictory quotes on screen, silent build, reveal last",
+    "hook": {
+      "visual": "Black screen, white text appears, hands lacing a shoe underneath",
+      "audio": "silent / trending audio",
+      "text_overlay": "\"This feels weird.\""
+    },
+    "script": [
+      "First time anyone puts these on, they say the same thing.",
+      "It feels weird.",
+      "Second run, same person, different sentence.",
+      "It feels like nothing.",
+      "That second one is the whole goal.",
+      "Weird is just your foot noticing there's room in the toe box for once.",
+      "We built the mould from scans of about four hundred runners' feet instead of borrowing an old one.",
+      "You're not meant to feel a running shoe.",
+      "Which is why the first time, it feels weird."
+    ],
+    "on_screen_text": [
+      "\"This feels weird.\" (run 1)",
+      "\"This feels like nothing.\" (run 2)",
+      "Same person. Same shoe.",
+      "400 runners' feet, scanned",
+      "You're not meant to feel a shoe"
+    ],
+    "caption": "Weird for one run, then nothing. Worth it?",
+    "duration_s": 24,
+    "share_reason": "Wide toe box people send this to friends who complain about cramped shoes and blackened toenails",
+    "comment_trigger": "Direct disagreement about whether a shoe should feel like anything at all, plus people describing their own break-in experience",
+    "why_views": "A quoted complaint as the opening line looks like criticism, so viewers stay to see how it gets resolved, and the last line loops back to the first."
   }
 ]

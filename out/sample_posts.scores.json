@@ -1,20 +1,58 @@
 [
   {
     "id": "v1",
-    "scores": {},
-    "overall": 10,
-    "fix": "placeholder fix"
+    "scores": {
+      "hook_strength": 4,
+      "specificity": 4,
+      "retention": 4,
+      "share_trigger": 5,
+      "native": 5,
+      "honesty": 4,
+      "reusability": 5
+    },
+    "overall": 8,
+    "fix": "Replace the generic \"Worst gym machines, ranked\" overlay with the fight-picking claim itself (\"the #1 worst one always has a queue\") so the withheld reveal is loaded in frame one, not just in the voiceover."
   },
   {
     "id": "v2",
-    "scores": {},
-    "overall": 9,
-    "fix": "placeholder fix"
+    "scores": {
+      "hook_strength": 5,
+      "specificity": 3,
+      "retention": 4,
+      "share_trigger": 4,
+      "native": 4,
+      "honesty": 3,
+      "reusability": 5
+    },
+    "overall": 8,
+    "fix": "Soften \"the whole set just did nothing\" to something you can actually show (\"you just skipped the part that works\"), and add one concrete number, the weight on the bar, so the wrong-rep/right-rep comparison has a stake instead of a vague claim."
   },
   {
     "id": "v3",
-    "scores": {},
-    "overall": 8,
-    "fix": "placeholder fix"
+    "scores": {
+      "hook_strength": 5,
+      "specificity": 5,
+      "retention": 4,
+      "share_trigger": 5,
+      "native": 5,
+      "honesty": 5,
+      "reusability": 5
+    },
+    "overall": 9,
+    "fix": "Cut \"Middle, the protein yoghurts. Boring, does the job, no notes.\" It is the only line that does not move the viewer forward; reinvest the two seconds in the cottage cheese reveal so the payoff lands harder before the drop-off point."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "hook_strength": 3,
+      "specificity": 2,
+      "retention": 2,
+      "share_trigger": 3,
+      "native": 4,
+      "honesty": 4,
+      "reusability": 5
+    },
+    "overall": 6,
+    "fix": "The hook has no visible stake, plate loading is the most scrolled-past shot in fitness. Open on something that contradicts the text on screen (limping down stairs, or a notes app screenshot of last week's numbers) and specify a visual change every beat, otherwise the middle is seven text cards and dies at line three."
   }
 ]
