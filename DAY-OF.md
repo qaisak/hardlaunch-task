@@ -2,7 +2,7 @@
 
 ## Before 11:00 (30 min, in order)
 - [ ] Eat. Water. Phone on silent except email / WhatsApp from Matt.
-- [ ] Terminal: `cd C:\Users\Qais\hardlaunch-task` then `.venv\Scripts\activate`
+- [ ] PowerShell (use `;` between commands, never `&&`): `cd C:\Users\Qais\hardlaunch-task; .venv\Scripts\activate`
 - [ ] Paste your API key into `.env` (copy `.env.example` to `.env` first) and run `python check_setup.py`
 - [ ] `python generate.py inputs/sample_brief.md --n 3 --top 1` and read `out/sample_brief.md` once,
       so you know what the system produces before the brief arrives
