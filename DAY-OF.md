@@ -32,7 +32,7 @@
 ## 14:30 to 15:00  Rationale and hand-in. NO NEW CODE.
 - Fill RATIONALE.md fully. One page.
 - Do the README run instructions work from a clean clone? Check.
-- Remove `out/` from .gitignore so sample output ships. `git commit -m "final"`, push or zip, send.
+- `git add -A; git commit -m "final"; git push` then add Matt as collaborator on GitHub (Settings > Collaborators) and email him the link.
 
 ## Questions to have ready for the first 20 min (pick what applies)
 - Platform and length? (TikTok, 20-40s assumed if unsaid)
@@ -40,6 +40,7 @@
 - Output as scripts / hooks / captions only, or also a visual spec / storyboard?
 - Is views the only objective, or is there a conversion constraint to respect?
 - How will you test it, CLI on a file? (so it matches their harness)
+- What is your GitHub username? Repo is private at github.com/qaisak/hardlaunch-task, add him as collaborator at hand-in
 
 ## Hand-in checklist
 - [ ] Runs from README in one command
