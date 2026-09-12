@@ -1,0 +1,44 @@
+{
+  "brand_name": "Allbirds",
+  "one_liner": "Comfortable everyday shoes made from wool, tree fibre and sugarcane",
+  "niche": "sustainable everyday footwear and basics",
+  "product_type": "physical product",
+  "audience": "25-45 year old UK city dwellers who walk a lot, commute, travel and work hybrid, want one comfortable shoe that looks normal with jeans, and care about natural materials (inferred)",
+  "core_pain": "hot, sweaty, stiff synthetic trainers that need breaking in, plus owning separate shoes for commuting, travel, weekends and the office",
+  "old_way_objects": [
+    "plastic running trainers",
+    "sweaty gym socks",
+    "canvas plimsolls that destroy your heels",
+    "smart work shoes that need breaking in",
+    "flat ballet pumps with no support",
+    "shoe deodoriser spray",
+    "gel insoles",
+    "packing three pairs of shoes in a carry on"
+  ],
+  "scenes": [
+    "a commuter on a packed London tube in August, feet boiling inside synthetic trainers, still two stops from the office",
+    "someone at the front door before a full day of city walking, standing over a pile of shoes trying to pick the pair that will not wreck their feet",
+    "a traveller kneeling on a bedroom floor trying to fit three pairs of shoes into a cabin bag the night before a flight"
+  ],
+  "tone": "warm, playful, plain-spoken, low-key, nature-led",
+  "proof_points": [
+    "made with natural materials like merino wool, eucalyptus tree fibre and sugarcane",
+    "free shipping on UK orders over £50",
+    "30 day returns or exchanges on unworn items with tags attached",
+    "Terralux collection made with animal-free, bio-fabricated leather alternative",
+    "Men's Varsity priced at £110",
+    "replaces petroleum-based synthetics with natural alternatives wherever possible",
+    "has physical retail stores"
+  ],
+  "do_not_say": [
+    "carbon neutral or zero emissions claims",
+    "medical claims about curing foot, knee or back pain",
+    "orthopaedic or podiatrist-approved unless stated",
+    "naming rival shoe brands",
+    "100% natural or 100% plastic free",
+    "waterproof (the site says water-repellent)",
+    "invented customer numbers, review counts or star ratings",
+    "free returns (customers pay return shipping)"
+  ],
+  "cta": "shop the shoes on allbirds.co.uk, men's or women's"
+}

@@ -95,6 +95,17 @@ def call(client, system: str, user: str, effort: str = "high") -> str:
     return "".join(b.text for b in msg.content if b.type == "text")
 
 
+def call_json(client, system: str, user: str, effort: str = "high"):
+    """call() then parse. If the model's JSON is malformed, one repair round-trip instead of a crash."""
+    raw = call(client, system, user, effort)
+    try:
+        return extract_json(raw)
+    except (json.JSONDecodeError, ValueError):
+        fixed = call(client, "You fix malformed JSON. Return ONLY the corrected JSON, nothing else.",
+                     "Repair this so it parses. Keep all content, escape quotes inside strings:\n\n" + raw, effort="low")
+        return extract_json(fixed)
+
+
 # ------------------------------------------------------------ pipeline ------
 
 def generate_variants(client, taste: str, input_text: str, n: int, dry: bool) -> list[dict]:

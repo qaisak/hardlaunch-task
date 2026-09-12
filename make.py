@@ -25,12 +25,13 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from PIL import Image, ImageDraw, ImageFont
 
-from generate import PROMPTS, ROOT, call, extract_json, read
+from generate import PROMPTS, ROOT, call, call_json, extract_json, read
 
 load_dotenv()
 
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/128 Safari/537.36"}
 MAX_CHARS = 14000
+MIN_CHARS = 1500  # below this a bare GET is a JS shell or a thin page: use the model's web fetch
 
 
 # ---------------------------------------------------------------- ingest ----
@@ -95,7 +96,7 @@ def ingest(url: str, client=None) -> str:
     except Exception as e:
         text, links = "", []
         print(f"  scrape failed ({e}); trying web fetch fallback", flush=True)
-    if len(text) < 400 and client is not None:
+    if len(text) < MIN_CHARS and client is not None:
         return ingest_via_model(client, url)[:MAX_CHARS]
     base = f"{urlparse(url).scheme}://{urlparse(url).netloc}"
     seen, extra = set(), []
@@ -180,7 +181,7 @@ def main() -> None:
     style = read(PROMPTS / "overlay_style.md")
 
     log("building brand profile")
-    profile = extract_json(call(client, taste, read(PROMPTS / "profile.md").replace("{text}", site_text), effort="medium"))
+    profile = call_json(client, taste, read(PROMPTS / "profile.md").replace("{text}", site_text), effort="medium")
     brand = profile.get("brand_name", urlparse(args.url).netloc)
     outdir = args.out / slug(brand)
     outdir.mkdir(parents=True, exist_ok=True)
@@ -188,17 +189,17 @@ def main() -> None:
     profile_s = json.dumps(profile, indent=1, ensure_ascii=False)
 
     log("choosing format")
-    fmt = extract_json(call(client, taste, read(PROMPTS / "format_select.md").replace("{profile}", profile_s), effort="low"))
+    fmt = call_json(client, taste, read(PROMPTS / "format_select.md").replace("{profile}", profile_s), effort="low")
 
     log(f"writing {args.n} overlay drafts")
-    variants = extract_json(call(client, taste + "\n\n" + style,
-                                 read(PROMPTS / "overlay_generate.md").replace("{n}", str(args.n)).replace("{profile}", profile_s)))
+    variants = call_json(client, taste + "\n\n" + style,
+                                 read(PROMPTS / "overlay_generate.md").replace("{n}", str(args.n)).replace("{profile}", profile_s))
     (outdir / "variants.json").write_text(json.dumps(variants, indent=2, ensure_ascii=False), encoding="utf-8")
 
     log("critiquing")
-    scores = extract_json(call(client, taste + "\n\n" + style,
+    scores = call_json(client, taste + "\n\n" + style,
                                read(PROMPTS / "overlay_critique.md").replace("{variants}", json.dumps(variants, indent=1, ensure_ascii=False)).replace("{profile}", profile_s),
-                               effort="medium"))
+                               effort="medium")
     (outdir / "scores.json").write_text(json.dumps(scores, indent=2, ensure_ascii=False), encoding="utf-8")
 
     by_id = {s["id"]: s for s in scores}
@@ -210,9 +211,9 @@ def main() -> None:
     final = win
     if ws.get("fix"):
         try:
-            rev = extract_json(call(client, taste + "\n\n" + style,
+            rev = call_json(client, taste + "\n\n" + style,
                                     read(PROMPTS / "overlay_revise.md").replace("{text}", win["text"]).replace("{fix}", ws["fix"]).replace("{profile}", profile_s),
-                                    effort="medium"))
+                                    effort="medium")
             final = {**win, "text": rev["text"], "caption": rev.get("caption", win.get("caption")), "what_changed": rev.get("what_changed", "")}
         except Exception as e:  # revise is a bonus, never let it sink the run
             log(f"revise skipped: {e}")

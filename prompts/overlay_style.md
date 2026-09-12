@@ -36,3 +36,10 @@ Common failures to avoid:
 - More than one idea. It is one person, one moment, one verdict.
 - Over 70 words. Nobody reads a wall.
 - Explaining the joke.
+
+Two more rules:
+- **Match the brand's market.** If the site prices in $ or the audience is American, the scene, slang
+  and places are American (the L train, a Trader Joe's, "dude"). If it is £ or UK, British. If global or
+  unclear, keep places generic (the bus, the library, the gym) and avoid slang that dates it to one country.
+- **Invent the verdict.** The verdict examples above ("like a psychopath", "built different and wrong")
+  are illustrations of the register, not a menu. Write a new one for this scene every time.

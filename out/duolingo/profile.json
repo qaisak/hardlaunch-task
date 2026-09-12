@@ -1,0 +1,42 @@
+{
+  "brand_name": "Duolingo",
+  "one_liner": "Free app that teaches languages through short game-like lessons",
+  "niche": "language learning app",
+  "product_type": "app",
+  "audience": "13 to 35 year olds learning a language on their phone in spare minutes: students, people with a holiday booked, people dating or living abroad, hobby learners who quit textbooks (inferred)",
+  "core_pain": "wanting to speak another language but never sticking with it, because textbooks, classes and grammar drills are boring, expensive and easy to abandon after a week",
+  "old_way_objects": [
+    "textbooks",
+    "paper flashcards",
+    "anki",
+    "evening class at the local college",
+    "youtube grammar videos",
+    "a phrasebook bought at the airport",
+    "google translate",
+    "a notes app list of vocab"
+  ],
+  "scenes": [
+    "on the bus to work, phone in hand, scrolling instead of doing the ten minutes of study they promised themselves (inferred)",
+    "in an airbnb kitchen in Madrid, ordering in English because the Spanish freezes in their throat (inferred)",
+    "at a desk at 11pm with an unopened grammar textbook and three untouched paper flashcards from January (inferred)"
+  ],
+  "tone": "playful, plain-spoken, cheeky, game-like",
+  "proof_points": [
+    "\"the world's most popular way to learn a language\"",
+    "\"100% free\"",
+    "\"fun and science-based\"",
+    "\"scientifically proven to work\"",
+    "available on duolingo.com and on the apps",
+    "courses listed include spanish, german, french, portuguese, italian, english"
+  ],
+  "do_not_say": [
+    "fluent in X weeks or any timeline-to-fluency guarantee",
+    "invented streak, user or course-completion numbers",
+    "naming rival apps or tutors",
+    "'replaces a teacher' or 'better than living abroad'",
+    "pricing or Super/Max tier details (not confirmed in the retrieved copy)",
+    "exam pass or job outcome guarantees",
+    "aggressive owl threat jokes that read as harassment"
+  ],
+  "cta": "download the app and start a free lesson"
+}

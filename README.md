@@ -1,34 +1,50 @@
-# Short-form content generator
+# Brand URL in, on-brand short-form content out
 
-Input (brief / transcript / past-post data) -> N hook-and-format variants -> strict critique
-pass -> ranked output with a suggested test plan.
+```
+python make.py https://www.somebrand.com
+```
 
-## Run
+Produces, in `out/<brand>/`:
+
+| File | What |
+|---|---|
+| `post.md` | The post: overlay text, base-video spec, audio, caption, why it is this brand, the format decision, runners-up, and the brand profile used |
+| `post.png` | 9:16 preview with the text burned on TikTok-style, where the silent reacting creator would be |
+| `profile.json` | Brand profile extracted from the site |
+| `variants.json`, `scores.json` | All drafts and the editor's scores |
+
+Around 90 seconds per brand, well under £1.
+
+## Setup
 ```
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 copy .env.example .env        (paste ANTHROPIC_API_KEY into .env)
 python check_setup.py
-python generate.py inputs/sample_brief.md --n 8 --top 3
+python make.py https://www.calai.app
 ```
-Output lands in `out/<input>.md` (readable) plus `.variants.json` and `.scores.json`.
-
-`--dry-run` runs the whole pipeline with placeholder content and no API calls.
 
 ## How it works
-1. `prompts/taste.md` is the content rulebook (hook, retention, share trigger, native-ness, format).
-   It is the system prompt for every call. Edit this to change taste, not the code.
-2. `prompts/generate.md` asks for N variants that differ in hook and format, as JSON.
-3. `prompts/critique.md` scores each variant as a harsh editor (including an honesty check
-   against the input) and names one fix per variant.
-4. `generate.py` ranks by score, marks the top K as SHIP, and appends a test plan.
+1. **Ingest** (`ingest()`): GET the homepage plus up to two "about / how it works" pages, strip to text.
+   If the site is a JS shell or bot-gated (under 400 chars), fall back to Claude's server-side web fetch.
+2. **Brand profile** (`prompts/profile.md`): one call turns the site text into JSON: niche, audience,
+   the core pain, the exact objects and rival tools people use instead (`old_way_objects`), real scenes
+   where the pain shows, tone, proof points, do-not-say.
+3. **Format decision** (`prompts/format_select.md`): long overlay vs slideshow vs hook+demo, with a reason.
+   The system always renders long overlay (one content type was sufficient; it is the dominant format
+   and needs no footage), but the decision is recorded so a human can see it.
+4. **Drafts** (`prompts/overlay_generate.md` + `prompts/overlay_style.md`): N overlays in the house style,
+   each a different scene and verdict, brand name exactly once, niche-specific nouns from the profile.
+5. **Critique** (`prompts/overlay_critique.md`): a strict editor scores on-brand, voice, hook, not-an-ad,
+   comment bait, honesty, length, and names one fix per draft.
+6. **Revise** (`prompts/overlay_revise.md`): the editor's fix is applied to the winner.
+7. **Assemble** (`render_png()`): text burned onto a 9:16 frame with a black stroke, plus the markdown pack.
 
-## Extending
-- New input shape: edit `load_input()` in `generate.py`.
-- New output shape: edit the JSON schema in `prompts/generate.md` and `render()`.
+The taste lives in `prompts/overlay_style.md` (what a long overlay is and the seven things every one must
+have, derived from the reference piece) and `prompts/taste.md` (general short-form rules). Editing those
+changes the output; the code is plumbing.
 
-## Fallback backend
-`python generate.py inputs/x.md --backend cli` runs the same pipeline through `claude -p`
-(Claude Code subscription) instead of the API. Requires `claude` to be logged in. Set
-`CLAUDE_CLI` if the binary is somewhere else.
+## Also in the repo
+`generate.py` is the earlier, more general generator (any text input to N hook/format variants with a
+critique pass). `make.py` imports its `call()` and JSON helpers. `inputs/` and `out/sample_*` are from that.

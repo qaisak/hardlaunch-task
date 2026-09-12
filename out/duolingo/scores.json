@@ -1,0 +1,72 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "cut \"no app.\" since it duplicates the duolingo item, and swap \"respect honestly\" for a fresher verdict that points at the receipt bookmark so the caption and text stop repeating each other."
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 3
+    },
+    "overall": 7,
+    "fix": "tighten the opening so the pain lands in the first 8 words (\"i spent nine days in madrid ordering in english\") and cut \"came home saying i'd pick it up next time\" so the twist verdict hits faster."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "\"she's built different and wrong\" is lifted straight from the reference verdict bank, write a new one off the whiteboard and six adults image; also drop \"no app on the bus there\" as it doubles the duolingo line."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 5,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 5
+    },
+    "overall": 8,
+    "fix": "restore the rhythm of the no-list by fronting the fragments (\"textbook unopened. three flashcards from january. anki downloaded never opened. no duolingo.\") so it reads as the house cadence rather than a paragraph."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "the verdict is too soft, \"hope she makes it honestly\" gives nobody anything to argue with, replace with a flat judgement on the phrasebook buyer that people will defend or tag."
+  }
+]
