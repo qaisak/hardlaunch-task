@@ -1,0 +1,49 @@
+{
+  "brand_name": "Cal AI",
+  "one_liner": "Calorie tracking app that reads your meal from a photo",
+  "niche": "calorie and macro tracking app",
+  "product_type": "app",
+  "audience": "16-30s gym-goers, bulkers and weight-loss beginners who follow fitness creators on TikTok and want macros without manual logging (inferred)",
+  "core_pain": "manually searching, weighing and guessing every meal's calories and macros in a database, so tracking gets abandoned within a week",
+  "old_way_objects": [
+    "myfitnesspal",
+    "kitchen scales",
+    "a notes app",
+    "notes app screenshots of nutrition labels",
+    "google 'how many calories in'",
+    "chatgpt guessing your dinner",
+    "a paper food diary",
+    "measuring cups"
+  ],
+  "scenes": [
+    "standing at the kitchen counter at 11pm with a late-night snack, phone in one hand, scrolling a food database for the right entry",
+    "at a restaurant with friends, plate arrives, someone is trying to guess the macros of a mixed curry that has no label",
+    "in the gym car park after a session, realising they haven't logged anything since breakfast and giving up on the day"
+  ],
+  "tone": "casual, blunt, creator-led, friendly",
+  "proof_points": [
+    "Loved by 5M users with 4.9 rating",
+    "Over 100k 5-star ratings",
+    "4.8/5 and 4.7/5 store ratings",
+    "About 80% accurate on food scans (stated in FAQ)",
+    "Photo scan uses the phone's depth sensor to calculate food volume",
+    "Tracks calories, protein, carbs and fat; photo scan, barcode scan or describe your meal",
+    "Integrates with Apple Health and Google Fit for steps and exercise",
+    "Add your own foods and recipes",
+    "Dark Mode; new features weekly",
+    "3-day free trial, cancel anytime",
+    "Family plan available",
+    "User quotes: 'im ngl I've lost 17 lbs with it', 'IVE BEEN BULKING FOR A YEAR STRAIGHT W APP'"
+  ],
+  "do_not_say": [
+    "100% accurate or perfectly accurate scanning (site says about 80%)",
+    "any medical claim: treats, cures or manages diabetes, eating disorders or any condition",
+    "guaranteed weight loss or 'lose X lbs in X days'",
+    "naming MyFitnessPal as a rival to attack (site only mentions it re: imports)",
+    "free forever or no cost (it is a paid subscription after a 3-day trial)",
+    "invented user counts, download numbers or accuracy percentages",
+    "'you can eat anything and still get shredded' as a brand promise",
+    "implying subscriptions transfer between iPhone and Android"
+  ],
+  "cta": "Download Cal AI and claim the 3-day free trial"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 5,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "swap the borrowed verdict 'she's built different and wrong' for a fresh line of your own, it's lifted straight from the reference and reads like a template."
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "cut 'while my food went cold', it's a duplicate beat from v1 and the under-the-table googling already carries the scene."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 2,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "'couldn't be me' is the weakest closer of the set and it's straight off the reference list, replace with a verdict people can argue with about writing off a day."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 5,
+      "voice": 5,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 5,
+      "honesty": 5,
+      "length": 5
+    },
+    "overall": 9,
+    "fix": "tighten the opening to 'watched a lad ask chatgpt how many calories in his mum's lasagne' and drop 'type of mince' so the escalation lands faster."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 4,
+      "length": 3
+    },
+    "overall": 7,
+    "fix": "cut 'hit my protein by faith alone' or the biro line, you're at 55 words with two punchlines fighting and the 'big rice' beat is the stronger one."
+  }
+]

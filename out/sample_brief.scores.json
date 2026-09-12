@@ -2,85 +2,43 @@
   {
     "id": "v1",
     "scores": {
-      "hook_strength": 4,
-      "specificity": 4,
-      "retention": 4,
-      "share_trigger": 4,
-      "native": 5,
-      "honesty": 4,
-      "reusability": 4
-    },
-    "overall": 7,
-    "fix": "The hook says 'night nine is the reason I'm filming this' but never shows night nine — put the tracker graph reveal (flat stretch where the 3am gap was) as a hard cut at the end to close the loop visually, and cut line 3 ('not stressed, not needing the loo') into an on-screen text line so the first 5 seconds move faster."
-  },
-  {
-    "id": "v2",
-    "scores": {
       "hook_strength": 5,
       "specificity": 4,
       "retention": 3,
-      "share_trigger": 5,
-      "native": 5,
-      "honesty": 4,
-      "reusability": 5
-    },
-    "overall": 8,
-    "fix": "Text-only over 'slow handheld shots in the dark' will flatline in the middle — specify a distinct visual beat per card (phone clock, ceiling, bin of sprays/gummies, capsule in palm, curtains at morning) so something changes every 2s, otherwise this dies at second 8 despite the best hook here."
-  },
-  {
-    "id": "v3",
-    "scores": {
-      "hook_strength": 4,
-      "specificity": 4,
-      "retention": 5,
-      "share_trigger": 5,
-      "native": 4,
-      "honesty": 4,
-      "reusability": 5
-    },
-    "overall": 8,
-    "fix": "Lines 8-10 are three closing lines doing one job and the review-quote line is where it starts smelling like an ad — cut 'the reviews are all the same sentence' and end on 'I wanted it to be the eye mask, it was the £24 bottle of boring' so the last line loops back to 'number one is going to annoy people'."
-  },
-  {
-    "id": "v4",
-    "scores": {
-      "hook_strength": 4,
-      "specificity": 5,
-      "retention": 4,
       "share_trigger": 4,
-      "native": 5,
-      "honesty": 4,
-      "reusability": 5
-    },
-    "overall": 8,
-    "fix": "'Two thousand-odd reviews all say the same boring sentence' is the one line that flips it back into a pitch — either quote the sentence flat with no framing or drop it; the anti-sell only works if you never sell, and the £24 objection is doing more persuasion than the proof line is."
-  },
-  {
-    "id": "v5",
-    "scores": {
-      "hook_strength": 4,
-      "specificity": 4,
-      "retention": 3,
-      "share_trigger": 3,
       "native": 3,
       "honesty": 3,
       "reusability": 4
     },
     "overall": 6,
-    "fix": "This is a proof-point recital dressed as a video — '4.7 stars across 2,100' plus ingredient plus dosage plus timeline is four ad beats in a row with nothing changing on screen. Keep the scroll-stop hook, cut the stars/dosage lines entirely, and make the whole body about why specific reviews beat glowing ones; also fix 'seven words' — the quoted phrase is six."
+    "fix": "You set up the final screen and never show it. Either show the app screen in the last 3 seconds or drop the implied result entirely, and bin the 'not an ad' overlay, that line is the single biggest tell that it is an ad."
   },
   {
-    "id": "v6",
+    "id": "v2",
+    "scores": {
+      "hook_strength": 3,
+      "specificity": 4,
+      "retention": 4,
+      "share_trigger": 4,
+      "native": 4,
+      "honesty": 3,
+      "reusability": 5
+    },
+    "overall": 7,
+    "fix": "The hook is a face in bed with a capsule, visually identical to every supplement video. Open on the phone or a written day-by-day list with days 4 to 7 all reading 'nothing', so the visible stake is failure, and soften the day 8 to 10 claim to something you can honestly say rather than a clean three-night result."
+  },
+  {
+    "id": "v3",
     "scores": {
       "hook_strength": 4,
       "specificity": 5,
       "retention": 4,
-      "share_trigger": 3,
-      "native": 5,
-      "honesty": 4,
+      "share_trigger": 4,
+      "native": 4,
+      "honesty": 5,
       "reusability": 5
     },
-    "overall": 7,
-    "fix": "The open loop is deferred to a different video, so this post's own completion rate has nothing to pay off — give it an in-video micro-payoff (e.g. check the tracker on camera at the end and read out the one night that was different, or state the exact thing that would make you call it a fail) so viewers finish this one instead of only saving it."
+    "overall": 8,
+    "fix": "Reason three is the whole video, so tease it in the first 1.5s instead of counting in. Lead with 'reason three is going to annoy you' over the three fingers, then run one, two, three, and cut the product spec line down to a single overlay so the middle never flattens."
   }
 ]

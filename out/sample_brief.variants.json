@@ -1,191 +1,100 @@
 [
   {
     "id": "v1",
-    "format": "Result-first self-test: 'I tried X for N nights, the outcome stated in line one'",
+    "format": "Screenshot receipts, result shown before the process",
     "hook": {
-      "visual": "Phone screen filmed at arm's length showing sleep-tracker graph, finger pointing at a flat stretch where the old 3am gap used to be",
-      "audio": "Night four was still rubbish. Night nine is the reason I'm filming this.",
-      "text_overlay": "Night 4: rubbish. Night 9: this."
+      "visual": "Phone screen held close, sleep app history showing a wake-up at 3:04am, then 3:11am, then 2:58am, thumb scrolling through them",
+      "audio": "Three fifty eight. Three eleven. Three oh four. That was my last two weeks.",
+      "text_overlay": "my 3am wake-ups, logged"
     },
     "script": [
-      "Night four was still rubbish. Night nine is the reason I'm filming this.",
-      "I've woken up at 3am, basically every night, for about two years.",
-      "Not stressed. Not needing the loo. Just awake, staring at the ceiling.",
-      "So I tried one capsule of magnesium glycinate, 30 minutes before bed. That's it.",
-      "Nothing happened for the first five nights and I nearly gave up.",
-      "Then one morning I realised I hadn't seen 3am on my phone in a while.",
-      "It's 300mg, there's no melatonin in it, and I don't wake up foggy.",
-      "It's not magic. It took a week and a half to notice anything.",
-      "But I haven't checked the time in the middle of the night since night nine."
+      "Three fifty eight. Three eleven. Three oh four. That was my last two weeks.",
+      "Every night, same thing, awake for an hour, then dead by 11am at my desk.",
+      "I didn't buy a supplement for it. I read reviews for about an hour first because I assume all of this is nonsense.",
+      "The line that kept coming up on this one was, I stopped waking up at 3am. Same words, over and over.",
+      "It's magnesium glycinate. 300mg. No melatonin in it, which is the bit I cared about.",
+      "One capsule, half an hour before bed. That's the whole routine.",
+      "Nothing happened for the first week, and I nearly binned it.",
+      "Then I checked the app again, and that's the part I'll show you."
     ],
     "on_screen_text": [
-      "two years of 3am",
-      "one capsule, 30 min before bed",
-      "nights 1-5: nothing",
-      "no melatonin in it",
-      "still boring. still works."
+      "1 hour of reading reviews, not an ad",
+      "4.7 stars, 2,100 reviews",
+      "300mg magnesium glycinate",
+      "no melatonin",
+      "day 1 to 7: nothing",
+      "then check the screen again"
     ],
-    "caption": "What time do you wake up at? Mine was always 3am.",
-    "duration_s": 32,
-    "share_reason": "Someone who wakes up at 3am sends this to their partner who watches them do it, or to the group chat where everyone complains about being tired",
-    "comment_trigger": "The stated 3am time makes people name their own wake-up time; the 'nothing happened for five nights' admission invites 'how long did it actually take you'",
-    "why_views": "Opening with a dated before/after on a real tracker screen shows the result before any context, and the admission that nights 1-5 failed buys credibility from a sceptical audience in the first second."
+    "caption": "What time do you wake up in the night? Mine was 3am on the dot.",
+    "duration_s": 30,
+    "share_reason": "Someone who wakes at the same time every night sends it to their partner or group chat as, this is literally me, look at the times",
+    "comment_trigger": "Asking what time people wake up gets hundreds of one-word replies, and the deliberate withhold of the final screen makes people ask what happened",
+    "why_views": "Real timestamps on a real phone read as evidence rather than advertising, and the unresolved final screen keeps people to the last beat."
   },
   {
     "id": "v2",
-    "format": "POV text overlay, silent, trending audio, shot in real conditions",
+    "format": "Day-by-day diary where the early days are honestly boring, payoff in the last 20%",
     "hook": {
-      "visual": "Dark bedroom, face lit only by phone screen, eyes open, ceiling above",
-      "audio": "silent / trending audio",
-      "text_overlay": "3:07am. again."
+      "visual": "Creator in bed, lamp on, holding one capsule up to the camera, slightly annoyed face",
+      "audio": "Day four of this and I've felt absolutely nothing, so I'm filming the whole thing.",
+      "text_overlay": "day 4: still nothing"
     },
     "script": [
-      "silent throughout — text overlays carry the whole story over slow handheld shots in the dark"
+      "Day four of this and I've felt absolutely nothing, so I'm filming the whole thing.",
+      "Day five, nothing. Slept badly, woke up at 3am as usual, brilliant.",
+      "Day six, I checked the label to see if I'd been taking it wrong. I hadn't. One capsule, 30 minutes before bed.",
+      "Day seven, the site does say five to ten days, so fine, I'm not out yet.",
+      "Day eight, first night I didn't remember waking up. Could be a fluke.",
+      "Day nine, same. Day ten, same.",
+      "It's 300mg magnesium glycinate, there's no melatonin in it, so I'm not groggy in the morning, which was my whole worry.",
+      "I'm not going to tell you it's magic. I'm telling you it took over a week and I nearly quit on day six."
     ],
     "on_screen_text": [
-      "3:07am. again.",
-      "not stressed. not thirsty. just awake.",
-      "falling asleep was never my problem",
-      "staying asleep was",
-      "so I stopped buying sleep sprays and gummies",
-      "and tried 300mg magnesium glycinate. one capsule.",
-      "nights 1-6: nothing at all",
-      "night 10: didn't see 3am",
-      "still don't"
+      "day 5: nothing",
+      "day 6: checked I wasn't doing it wrong",
+      "day 7: label says 5 to 10 days",
+      "day 8: didn't wake up",
+      "day 9, day 10: same",
+      "no melatonin, no morning fog",
+      "day 6 is where most people quit"
     ],
-    "caption": "3am club, what's your exact time?",
-    "duration_s": 22,
-    "share_reason": "Sent silently at 2am from one insomniac to another as an 'this is literally me' tag — no audio needed, works on mute in bed",
-    "comment_trigger": "'What's your exact time' makes hundreds of people post 3:04, 3:12, 4am — cheap, high-volume comments and an argument about why it's always 3am",
-    "why_views": "Filmed in the exact situation the viewer is in while scrolling — dark room, phone light, 3:07am on screen — so the hook is recognition rather than information, which holds mute viewers."
+    "caption": "Anyone else give up on something at day six?",
+    "duration_s": 35,
+    "share_reason": "Sent by one sceptical friend to another as proof that the honest version of a supplement review exists, and as a warning not to quit early",
+    "comment_trigger": "The day six quit point is a plainly stated opinion people argue with, plus loads of people reply about the thing they gave up on too soon",
+    "why_views": "Opening on failure rather than success breaks the pattern of every supplement video and buys enough scepticism credit that people stay for the turn."
   },
   {
     "id": "v3",
-    "format": "Ranking with the controversial pick last: '4 things I tried, ranked worst to best'",
+    "format": "3-item ranking of reasons not to buy it, most controversial last",
     "hook": {
-      "visual": "Four items lined up on a duvet: a lavender spray, a weighted eye mask, a sleep tea box, a plain white capsule bottle. Hand sweeps the spray straight off the bed.",
-      "audio": "Four things I bought to fix waking up at 3am, ranked, and number one is going to annoy people.",
-      "text_overlay": "Ranked. #1 will annoy people."
+      "visual": "Creator sat on the edge of the bed, product bottle on the duvet beside them, holding up three fingers straight to camera",
+      "audio": "Three reasons you shouldn't buy the sleep thing I've been taking.",
+      "text_overlay": "3 reasons not to buy it"
     },
     "script": [
-      "Four things I bought to fix waking up at 3am, ranked, and number one is going to annoy people.",
-      "Four: the pillow spray. Smells lovely. Did absolutely nothing at 3am.",
-      "Three: the sleep tea. Made me get up at 3am to wee instead. Worse.",
-      "Two: the weighted eye mask. Genuinely nice. Helped me fall asleep, not stay asleep.",
-      "One: the boring one. 300mg magnesium glycinate, one capsule, 30 minutes before bed.",
-      "No melatonin, so no hangover feeling in the morning, which was my whole issue with the other stuff.",
-      "Took me about a week and a half before I noticed anything, so don't judge it on night two.",
-      "The reviews are all the same sentence: 'I stopped waking up at 3am.' That was it for me too.",
-      "Annoying, because I wanted the answer to be the eye mask. It was the £24 bottle of boring.",
-      "So: four things, and the one I'd buy again is the one with no smell, no ritual, no vibe."
+      "Three reasons you shouldn't buy the sleep thing I've been taking.",
+      "One. It's slow. Five to ten days before you notice anything. If you want tonight sorted, this isn't it.",
+      "Two. It's 24 quid a month on subscription. That's a real cost and I'm not going to pretend it isn't.",
+      "Three, and this is the one people don't want to hear.",
+      "It will not out-work your phone. If you're scrolling until 1am, which is exactly what you're doing right now, no capsule fixes that.",
+      "What it is, is 300mg of magnesium glycinate with no melatonin, so you don't wake up foggy.",
+      "The review line that made me try it was, I stopped waking up at 3am. That's the whole promise. That's it.",
+      "So if you're still scrolling, reason three is for you."
     ],
     "on_screen_text": [
-      "4. pillow spray — nice smell, nothing",
-      "3. sleep tea — made it worse",
-      "2. eye mask — falling asleep only",
-      "1. the boring capsule",
-      "gave it 10 days before judging"
+      "1. slow. 5 to 10 days",
+      "2. £24 a month",
+      "3. ...",
+      "it can't out-work your phone",
+      "300mg magnesium glycinate, no melatonin",
+      "4.7 stars, 2,100 reviews",
+      "you're still scrolling though"
     ],
-    "caption": "Defend the pillow spray in the comments, I dare you.",
-    "duration_s": 38,
-    "share_reason": "Sent to the friend who owns all four of these things and swears by the spray, as a wind-up",
-    "comment_trigger": "Openly ranking beloved products last — pillow spray and sleep tea fans will argue, and people will add their own #1",
-    "why_views": "A four-item ranking creates four micro-payoffs plus a pre-announced controversial ending, so the viewer stays for the reveal instead of dropping at the product mention."
-  },
-  {
-    "id": "v4",
-    "format": "Anti-sell: 'reasons you should not buy this' — objections stated before the pitch",
-    "hook": {
-      "visual": "Creator holding the bottle, then setting it down and pushing it away from the camera",
-      "audio": "Three reasons you shouldn't buy this, from someone who takes it every night.",
-      "text_overlay": "Don't buy this if..."
-    },
-    "script": [
-      "Three reasons you shouldn't buy this, from someone who takes it every night.",
-      "One: it's slow. It took me about nine nights. If you want tonight to be different, this isn't it.",
-      "Two: it's £24 a month on subscription. That's a real cost for something this undramatic.",
-      "Three: it doesn't knock you out. There's no melatonin in it. You won't feel drugged.",
-      "If falling asleep is your problem, I'm honestly not sure this is your thing.",
-      "Mine was staying asleep. Awake at 3am, every night, for about two years.",
-      "One capsule, 300mg magnesium glycinate, half an hour before bed, nothing else changed.",
-      "Two thousand-odd reviews and they all say the same boring sentence about 3am. So does mine now.",
-      "So don't buy it for tonight. Buy it if you're willing to be unimpressed for a week."
-    ],
-    "on_screen_text": [
-      "1. it's slow — ~9 nights for me",
-      "2. £24/month, real money",
-      "3. won't knock you out",
-      "no melatonin = no morning fog",
-      "be unimpressed for a week"
-    ],
-    "caption": "Would you give something 10 nights before deciding?",
-    "duration_s": 30,
-    "share_reason": "Sceptics send it to other sceptics — it's the rare supplement video that leads with the downsides, so it reads as safe to forward",
-    "comment_trigger": "Stating the price out loud splits the comments into 'that's expensive' vs 'cheaper than my sleep', and 'this isn't for you if...' makes people declare which problem they have",
-    "why_views": "Opening by pushing the product away inverts the expected ad structure, so the sceptical viewer stays to hear the criticism they were already forming."
-  },
-  {
-    "id": "v5",
-    "format": "Reading real reviews out loud and reacting to the one repeated phrase",
-    "hook": {
-      "visual": "Phone held close to camera, thumb scrolling a wall of reviews fast; scroll stops hard on a highlighted line",
-      "audio": "I scrolled two thousand reviews and the same seven words keep coming up.",
-      "text_overlay": "Same 7 words. Over and over."
-    },
-    "script": [
-      "I scrolled two thousand reviews and the same seven words keep coming up.",
-      "'I stopped waking up at 3am.' That one. Again. And again.",
-      "Not 'life changing'. Not 'best sleep ever'. Just that.",
-      "Which is weirdly the only kind of review I trust, because it's so specific.",
-      "So I checked what's actually in it: 300mg magnesium glycinate. No melatonin.",
-      "One capsule, 30 minutes before bed. That's the entire instruction.",
-      "4.7 stars across 2,100 of them, which for a supplement that does one boring thing is quite a lot.",
-      "The reviews also warn you it takes about five to ten days, which I appreciated.",
-      "I'm on night eleven. And I've now got the same seven words as everyone else."
-    ],
-    "on_screen_text": [
-      "\"I stopped waking up at 3am\"",
-      "4.7 stars / 2,100 reviews",
-      "300mg magnesium glycinate",
-      "no melatonin",
-      "night 11"
-    ],
-    "caption": "Do you trust a specific review more than a glowing one?",
+    "caption": "Reason three is the one nobody likes. What time is it where you are?",
     "duration_s": 28,
-    "share_reason": "Sent to the friend who always says 'reviews are fake' — the point of the video is how to read reviews, not the product",
-    "comment_trigger": "The claim that vague five-star reviews are less trustworthy than specific ones is a hot take people love to back up or dispute with their own examples",
-    "why_views": "A fast review scroll that slams to a stop on one highlighted sentence is pure visual curiosity, and the repeated phrase gives the video a built-in payoff to wait for."
-  },
-  {
-    "id": "v6",
-    "format": "Mid-process diary entry: 'day N of something, filmed at the moment of doubt'",
-    "hook": {
-      "visual": "Creator in the kitchen at night, unwashed hair, holding a capsule between finger and thumb up to the camera light",
-      "audio": "Day six of this and I'm about to say something I'll probably regret.",
-      "text_overlay": "Day 6. Still nothing."
-    },
-    "script": [
-      "Day six of this and I'm about to say something I'll probably regret.",
-      "I think it's not working. Six nights, one capsule each night, 30 minutes before bed.",
-      "Still woke up at 3am on nights two, four and five.",
-      "The company literally tells you it takes five to ten days, so I know I'm being impatient.",
-      "It's 300mg magnesium glycinate. No melatonin, so there's nothing to make me feel it working.",
-      "Which is the annoying part. There's no effect to report. Just data I don't have yet.",
-      "I'm going to keep going to night fourteen and come back either way.",
-      "If it doesn't work I'll say so and I'll say what I paid.",
-      "Update at day fourteen. Save this if you want to know whether I regret it."
-    ],
-    "on_screen_text": [
-      "day 6",
-      "woke at 3am: nights 2, 4, 5",
-      "brand says 5-10 days",
-      "no melatonin = nothing to 'feel'",
-      "coming back at day 14"
-    ],
-    "caption": "Day 14 update coming. Guess now: works or doesn't?",
-    "duration_s": 26,
-    "share_reason": "Sent to a friend who's mid-argument about whether supplements do anything, as a live experiment to follow",
-    "comment_trigger": "Asking people to predict the outcome, plus openly doubting the product, pulls in both 'give it time, mine took 10 days' and 'it's a placebo' replies arguing with each other",
-    "why_views": "Admitting failure at day six is the opposite of what viewers expect from a product video, and the promised day-14 update turns the open loop into follows, saves and return views."
+    "share_reason": "Sent to the mate who complains about sleep every week but is on TikTok at midnight, as a light callout",
+    "comment_trigger": "Directly accusing the viewer of scrolling at 1am provokes defensive replies, and the price named out loud starts a worth-it or not argument",
+    "why_views": "A negative ranking about a product the creator actually uses is a contradiction the brain wants resolved, and calling out the viewer's current behaviour lands mid-scroll."
   }
 ]

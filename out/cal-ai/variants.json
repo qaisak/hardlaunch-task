@@ -1,0 +1,47 @@
+[
+  {
+    "id": "v1",
+    "text": "just seen my flatmate weighing pasta at 11pm. no barcode. no photo. no cal ai. just kitchen scales and a notes app with three years of half finished entries. stood there scrolling a food database for nine minutes while the pasta went cold. she's built different and wrong",
+    "word_count": 48,
+    "base_video": "Creator leaning on a kitchen counter at night, one light on, holding a fork over a bowl, chewing slowly and staring dead into the lens. Small head shake once near the end.",
+    "audio": "original audio, room tone, fork on bowl",
+    "caption": "the pasta was cold. the entry was still wrong",
+    "why_this_brand": "The 11pm kitchen scales plus food database scroll is the exact manual logging ritual Cal AI's photo scan replaces."
+  },
+  {
+    "id": "v2",
+    "text": "i logged a mixed curry by vibes on saturday. no label. no barcode. no cal ai. just me under the table googling how many calories in chicken tikka while my food went cold. typed in 1200. added a bit for the naan. closed the app. brave. stupid. brave.",
+    "word_count": 47,
+    "base_video": "Creator sat in a restaurant booth or at a kitchen table with a takeaway container, slowly eating, glancing down at their phone then back up at the camera with no expression.",
+    "audio": "trending mellow rap or slowed r&b sound at low volume",
+    "caption": "what do you put for a curry, be honest",
+    "why_this_brand": "Guessing macros on a no-label mixed curry is the restaurant moment Cal AI's describe-your-meal and photo scan exist for."
+  },
+  {
+    "id": "v3",
+    "text": "guy in the puregym car park last night going through his camera roll trying to remember what he ate at 1pm. no scan. no cal ai. no diary. just fourteen screenshots of nutrition labels and a feeling. gave up on the whole day and drove home. couldn't be me",
+    "word_count": 49,
+    "base_video": "Creator sat in the driver's seat in gym kit, post session, sipping a shake, looking out the windscreen then slowly turning to the camera. No talking.",
+    "audio": "original audio, engine off, car hum",
+    "caption": "the day you stop logging is the day it ends",
+    "why_this_brand": "The gym car park write-off and the camera roll of nutrition label screenshots is the abandonment point Cal AI's quick photo log removes."
+  },
+  {
+    "id": "v4",
+    "text": "watched a lad ask chatgpt how many calories in his mum's lasagne. described the whole dish. portion size. type of mince. no scales. no cal ai. no label. then argued with it when it said 900. sat there negotiating with a robot over lasagne. genuinely unwell",
+    "word_count": 46,
+    "base_video": "Creator on a sofa with a plate on their lap, mid bite, looking off camera like they are watching someone across the room, then straight down the lens with raised eyebrows.",
+    "audio": "original audio, TV murmuring in the background",
+    "caption": "he got it down to 740 in the end",
+    "why_this_brand": "Talking a chatbot into a lower number for a homemade dish is the guesswork loop Cal AI's meal scan is built to end."
+  },
+  {
+    "id": "v5",
+    "text": "i bulked for four months with a paper food diary in my gym bag. no scan. no barcode. no cal ai. just measuring cups and a biro that ran out in week two. wrote down big rice twice a day and called it tracking. hit my protein by faith alone. respect to past me. barely",
+    "word_count": 55,
+    "base_video": "Creator sat on a bench in a gym changing room or bedroom floor, gym bag open beside them, holding a battered notebook, flicking a page and giving the camera a slow blink.",
+    "audio": "trending nostalgic sound, low volume",
+    "caption": "big rice. that was the entry. that was it",
+    "why_this_brand": "A paper diary, measuring cups and a made up portion size is the pre-app bulking method Cal AI's macro tracking replaces."
+  }
+]
