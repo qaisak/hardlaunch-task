@@ -1,0 +1,86 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "Cut 'phone in the bed' and 'face lit up like a vending machine' down to one image so the no X list lands cleanly, and sharpen the verdict beyond 'going to war and losing' into something taggable."
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 6,
+    "fix": "Open on the damning number, 'four hours for six hundred words', instead of the doc setup, so the first eight words earn the read."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 5,
+      "voice": 5,
+      "hook": 5,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 5
+    },
+    "overall": 9,
+    "fix": "Trim 'no phone in another room' to just 'phone in another room? no' or drop it, the list is one beat long and the rest is already perfect."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 5,
+      "honesty": 4,
+      "length": 3
+    },
+    "overall": 8,
+    "fix": "Cut the 'deletes it. redownloads it. deletes it.' repetition, the app store line already did that work, and it delays the verdict."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 4,
+      "not_an_ad": 3,
+      "comment_bait": 3,
+      "honesty": 4,
+      "length": 4
+    },
+    "overall": 6,
+    "fix": "'no opal on the laptop though' is the brand doing a job, which reads as a pitch. Put opal back in a proper no X list and let the macbook be the joke on its own."
+  },
+  {
+    "id": "v6",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 3,
+      "not_an_ad": 3,
+      "comment_bait": 3,
+      "honesty": 4,
+      "length": 2
+    },
+    "overall": 5,
+    "fix": "It's a testimonial, not an observation. Rewrite as third person, drop 'it's working', and cut to under 50 words so one idea survives."
+  }
+]

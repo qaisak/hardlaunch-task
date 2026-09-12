@@ -29,6 +29,7 @@ from PIL import Image, ImageDraw, ImageFont
 from generate import PROMPTS, ROOT, call, call_json, extract_json, read
 from video import render_mp4
 from trends import trend_input, adapt
+from discovery import discover, audience_context as research_context, trend_reference
 from audience import build_insights, writing_context
 
 load_dotenv()
@@ -165,7 +166,7 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "brand"
 
 
-def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None, audience_links='', audience_excerpts='', trend_links='', trend_notes='', trend_observed='', trend_market='') -> dict:
+def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None, audience_links='', audience_excerpts='', trend_links='', trend_notes='', trend_observed='', trend_market='', auto_research=True) -> dict:
     """The whole pipeline for one URL. Returns the result dict; also used by app.py."""
     reference = trend_input(trend_links, trend_notes, trend_observed, trend_market)
     import anthropic
@@ -187,12 +188,15 @@ def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None, audience_
     profile = call_json(client, taste, read(PROMPTS / "profile.md").replace("{text}", site_text), effort="medium")
     profile["source_url"] = url
     insights = build_insights(client, profile, audience_links, audience_excerpts, log) if audience_links or audience_excerpts else None
-    audience_context = writing_context(insights)
+    research = discover(client, profile, log) if auto_research else {"status":"Automatic research disabled", "audience":[], "trends":[]}
+    audience_context = writing_context(insights) if insights else research_context(research)
+    reference = reference or trend_reference(research)
     brand = profile.get("brand_name", urlparse(url).netloc)
     outdir = out / slug(brand)
     outdir.mkdir(parents=True, exist_ok=True)
     (outdir / "profile.json").write_text(json.dumps(profile, indent=2, ensure_ascii=False), encoding="utf-8")
     (outdir / "audience.json").write_text(json.dumps(insights or {"themes": [], "sources": []}, indent=2, ensure_ascii=False), encoding="utf-8")
+    (outdir / "research.json").write_text(json.dumps(research, indent=2, ensure_ascii=False), encoding="utf-8")
     profile_s = json.dumps(profile, indent=1, ensure_ascii=False)
 
     log("choosing format")
@@ -228,12 +232,17 @@ def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None, audience_
     directions = {}
     if reference:
         log("Adapting a second direction from trend references")
-        adapted = adapt(client, profile, final, reference, taste + "\n" + style)
-        directions = {"evergreen": dict(final), "trend": adapted}
+        try:
+            adapted = adapt(client, profile, final, reference, taste + "\n" + style)
+            directions = {"evergreen": dict(final), "trend": adapted}
+        except Exception as error:
+            log("Trend adaptation unavailable; exporting evergreen: " + type(error).__name__)
+            research["adaptation_status"] = "Adaptation unavailable; evergreen exported"
+            (outdir / "research.json").write_text(json.dumps(research, indent=2), encoding="utf-8")
     (outdir / "trends.json").write_text(json.dumps(reference or {}, indent=2, ensure_ascii=False), encoding="utf-8")
     (outdir / "directions.json").write_text(json.dumps(directions, indent=2, ensure_ascii=False), encoding="utf-8")
     final["direction"] = "evergreen"
-    final["audience_used"] = bool(insights)
+    final["audience_used"] = bool(insights or research.get("audience"))
     log("rendering preview")
     render_png(final["text"], outdir / "post.png", brand)
     log("rendering video")

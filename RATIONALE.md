@@ -6,9 +6,7 @@ A brand URL starts the workflow. Python reads the homepage and supporting pages,
 
 The final post also supplies a reaction label. A catalogue of seven familiar reactions ranks three suggestions by mood and situation, with visible reasons; stock is disabled. The editor can replace the selected clip, edit the text and caption, and rebuild without another writing call. Clips loop for a duration based on reading time. Exports are silent, and suggested audio is not represented as an included asset.
 
-Optional Reddit links and pasted excerpts supply audience frustrations and workarounds. Themes retain matching evidence and source links; only original summaries guide the writer. Unreadable discussions produce an explicit request for excerpts. This is inspiration from selected anecdotes, not audience statistics or product evidence.
-
-Optional trend references produce a second, selectable writing direction. Dates, markets and source links remain visible; the app does not claim to verify momentum. The editor compares the adaptation with the evergreen draft before rebuilding.
+Research runs automatically after profiling. DDGS searches indexed Reddit, TikTok and Instagram content; Claude selects relevant excerpts with matching evidence. Reddit context informs the writing, and suitable content references produce a second selectable direction. Sources, collection dates and coverage stay visible. Search failure falls back to evergreen content. Manual references remain overrides. Indexed snippets provide inspiration, not representative audience statistics or verified trend momentum.
 
 The system uses Python, Claude through the Anthropic SDK, requests, BeautifulSoup, Pillow and FFmpeg. A small local web interface shows generation progress, previews results and downloads MP4s. Claude Code and Codex assisted development.
 

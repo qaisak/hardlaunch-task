@@ -80,6 +80,7 @@ def result_html(slug):
  <p class="footnote">Change the clip or words. Rebuilding uses your saved post, with no AI writing call.</p>
  <div class="actions"><button type="submit">Rebuild video</button><button type="button" id="copy-caption" class="secondary">Copy caption</button></div></form>
  <details><summary>Why this post?</summary><p>{e(final.get('why_this_brand',''))}</p><p><strong>Audience:</strong> {e(str(profile.get('audience','')))}</p><p><strong>Brand context:</strong> {e(str(profile.get('core_pain','')))}</p><p class="muted">Draft scores are AI editorial judgments, not measured audience results. Exports have no audio track.</p></details>
+ {research_html(d)}
  {audience_html(d)}
  <details><summary>Other writing directions</summary><ul class="alternatives">{alternatives}</ul></details>
  </div></section>'''
@@ -93,6 +94,17 @@ def audience_html(d):
         evidence=''.join(f'<blockquote>{e(ev["quote"])} <a href="{e(ev["url"])}" target="_blank" rel="noreferrer">Source ↗</a> <small>({e(methods.get(ev["source_id"],""))})</small></blockquote>' for ev in theme['evidence'])
         items.append(f'<li><strong>{e(theme["theme"])}</strong><p>{e(theme["angle"])}</p>{evidence}</li>')
     return '<details open><summary>Audience insights · Reddit</summary><p class="footnote">Selected anecdotes inspire the writing. They do not establish audience statistics or product claims. Pasted excerpts are supplied text, not independently verified comments.</p><ul class="alternatives">'+''.join(items)+'</ul></details>'
+
+def research_html(d):
+    data=read_json(d/'research.json',{})
+    if not data:return ''
+    coverage=data.get('coverage',{})
+    sections=['<p class="footnote">Selected sources: '+e(' · '.join(f'{domain}: {count}' for domain,count in coverage.items()))+'</p>'] if coverage else []
+    for kind,label in [('audience','Audience discussions'),('trends','Content references')]:
+        items=''.join(f'<li><a href="{e(row["url"])}" target="_blank" rel="noreferrer">{e(row.get("title") or row["url"])}</a><p>{e(row["summary"])}</p><blockquote>{e(row.get("evidence",""))}</blockquote><small>Source date: {e(str(row.get("page_age") or "unknown"))}</small></li>' for row in data.get(kind,[]))
+        sections.append(f'<h3>{label}</h3><ul>{items}</ul>' if items else f'<p>No usable {label.lower()} found.</p>')
+    return '<details open><summary>Automatic research</summary><p>'+e(data.get('status',''))+'</p><p class="footnote">Collected '+e(data.get('collected_at','—'))+' · '+e(data.get('provider',''))+'</p>'+''.join(sections)+'<p class="footnote">'+e(data.get('scope',''))+'</p><p>'+e(data.get('adaptation_status','')+' '+ '; '.join(data.get('errors',[])))+'</p></details>'
+
 
 def trends_html(d):
     reference=read_json(d/'trends.json',{})
@@ -114,8 +126,9 @@ def page(slug=None):
 <body><div class="shell"><header><a class="logo" href="/"><span></span>FRAME</a><span class="topnote">Brand URL → a finished video</span></header>
 <section class="hero"><div class="eyebrow">Short-form content studio</div><h1>A brand. A point of view.</h1><p>Turn a website into a sharp story and a familiar reaction.</p></section>
 <form class="url-form" action="/api/make" method="post" data-job><div class="url-row"><label for="brand-url" class="sr-only">Brand website</label><input id="brand-url" name="url" placeholder="Paste a brand website, e.g. duolingo.com" required><button type="submit">Create a video ↗</button></div>
-<details><summary>Add audience context from Reddit · optional</summary><p class="footnote">Choose up to three relevant discussions. We use their frustrations and workarounds to inspire original writing.</p><div class="field"><label for="audience-links">Discussion links — one per line</label><textarea id="audience-links" name="audience_links" maxlength="2000" placeholder="https://www.reddit.com/r/.../comments/..."></textarea></div><div class="field"><label for="audience-excerpts">Relevant post or comment excerpts</label><textarea id="audience-excerpts" name="audience_excerpts" maxlength="18000" placeholder="Paste useful discussion text here. For multiple discussions, put each URL on its own line above its excerpt."></textarea><small>Reddit may block page reading. Pasted excerpts keep this step usable and retain the source link.</small></div></details>
-<details><summary>Add trend inspiration · optional</summary><p class="footnote">Find references in <a href="https://ads.tiktok.com/business/creativecenter/pc/en" target="_blank" rel="noreferrer">TikTok Creative Center ↗</a> or Instagram Reels. Supply what you observed to compare an original adaptation with an evergreen draft.</p>
+<p class="footnote">Automatic research searches Reddit, TikTok and Instagram for relevant public evidence. If nothing useful is found, your video still gets made.</p><label class="research-toggle"><input type="checkbox" name="skip_research" value="1"> Skip automatic research for this run</label>
+<details><summary>Override audience research · optional</summary><p class="footnote">Choose up to three relevant discussions. We use their frustrations and workarounds to inspire original writing.</p><div class="field"><label for="audience-links">Discussion links — one per line</label><textarea id="audience-links" name="audience_links" maxlength="2000" placeholder="https://www.reddit.com/r/.../comments/..."></textarea></div><div class="field"><label for="audience-excerpts">Relevant post or comment excerpts</label><textarea id="audience-excerpts" name="audience_excerpts" maxlength="18000" placeholder="Paste useful discussion text here. For multiple discussions, put each URL on its own line above its excerpt."></textarea><small>Reddit may block page reading. Pasted excerpts keep this step usable and retain the source link.</small></div></details>
+<details><summary>Override trend research · optional</summary><p class="footnote">Find references in <a href="https://ads.tiktok.com/business/creativecenter/pc/en" target="_blank" rel="noreferrer">TikTok Creative Center ↗</a> or Instagram Reels. Supply what you observed to compare an original adaptation with an evergreen draft.</p>
 <div class="field"><label for="trend-links">TikTok or Instagram links — up to three</label><textarea id="trend-links" name="trend_links" maxlength="2000"></textarea></div>
 <div class="field"><label for="trend-notes">What did you observe?</label><textarea id="trend-notes" name="trend_notes" maxlength="6000" placeholder="Describe the hook, joke structure, visual pattern and any audio. Include visible growth evidence if available; leave unknowns unknown."></textarea><small>Links are saved as references. The app does not automatically watch videos or verify trend momentum.</small></div>
 <div class="url-row"><div class="field"><label for="trend-observed">Date observed</label><input id="trend-observed" name="trend_observed" type="date"></div><div class="field"><label for="trend-market">Target region / language</label><input id="trend-market" name="trend_market" maxlength="100" placeholder="UK / English"></div></div></details></form>
@@ -160,7 +173,7 @@ def start_job(kind,payload):
                 if not url.startswith(('http://','https://')):url='https://'+url
                 parsed=urlparse(url)
                 if parsed.scheme not in ('http','https') or not parsed.hostname or parsed.username:raise ValueError('Enter a valid brand website address.')
-                result=run(url,progress=progress,audience_links=payload.get('audience_links',''),audience_excerpts=payload.get('audience_excerpts',''),trend_links=payload.get('trend_links',''),trend_notes=payload.get('trend_notes',''),trend_observed=payload.get('trend_observed',''),trend_market=payload.get('trend_market',''));slug=result['slug']
+                result=run(url,progress=progress,audience_links=payload.get('audience_links',''),audience_excerpts=payload.get('audience_excerpts',''),trend_links=payload.get('trend_links',''),trend_notes=payload.get('trend_notes',''),trend_observed=payload.get('trend_observed',''),trend_market=payload.get('trend_market',''),auto_research=payload.get('skip_research')!='1');slug=result['slug']
             else:slug=rebuild(payload,progress)
             with LOCK:JOBS[job_id].update(status='done',stage='Video ready',slug=slug)
         except Exception as error:

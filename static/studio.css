@@ -2,3 +2,4 @@
 .clip .tile{display:block}
 .url-form{display:block}.url-row{display:flex;gap:10px}.url-form details{margin-top:14px}.url-form textarea{min-height:95px}.url-form #audience-excerpts{min-height:145px}blockquote{margin:10px 0;padding-left:12px;border-left:3px solid var(--line);font-size:13px}blockquote a{text-decoration:underline}@media(max-width:650px){.url-row{flex-wrap:wrap}}
 .direction-card{padding:14px;border:1px solid var(--line);border-radius:10px;margin:12px 0;background:#fff}.direction-card h3{margin:0}.direction-card p{font-size:13px}.directions{margin:14px 0 24px}.url-form a{text-decoration:underline}
+.research-toggle{font-size:12px;font-weight:400;color:var(--muted)}.research-toggle input{width:auto;margin-right:7px}

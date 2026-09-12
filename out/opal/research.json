@@ -1,0 +1,157 @@
+{
+  "audience": [
+    {
+      "id": "4",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/AskOldPeople/comments/154u8w0/back_then_how_focuseddistracted_were_you_while/",
+      "title": "r/AskOldPeople on Reddit: Back then, how focused/distracted were you while working? Do you think some young people\u2019s inability to focus is due to the growth of internet and the increasing convenience of connections?",
+      "snippet": "July 20, 2023 - Hmm, so from your viewpoint, phone addiction is real dangerous. That does make sense to me ... Back in the 90's you were distracted by your co-workers' chatters, smoke breaks, personal calls on the landlines, that damn good book your reading...there's always distractions in any era.",
+      "page_age": null,
+      "summary": "A thread comparing past and present focus surfaces first-hand concern that phone addiction genuinely harms attention, versus older era distractions (posted July 2023, older).",
+      "evidence": "phone addiction is real dangerous",
+      "evidence_level": "Search excerpt; full page not inspected"
+    }
+  ],
+  "trends": [
+    {
+      "id": "9",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/discover/how-to-use-opal-app",
+      "title": "How to Use Opal App | TikTok",
+      "snippet": "5 days ago - This is how you stop doomscrolling. Opal blocks distracting apps during your focus time \u2014 and makes it feel good. Set your goals, decide what apps are productive or distracting, and Opal handles the rest.",
+      "page_age": null,
+      "summary": "TikTok discovery page for \"How to Use Opal App\" frames doomscrolling and blocking distracting apps during focus time as a topic signal, not a verified individual trend.",
+      "evidence": "This is how you stop doomscrolling. Opal blocks distracting apps during your focus time",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "6",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/discover/brick-app-vs-opal",
+      "title": "Brick App Vs Opal | TikTok",
+      "snippet": "3 weeks ago - Productivity Tip! These tools have helped me with focusing on my tasks. The Opal App to block off social media and TickTick to use the Pomodoro Technique.",
+      "page_age": null,
+      "summary": "TikTok discovery page comparing Brick and Opal shows blocker comparison plus Pomodoro pairing as an active topic area for focus tooling.",
+      "evidence": "The Opal App to block off social media and TickTick to use the Pomodoro Technique",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "5",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/discover/apps-to-block-social-media",
+      "title": "Apps to Block Social Media | TikTok",
+      "snippet": "3 weeks ago - Download focusedOS for free on the App Store to block social media and enhance your productivity. Improve study habits, combat distractions, and increase efficiency. Get the app now!.",
+      "page_age": null,
+      "summary": "TikTok discovery page around apps to block social media indicates ongoing interest in blocking tools for study habits and distraction; treat as topic signal only.",
+      "evidence": "block social media and enhance your productivity",
+      "evidence_level": "Search excerpt; full page not inspected"
+    }
+  ],
+  "sources": [
+    {
+      "id": "1",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/science/comments/1jmpl2i/when_the_phones_away_people_use_their_computer_to/",
+      "title": "r/science on Reddit: When the phone\u2019s away, people use their computer to play: distance to the smartphone reduces device usage but not overall distraction and task fragmentation during work",
+      "snippet": "March 29, 2025 - The smartphone helps workers balance the demands of their professional and personal lives but can also be a distraction, affecting productivity, wellbeing, and work-life balance. Drawing from insights on the impact of physical environments on ...",
+      "page_age": null
+    },
+    {
+      "id": "2",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/ProductivityApps/comments/1l1utk4/how_do_knowledge_workers_organise_their_personal/",
+      "title": "r/ProductivityApps on Reddit: How do knowledge workers organise their personal work?",
+      "snippet": "June 2, 2025 - hi all, I am developing an idea for a productivity app for knowledge workers working with M365. To fit the idea to the current problems I am looking\u2026",
+      "page_age": null
+    },
+    {
+      "id": "3",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/managers/comments/1mgmy40/need_advice_on_how_to_tell_employees_to_limit/",
+      "title": "Need advice on how to tell employees to limit time on personal cellphones : r/managers",
+      "snippet": "August 3, 2025 - Give anyone a chance to say whatever they wanna say, then agree as a team to put down the random phones and be productive. After that, if people still take the piss I'd pull people aside, and ask what's going on pretty directly, 1 person being selfish/distracted is enough to break the precedent and it's important to nip things in the bud directly before they stew.",
+      "page_age": null
+    },
+    {
+      "id": "4",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/AskOldPeople/comments/154u8w0/back_then_how_focuseddistracted_were_you_while/",
+      "title": "r/AskOldPeople on Reddit: Back then, how focused/distracted were you while working? Do you think some young people\u2019s inability to focus is due to the growth of internet and the increasing convenience of connections?",
+      "snippet": "July 20, 2023 - Hmm, so from your viewpoint, phone addiction is real dangerous. That does make sense to me ... Back in the 90's you were distracted by your co-workers' chatters, smoke breaks, personal calls on the landlines, that damn good book your reading...there's always distractions in any era.",
+      "page_age": null
+    },
+    {
+      "id": "5",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/discover/apps-to-block-social-media",
+      "title": "Apps to Block Social Media | TikTok",
+      "snippet": "3 weeks ago - Download focusedOS for free on the App Store to block social media and enhance your productivity. Improve study habits, combat distractions, and increase efficiency. Get the app now!.",
+      "page_age": null
+    },
+    {
+      "id": "6",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/discover/brick-app-vs-opal",
+      "title": "Brick App Vs Opal | TikTok",
+      "snippet": "3 weeks ago - Productivity Tip! These tools have helped me with focusing on my tasks. The Opal App to block off social media and TickTick to use the Pomodoro Technique.",
+      "page_age": null
+    },
+    {
+      "id": "7",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/discover/brick-vs-bloom-phone-blocker",
+      "title": "Brick Vs Bloom Phone Blocker | TikTok",
+      "snippet": "5 days ago - A reading vlog testing the brick phone blocker to see how much gets done \u2014 honest results, tips, and whether it helped focus. ... Thank you @GetBrick \ud83d\udda4 Discover the Benefits of the Brick Lockout Device. Explore the impact of the Brick device on reducing phone distractions. Join the journey towards productive time management! ... @GetBrick this little thing sits on my fridge and has really helped me get off social media ...",
+      "page_age": null
+    },
+    {
+      "id": "8",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/discover/focus-down-app-ios",
+      "title": "Focus Down App Ios | TikTok",
+      "snippet": "3 weeks ago - \u201cIs Vision actually free?\u201d Here\u2019s exactly what\u2019s free and what isn\u2019t \ud83d\udc47 You can use Vision for free to start focus sessions, block distracting apps, create unlimited tasks, use the calendar, create up to 2 active projects, and have ...",
+      "page_age": null
+    },
+    {
+      "id": "9",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/discover/how-to-use-opal-app",
+      "title": "How to Use Opal App | TikTok",
+      "snippet": "5 days ago - This is how you stop doomscrolling. Opal blocks distracting apps during your focus time \u2014 and makes it feel good. Set your goals, decide what apps are productive or distracting, and Opal handles the rest.",
+      "page_age": null
+    },
+    {
+      "id": "10",
+      "kind": "trends",
+      "url": "https://www.instagram.com/reel/DdG0PaPtj9x/",
+      "title": "Kilian Rannou | I used to struggle a lot with time and ... - Instagram",
+      "snippet": "3. The Static Screen: No phone notifications, social media, or texting for the first 45 minutes of the day. 4. Physical Friction: Complete a 45-minute focused workout. Push your body hard before your brain can find an excuse. 5. The Cold Shock: Take a 3-minute cold shower right after your workout to lock in mental alertness and dopamine. 6.",
+      "page_age": null
+    },
+    {
+      "id": "11",
+      "kind": "trends",
+      "url": "https://www.instagram.com/reel/DdFsp13IX2Z/",
+      "title": "Liu Clipper | Chrisean made sure to stay CALM after Jr accidentally ...",
+      "snippet": "Follow 4likes kickonlyy Chrisean Rock is an American reality television personality, recording artist, and social media figure known for her public relationship with Blueface, musical releases, and featured appearances across major reality TV series and digital platforms.",
+      "page_age": null
+    }
+  ],
+  "errors": [],
+  "queries": [
+    "site:reddit.com knowledge workers phone distraction struggles",
+    "site:tiktok.com block social media apps focus",
+    "site:instagram.com/reel/ block social media apps focus"
+  ],
+  "status": "Sources found",
+  "collected_at": "2026-09-12",
+  "collected_timestamp": 1789204064.2992065,
+  "cached": false,
+  "provider": "DDGS indexed search + Claude relevance review",
+  "scope": "Indexed public search evidence. No full-feed coverage, video viewing, verified momentum or predicted views.",
+  "coverage": {
+    "reddit.com": 1,
+    "tiktok.com": 3,
+    "instagram.com": 0
+  }
+}

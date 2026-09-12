@@ -1,0 +1,49 @@
+{
+  "brand_name": "Opal",
+  "one_liner": "App blocker that protects your focus across phone and desktop",
+  "niche": "screen time / focus and app blocking app",
+  "product_type": "app",
+  "audience": "18-35 knowledge workers, founders, designers, engineers, students and creatives who feel their phone is eating their day, plus ADHD-leaning users and parents (inferred); available on iPhone, Mac and Android",
+  "core_pain": "Picking up the phone on autopilot and losing hours to Instagram and TikTok without noticing, then finishing the day with nothing done",
+  "old_way_objects": [
+    "screen time settings",
+    "focus mode",
+    "deleting instagram then redownloading it",
+    "airplane mode",
+    "phone in another room",
+    "a kitchen timer",
+    "pomodoro apps",
+    "greyscale mode",
+    "a phone safe / lockbox"
+  ],
+  "scenes": [
+    "Bedroom, 11:40pm, someone who said 'one more video' still scrolling TikTok in the dark with work at 8am",
+    "Desk at home office, laptop open on a half-written doc, hand reaching for the phone every 90 seconds",
+    "Student in a library with notes open, flipping to Instagram between every paragraph and re-reading the same line"
+  ],
+  "tone": "calm, design-led, mission-driven, direct",
+  "proof_points": [
+    "4.8 rating, 150k+ App Ratings",
+    "Described on site as 'The #1 Screen Time App'",
+    "Average time saved: 1h 23m saved daily, 1 month saved each year, 6 years of life reclaimed, calculated on Screen Time before and after Opal for over N=300,000",
+    "94% less distracted",
+    "93% more productive",
+    "90% improved mental health",
+    "Site states the average person spends 5 to 6 hours on their phone a day",
+    "Features: Opal Score, Focus Rules, Focus Timer, Focus Gems, Hard Mode, Allow Only, Soundscapes",
+    "Available on iPhone, Mac and Android; Opal for Schools",
+    "Backed by investors including Evan Sharp (co-founder, Pinterest), Severin Hacker (co-founder, Duolingo), Tim Kendal, Adjacent, Speedinvest, Night Capital",
+    "Named users on site including Nicole Vignola (neuroscientist) and Ella Emhoff (artist and fashion designer)"
+  ],
+  "do_not_say": [
+    "curing or treating phone addiction, ADHD, anxiety or depression",
+    "any medical or mental health guarantee",
+    "naming rival blocker apps",
+    "promising specific grades, income or productivity outcomes for an individual",
+    "claiming it makes willpower unnecessary or that it can never be bypassed beyond the stated Hard Mode feature",
+    "inventing time-saved or rating numbers beyond those listed above",
+    "shaming language aimed at individuals"
+  ],
+  "cta": "Download Opal and start the free trial (try for free, then Opal Pro)",
+  "source_url": "https://opalapp.com/"
+}

@@ -4,3 +4,5 @@ requests
 beautifulsoup4
 pillow
 imageio-ffmpeg
+
+ddgs==9.16.0

@@ -1,0 +1,34 @@
+{
+  "clip": "reaction_deadpan.mp4",
+  "reaction": "deadpan",
+  "name": "Jim: sarcastic wow",
+  "source": "https://gifdb.com/gif/jim-halpert-the-office-sarcastic-wow-0r6xdo0apv9mu5re.html",
+  "recommendations": [
+    {
+      "clip": "reaction_deadpan.mp4",
+      "name": "Jim: sarcastic wow",
+      "score": 9,
+      "reason": "deadpan expression; pointless effort",
+      "mood": "deadpan"
+    },
+    {
+      "clip": "reaction_tea.mp4",
+      "name": "Kermit: quietly judging",
+      "score": 6,
+      "reason": "deadpan expression",
+      "mood": "deadpan"
+    },
+    {
+      "clip": "reaction_confused.mp4",
+      "name": "Confused Travolta",
+      "score": 3,
+      "reason": "pointless effort",
+      "mood": "confused"
+    }
+  ],
+  "selection": "model",
+  "duration_s": 22.2,
+  "word_count": 51,
+  "audio": "silent",
+  "description": "Jim: sarcastic wow \u00b7 22.2s \u00b7 silent"
+}
