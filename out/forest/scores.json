@@ -11,76 +11,76 @@
       "length": 4
     },
     "overall": 7,
-    "fix": "cut the long instagram fragment down to 'no deleting instagram at 2am' so the list keeps its rhythm, and replace 'brave i guess' with a verdict people can argue with"
+    "fix": "Trim the middle sentence to one fragment ('four hours of notes and a buzz every few minutes') and sharpen the verdict past 'gladiator', which is too close to a stock compliment to start an argument."
   },
   {
     "id": "v2",
     "scores": {
       "on_brand": 4,
-      "voice": 3,
-      "hook": 3,
-      "not_an_ad": 5,
-      "comment_bait": 2,
-      "honesty": 5,
-      "length": 4
-    },
-    "overall": 6,
-    "fix": "pick one person: a dissertation and 'calling that a work day' are two different lives. Keep the remote worker, drop the dissertation, and end on something sharper than 'not proud'"
-  },
-  {
-    "id": "v3",
-    "scores": {
-      "on_brand": 4,
       "voice": 4,
       "hook": 4,
-      "not_an_ad": 5,
-      "comment_bait": 4,
-      "honesty": 5,
-      "length": 4
-    },
-    "overall": 7,
-    "fix": "'no rule about waiting until dessert' is a soft invented item, swap it for a harder real habit so the list stays concrete"
-  },
-  {
-    "id": "v4",
-    "scores": {
-      "on_brand": 4,
-      "voice": 4,
-      "hook": 4,
-      "not_an_ad": 5,
-      "comment_bait": 3,
-      "honesty": 5,
-      "length": 5
-    },
-    "overall": 7,
-    "fix": "the verdict judges the list, not him. Turn it back on the person so viewers have someone to tag"
-  },
-  {
-    "id": "v5",
-    "scores": {
-      "on_brand": 4,
-      "voice": 5,
-      "hook": 5,
-      "not_an_ad": 5,
-      "comment_bait": 4,
-      "honesty": 4,
-      "length": 5
-    },
-    "overall": 8,
-    "fix": "'four times this month' is a made-up count doing no work, make it 'i keep deleting instagram' and let 'rock bottom has wifi' carry it"
-  },
-  {
-    "id": "v6",
-    "scores": {
-      "on_brand": 5,
-      "voice": 4,
-      "hook": 3,
       "not_an_ad": 5,
       "comment_bait": 4,
       "honesty": 5,
       "length": 3
     },
     "overall": 7,
-    "fix": "cut 'the second it gets hard', it explains the joke the verdict already lands, and tighten the opener so the first eight words hit the timer faster"
+    "fix": "Cut 'eleven days of effort and nothing left to show it happened' entirely, it restates the line before it; the no-record idea lands harder said once."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "Merge 'he said it felt less fun. he still finished the fifty minutes.' into one beat so the verdict 'colour was never the problem' hits without a pause before it."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 2
+    },
+    "overall": 5,
+    "fix": "Cut to 50 words and pick one verdict, 'she's doing her best. it's not going great' is two half-verdicts softening each other; also 'no idea what she was writing' breaks the no-X list's rhythm by switching meaning mid-list."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 3
+    },
+    "overall": 7,
+    "fix": "Lose 'the timer is still running somewhere' and shorten the van line, the piece is 63 words carrying one joke that peaks at the sidebar."
+  },
+  {
+    "id": "v6",
+    "scores": {
+      "on_brand": 3,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 6,
+    "fix": "The dinner table nouns fit any anti-phone brand; anchor it with something only this niche says (a timer nobody started, a session nobody planted) or the swap test fails."
   }
 ]

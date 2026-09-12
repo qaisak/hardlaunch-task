@@ -3,6 +3,29 @@
   "reaction": "confused",
   "name": "Confused Travolta",
   "source": "https://gifdb.com/gif/confused-john-travolta-gif-qihgl7ev5fwg1ihu.html",
+  "recommendations": [
+    {
+      "clip": "reaction_confused.mp4",
+      "name": "Confused Travolta",
+      "score": 9,
+      "reason": "confused expression; pointless effort",
+      "mood": "confused"
+    },
+    {
+      "clip": "reaction_disbelief.mp4",
+      "name": "Blinking disbelief",
+      "score": 5,
+      "reason": "bad decision; Related tone: disbelief",
+      "mood": "disbelief"
+    },
+    {
+      "clip": "reaction_deadpan.mp4",
+      "name": "Jim: sarcastic wow",
+      "score": 3,
+      "reason": "pointless effort",
+      "mood": "deadpan"
+    }
+  ],
   "selection": "text-rule fallback",
   "duration_s": 27.2,
   "word_count": 64,

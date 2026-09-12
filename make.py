@@ -27,6 +27,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 from generate import PROMPTS, ROOT, call, call_json, extract_json, read
 from video import render_mp4
+from audience import build_insights, writing_context
 
 load_dotenv()
 
@@ -162,7 +163,7 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "brand"
 
 
-def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None) -> dict:
+def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None, audience_links='', audience_excerpts='') -> dict:
     """The whole pipeline for one URL. Returns the result dict; also used by app.py."""
     import anthropic
     client = anthropic.Anthropic()
@@ -181,22 +182,26 @@ def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None) -> dict:
 
     log("building brand profile")
     profile = call_json(client, taste, read(PROMPTS / "profile.md").replace("{text}", site_text), effort="medium")
+    profile["source_url"] = url
+    insights = build_insights(client, profile, audience_links, audience_excerpts, log) if audience_links or audience_excerpts else None
+    audience_context = writing_context(insights)
     brand = profile.get("brand_name", urlparse(url).netloc)
     outdir = out / slug(brand)
     outdir.mkdir(parents=True, exist_ok=True)
     (outdir / "profile.json").write_text(json.dumps(profile, indent=2, ensure_ascii=False), encoding="utf-8")
+    (outdir / "audience.json").write_text(json.dumps(insights or {"themes": [], "sources": []}, indent=2, ensure_ascii=False), encoding="utf-8")
     profile_s = json.dumps(profile, indent=1, ensure_ascii=False)
 
     log("choosing format")
     fmt = call_json(client, taste, read(PROMPTS / "format_select.md").replace("{profile}", profile_s), effort="low")
 
     log(f"writing {n} overlay drafts")
-    variants = call_json(client, taste + "\n\n" + style,
+    variants = call_json(client, taste + "\n\n" + style + audience_context,
                                  read(PROMPTS / "overlay_generate.md").replace("{n}", str(n)).replace("{profile}", profile_s))
     (outdir / "variants.json").write_text(json.dumps(variants, indent=2, ensure_ascii=False), encoding="utf-8")
 
     log("critiquing")
-    scores = call_json(client, taste + "\n\n" + style,
+    scores = call_json(client, taste + "\n\n" + style + audience_context,
                                read(PROMPTS / "overlay_critique.md").replace("{variants}", json.dumps(variants, indent=1, ensure_ascii=False)).replace("{profile}", profile_s),
                                effort="medium")
     (outdir / "scores.json").write_text(json.dumps(scores, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -210,13 +215,14 @@ def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None) -> dict:
     final = win
     if ws.get("fix"):
         try:
-            rev = call_json(client, taste + "\n\n" + style,
+            rev = call_json(client, taste + "\n\n" + style + audience_context,
                                     read(PROMPTS / "overlay_revise.md").replace("{text}", win["text"]).replace("{fix}", ws["fix"]).replace("{profile}", profile_s),
                                     effort="medium")
             final = {**win, "text": rev["text"], "caption": rev.get("caption", win.get("caption")), "what_changed": rev.get("what_changed", ""), "reaction": rev.get("reaction", win.get("reaction"))}
         except Exception as e:  # revise is a bonus, never let it sink the run
             log(f"revise skipped: {e}")
 
+    final["audience_used"] = bool(insights)
     log("rendering preview")
     render_png(final["text"], outdir / "post.png", brand)
     log("rendering video")
@@ -252,8 +258,12 @@ def main() -> None:
     ap.add_argument("url")
     ap.add_argument("--n", type=int, default=6, help="overlay drafts to generate")
     ap.add_argument("--out", type=Path, default=ROOT / "out")
+    ap.add_argument("--audience-links", type=Path, help="Text file with up to three Reddit discussion URLs")
+    ap.add_argument("--audience-excerpts", type=Path, help="Text file containing selected source excerpts")
     args = ap.parse_args()
-    res = run(args.url, args.n, args.out)
+    res = run(args.url, args.n, args.out,
+              audience_links=args.audience_links.read_text(encoding='utf-8-sig') if args.audience_links else '',
+              audience_excerpts=args.audience_excerpts.read_text(encoding='utf-8-sig') if args.audience_excerpts else '')
     print("\n" + res["final"]["text"] + "\n")
 
 

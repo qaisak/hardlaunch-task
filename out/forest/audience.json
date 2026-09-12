@@ -1,0 +1,37 @@
+{
+  "themes": [
+    {
+      "theme": "One commenter describes deleting an app and reinstalling it days later.",
+      "angle": "Imagine an original scene about a repeated delete-and-reinstall ritual. Use the cycle as a relatable starting point, without claiming everyone experiences it.",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "url": "https://www.reddit.com/r/productivity/comments/mea5en/",
+          "quote": "Everytime I delete the app I reinstall it after somedays."
+        }
+      ]
+    },
+    {
+      "theme": "A commenter suggests grayscale to make Instagram less interesting.",
+      "angle": "Imagine someone trying grayscale as a focus hack. Any exaggerated outcome belongs to the fictional joke, not the source evidence.",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "url": "https://www.reddit.com/r/productivity/comments/mea5en/",
+          "quote": "try turning your phone to grayscale"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "url": "https://www.reddit.com/r/productivity/comments/mea5en/",
+      "title": "Selected Reddit discussion",
+      "method": "pasted excerpt",
+      "text": "Everytime I delete the app I reinstall it after somedays.\nYou can also try turning your phone to grayscale. It makes Instagram way less interesting when all the photos are in black and white"
+    }
+  ],
+  "scope": "Selected anecdotes, not representative audience statistics or product evidence.",
+  "editor_reviewed": true
+}

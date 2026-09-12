@@ -3,6 +3,29 @@
   "reaction": "disbelief",
   "name": "Blinking disbelief",
   "source": "https://gifdb.com/gif/blinking-white-guy-meme-4opuoers8s0aznb0.html",
+  "recommendations": [
+    {
+      "clip": "reaction_disbelief.mp4",
+      "name": "Blinking disbelief",
+      "score": 9,
+      "reason": "disbelief expression; bad decision",
+      "mood": "disbelief"
+    },
+    {
+      "clip": "reaction_eyeroll.mp4",
+      "name": "Tony Stark: eye roll",
+      "score": 5,
+      "reason": "bad decision; Related tone: skeptical",
+      "mood": "skeptical"
+    },
+    {
+      "clip": "reaction_confused.mp4",
+      "name": "Confused Travolta",
+      "score": 2,
+      "reason": "Related tone: confused",
+      "mood": "confused"
+    }
+  ],
   "selection": "text-rule fallback",
   "duration_s": 20.2,
   "word_count": 46,

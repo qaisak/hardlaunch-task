@@ -4,28 +4,40 @@
     "description": "Direct look, then leans closer",
     "crop_y": 300,
     "collection": "stock",
-    "name": "Deadpan stock reaction"
+    "name": "Deadpan stock reaction",
+    "enabled": false,
+    "situations": [],
+    "tags": []
   },
   "pexels_5697630.mp4": {
     "mood": "skeptical",
     "description": "Serious expression and slight head tilt",
     "crop_y": 180,
     "collection": "stock",
-    "name": "Skeptical stock reaction"
+    "name": "Skeptical stock reaction",
+    "enabled": false,
+    "situations": [],
+    "tags": []
   },
   "pexels_8496672.mp4": {
     "mood": "thoughtful",
     "description": "Quiet contemplative close-up",
     "crop_y": 550,
     "collection": "stock",
-    "name": "Thoughtful stock reaction"
+    "name": "Thoughtful stock reaction",
+    "enabled": false,
+    "situations": [],
+    "tags": []
   },
   "pexels_8508690.mp4": {
     "mood": "disbelief",
     "description": "Questioning sideways look",
     "crop_y": 380,
     "collection": "stock",
-    "name": "Disbelief stock reaction"
+    "name": "Disbelief stock reaction",
+    "enabled": false,
+    "situations": [],
+    "tags": []
   },
   "reaction_confused.mp4": {
     "name": "Confused Travolta",
@@ -35,7 +47,15 @@
     "priority": 10,
     "source": "https://gifdb.com/gif/confused-john-travolta-gif-qihgl7ev5fwg1ihu.html",
     "collection": "reaction",
-    "usage": "Personal demonstration reference"
+    "usage": "Personal demonstration reference",
+    "enabled": true,
+    "tags": [],
+    "situations": [
+      "pointless effort"
+    ],
+    "duration_s": 3.7,
+    "framing": "Original aspect ratio contained above reading panel",
+    "existing_text": false
   },
   "reaction_disbelief.mp4": {
     "name": "Blinking disbelief",
@@ -45,7 +65,15 @@
     "priority": 10,
     "source": "https://gifdb.com/gif/blinking-white-guy-meme-4opuoers8s0aznb0.html",
     "collection": "reaction",
-    "usage": "Personal demonstration reference"
+    "usage": "Personal demonstration reference",
+    "enabled": true,
+    "tags": [],
+    "situations": [
+      "bad decision"
+    ],
+    "duration_s": 3.2,
+    "framing": "Original aspect ratio contained above reading panel",
+    "existing_text": false
   },
   "reaction_deadpan.mp4": {
     "name": "Jim: sarcastic wow",
@@ -58,6 +86,83 @@
     ],
     "source": "https://gifdb.com/gif/jim-halpert-the-office-sarcastic-wow-0r6xdo0apv9mu5re.html",
     "collection": "reaction",
-    "usage": "Personal demonstration reference"
+    "usage": "Personal demonstration reference",
+    "enabled": true,
+    "situations": [
+      "pointless effort"
+    ],
+    "duration_s": 1.07,
+    "framing": "Original aspect ratio contained above reading panel",
+    "existing_text": true
+  },
+  "reaction_overthinking.mp4": {
+    "name": "Zach: doing the maths",
+    "mood": "thoughtful",
+    "fit": "contain",
+    "priority": 10,
+    "source": "https://gifdb.com/gif/zach-galifianakis-beautiful-mind-thinking-of-numbers-76ipo9qiczopfkyz.html",
+    "collection": "reaction",
+    "usage": "Personal demonstration reference",
+    "enabled": true,
+    "tags": [],
+    "situations": [
+      "overthinking"
+    ],
+    "duration_s": 0.9,
+    "framing": "Original aspect ratio contained above reading panel",
+    "existing_text": true
+  },
+  "reaction_eyeroll.mp4": {
+    "name": "Tony Stark: eye roll",
+    "mood": "skeptical",
+    "fit": "contain",
+    "priority": 10,
+    "source": "https://gifdb.com/gif/eye-roll-robert-downey-jr-8mssmj3ab9awwf8t.html",
+    "collection": "reaction",
+    "usage": "Personal demonstration reference",
+    "enabled": true,
+    "tags": [],
+    "situations": [
+      "bad decision"
+    ],
+    "duration_s": 3.4,
+    "framing": "Original aspect ratio contained above reading panel",
+    "existing_text": false
+  },
+  "reaction_cheers.mp4": {
+    "name": "Leo: cheers",
+    "mood": "approval",
+    "fit": "contain",
+    "priority": 10,
+    "source": "https://gifdb.com/gif/leonardo-dicaprio-cheers-titanic-m9472ih03t6vbj3d.html",
+    "collection": "reaction",
+    "usage": "Personal demonstration reference",
+    "enabled": true,
+    "tags": [],
+    "situations": [
+      "unexpected success"
+    ],
+    "duration_s": 2.07,
+    "framing": "Original aspect ratio contained above reading panel",
+    "existing_text": false
+  },
+  "reaction_tea.mp4": {
+    "name": "Kermit: quietly judging",
+    "mood": "deadpan",
+    "fit": "contain",
+    "priority": 10,
+    "source": "https://gifdb.com/gif/kermit-drinking-tea-meme-mj3nwngyb2y0dpdv.html",
+    "collection": "reaction",
+    "usage": "Personal demonstration reference",
+    "enabled": true,
+    "tags": [
+      "thoughtful"
+    ],
+    "situations": [
+      "quiet judgment"
+    ],
+    "duration_s": 2.37,
+    "framing": "Original aspect ratio contained above reading panel",
+    "existing_text": false
   }
 }

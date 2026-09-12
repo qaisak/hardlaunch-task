@@ -1,11 +1,34 @@
 {
-  "clip": "pexels_8496672.mp4",
-  "reaction": "thoughtful",
-  "name": "Thoughtful stock reaction",
-  "source": null,
+  "clip": "reaction_tea.mp4",
+  "reaction": "deadpan",
+  "name": "Kermit: quietly judging",
+  "source": "https://gifdb.com/gif/kermit-drinking-tea-meme-mj3nwngyb2y0dpdv.html",
+  "recommendations": [
+    {
+      "clip": "reaction_tea.mp4",
+      "name": "Kermit: quietly judging",
+      "score": 9,
+      "reason": "thoughtful expression; quiet judgment",
+      "mood": "deadpan"
+    },
+    {
+      "clip": "reaction_overthinking.mp4",
+      "name": "Zach: doing the maths",
+      "score": 6,
+      "reason": "thoughtful expression",
+      "mood": "thoughtful"
+    },
+    {
+      "clip": "reaction_confused.mp4",
+      "name": "Confused Travolta",
+      "score": 2,
+      "reason": "Related tone: confused",
+      "mood": "confused"
+    }
+  ],
   "selection": "text-rule fallback",
   "duration_s": 22.5,
   "word_count": 52,
   "audio": "silent",
-  "description": "Thoughtful stock reaction \u00b7 22.5s \u00b7 silent"
+  "description": "Kermit: quietly judging \u00b7 22.5s \u00b7 silent"
 }

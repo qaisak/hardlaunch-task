@@ -3,6 +3,29 @@
   "reaction": "disbelief",
   "name": "Blinking disbelief",
   "source": "https://gifdb.com/gif/blinking-white-guy-meme-4opuoers8s0aznb0.html",
+  "recommendations": [
+    {
+      "clip": "reaction_disbelief.mp4",
+      "name": "Blinking disbelief",
+      "score": 6,
+      "reason": "disbelief expression",
+      "mood": "disbelief"
+    },
+    {
+      "clip": "reaction_overthinking.mp4",
+      "name": "Zach: doing the maths",
+      "score": 3,
+      "reason": "overthinking",
+      "mood": "thoughtful"
+    },
+    {
+      "clip": "reaction_confused.mp4",
+      "name": "Confused Travolta",
+      "score": 2,
+      "reason": "Related tone: confused",
+      "mood": "confused"
+    }
+  ],
   "selection": "text-rule fallback",
   "duration_s": 20.2,
   "word_count": 46,

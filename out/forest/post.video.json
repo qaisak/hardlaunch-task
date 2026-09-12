@@ -1,11 +1,34 @@
 {
-  "clip": "reaction_confused.mp4",
-  "reaction": "confused",
-  "name": "Confused Travolta",
-  "source": "https://gifdb.com/gif/confused-john-travolta-gif-qihgl7ev5fwg1ihu.html",
-  "selection": "manual",
-  "duration_s": 16.8,
-  "word_count": 37,
+  "clip": "reaction_deadpan.mp4",
+  "reaction": "deadpan",
+  "name": "Jim: sarcastic wow",
+  "source": "https://gifdb.com/gif/jim-halpert-the-office-sarcastic-wow-0r6xdo0apv9mu5re.html",
+  "recommendations": [
+    {
+      "clip": "reaction_deadpan.mp4",
+      "name": "Jim: sarcastic wow",
+      "score": 6,
+      "reason": "deadpan expression",
+      "mood": "deadpan"
+    },
+    {
+      "clip": "reaction_tea.mp4",
+      "name": "Kermit: quietly judging",
+      "score": 6,
+      "reason": "deadpan expression",
+      "mood": "deadpan"
+    },
+    {
+      "clip": "reaction_disbelief.mp4",
+      "name": "Blinking disbelief",
+      "score": 2,
+      "reason": "Related tone: disbelief",
+      "mood": "disbelief"
+    }
+  ],
+  "selection": "model",
+  "duration_s": 20.6,
+  "word_count": 47,
   "audio": "silent",
-  "description": "Confused Travolta \u00b7 16.8s \u00b7 silent"
+  "description": "Jim: sarcastic wow \u00b7 20.6s \u00b7 silent"
 }

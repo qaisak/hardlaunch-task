@@ -11,7 +11,7 @@ class VideoTests(unittest.TestCase):
         self.assertEqual(video.read_time('hello'), 8)
 
     def test_explicit_mood_overrides_text(self):
-        self.assertEqual(video.pick_base('madness', 'thoughtful').name, 'pexels_8496672.mp4')
+        self.assertEqual(video.pick_base('madness', 'thoughtful').name, 'reaction_overthinking.mp4')
 
     def test_old_posts_have_repeatable_selection(self):
         self.assertEqual(video.pick_base('arguing with a robot'), video.pick_base('arguing with a robot'))
@@ -27,6 +27,15 @@ class VideoTests(unittest.TestCase):
     def test_manual_clip_override(self):
         self.assertEqual(video.pick_base('quiet meditation', clip_name='reaction_confused.mp4').name, 'reaction_confused.mp4')
         with self.assertRaises(ValueError): video.pick_base(clip_name='../secrets.mp4')
+
+    def test_stock_is_never_available(self):
+        self.assertTrue(all(n.startswith('reaction_') for n in video.reaction_catalogue()))
+        with self.assertRaises(ValueError):video.pick_base(clip_name='pexels_8496672.mp4')
+
+    def test_situation_ranking(self):
+        picks=video.recommend_clips('quiet meditation', 'thoughtful')
+        self.assertEqual(picks[0]['clip'],'reaction_tea.mp4')
+        self.assertEqual(len({p['clip'] for p in picks}),3)
 
     def test_confused_fallback(self):
         self.assertEqual(video.infer_mood('photocopy the photocopy and nothing works'), 'confused')

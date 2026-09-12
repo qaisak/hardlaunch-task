@@ -11,7 +11,7 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse, unquote
 from make import ROOT, run
-from video import catalogue, render_mp4
+from video import reaction_catalogue, recommend_clips, render_mp4
 OUT=ROOT/'out'
 POOL=ThreadPoolExecutor(max_workers=1)
 JOBS={}
@@ -52,10 +52,13 @@ def result_html(slug):
     d=brand_dir(slug);final=saved_post(d);profile=read_json(d/'profile.json',{});meta=read_json(d/'post.video.json',{})
     text=final['text'];clip=meta.get('clip');stamp=(d/'post.mp4').stat().st_mtime_ns if (d/'post.mp4').exists() else 0
     choices=[]
-    for name,info in sorted(catalogue().items(),key=lambda item:(item[1].get('collection')!='reaction',item[1].get('name',''))):
+    recommendations=recommend_clips(text,final.get('reaction'))
+    suggested={item['clip']:(i+1,item['reason']) for i,item in enumerate(recommendations)}
+    for name,info in sorted(reaction_catalogue().items(),key=lambda item:(suggested.get(item[0],(99,''))[0],item[1].get('name',''))):
         if not (ROOT/'base'/name).is_file():continue
         checked='checked' if name==clip else ''
-        choices.append(f'<label class="clip"><input type="radio" name="clip" value="{e(name)}" {checked}><span class="tile"><img src="/base/{e(Path(name).stem)}.jpg" alt=""><span class="name">{e(info.get("name",name))}</span><span class="mood">{e(info.get("mood",""))}</span></span></label>')
+        reason=f'Suggestion {suggested[name][0]} · {suggested[name][1]}' if name in suggested else info.get('mood','')
+        choices.append(f'<label class="clip"><input type="radio" name="clip" value="{e(name)}" {checked}><span class="tile"><img src="/base/{e(Path(name).stem)}.jpg" alt=""><span class="name">{e(info.get("name",name))}</span><span class="mood">{e(reason)}</span></span></label>')
     variants=read_json(d/'variants.json',[])
     alternatives=''.join('<li>'+e(v['text'])+'</li>' for v in variants if v.get('text')!=text)
     source=f'<a href="{e(meta["source"])}" target="_blank" rel="noreferrer">Clip source ↗</a>' if meta.get('source') else 'Local stock library'
@@ -70,19 +73,31 @@ def result_html(slug):
  <form action="/api/render" method="post" data-job><input type="hidden" name="slug" value="{slug}">
  <div class="field"><label for="post-text">The story</label><textarea id="post-text" name="text" required maxlength="900">{e(text)}</textarea><small id="word-count"></small></div>
  <div class="field"><label for="caption">Caption</label><input id="caption" name="caption" maxlength="300" value="{e(final.get('caption','') or '')}"></div>
- <h3>Choose the reaction</h3><div class="clip-grid">{''.join(choices)}</div>
+ <h3>Choose the reaction</h3><p class="footnote">Top three suggestions match the saved story’s mood and situation. Pick any reaction below.</p><div class="clip-grid">{''.join(choices)}</div>
  <p class="footnote">Change the clip or words. Rebuilding uses your saved post, with no AI writing call.</p>
  <div class="actions"><button type="submit">Rebuild video</button><button type="button" id="copy-caption" class="secondary">Copy caption</button></div></form>
  <details><summary>Why this post?</summary><p>{e(final.get('why_this_brand',''))}</p><p><strong>Audience:</strong> {e(str(profile.get('audience','')))}</p><p><strong>Brand context:</strong> {e(str(profile.get('core_pain','')))}</p><p class="muted">Draft scores are AI editorial judgments, not measured audience results. Exports have no audio track.</p></details>
+ {audience_html(d)}
  <details><summary>Other writing directions</summary><ul class="alternatives">{alternatives}</ul></details>
  </div></section>'''
+
+def audience_html(d):
+    data=read_json(d/'audience.json',{})
+    if not data.get('themes'):return ''
+    items=[]
+    methods={s['id']:s.get('method','supplied source') for s in data.get('sources',[])}
+    for theme in data['themes']:
+        evidence=''.join(f'<blockquote>{e(ev["quote"])} <a href="{e(ev["url"])}" target="_blank" rel="noreferrer">Source ↗</a> <small>({e(methods.get(ev["source_id"],""))})</small></blockquote>' for ev in theme['evidence'])
+        items.append(f'<li><strong>{e(theme["theme"])}</strong><p>{e(theme["angle"])}</p>{evidence}</li>')
+    return '<details open><summary>Audience insights · Reddit</summary><p class="footnote">Selected anecdotes inspire the writing. They do not establish audience statistics or product claims. Pasted excerpts are supplied text, not independently verified comments.</p><ul class="alternatives">'+''.join(items)+'</ul></details>'
 
 def page(slug=None):
     body=result_html(slug) if slug else ''
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Frame — Content studio</title><link rel="stylesheet" href="/static/studio.css"></head>
 <body><div class="shell"><header><a class="logo" href="/"><span></span>FRAME</a><span class="topnote">Brand URL → a finished video</span></header>
 <section class="hero"><div class="eyebrow">Short-form content studio</div><h1>A brand. A point of view.</h1><p>Turn a website into a sharp story and a familiar reaction.</p></section>
-<form class="url-form" action="/api/make" method="post" data-job><label for="brand-url" class="sr-only">Brand website</label><input id="brand-url" name="url" placeholder="Paste a brand website, e.g. duolingo.com" required><button type="submit">Create a video ↗</button></form>
+<form class="url-form" action="/api/make" method="post" data-job><div class="url-row"><label for="brand-url" class="sr-only">Brand website</label><input id="brand-url" name="url" placeholder="Paste a brand website, e.g. duolingo.com" required><button type="submit">Create a video ↗</button></div>
+<details><summary>Add audience context from Reddit · optional</summary><p class="footnote">Choose up to three relevant discussions. We use their frustrations and workarounds to inspire original writing.</p><div class="field"><label for="audience-links">Discussion links — one per line</label><textarea id="audience-links" name="audience_links" maxlength="2000" placeholder="https://www.reddit.com/r/.../comments/..."></textarea></div><div class="field"><label for="audience-excerpts">Relevant post or comment excerpts</label><textarea id="audience-excerpts" name="audience_excerpts" maxlength="18000" placeholder="Paste useful discussion text here. For multiple discussions, put each URL on its own line above its excerpt."></textarea><small>Reddit may block page reading. Pasted excerpts keep this step usable and retain the source link.</small></div></details></form>
 <div id="status" class="status" role="status" aria-live="polite" hidden></div>{body}{gallery()}
 <footer>Personal demo · Curated reactions + editable content · Built for a human editor</footer></div><script src="/static/studio.js"></script></body></html>'''
 
@@ -118,7 +133,7 @@ def start_job(kind,payload):
                 if not url.startswith(('http://','https://')):url='https://'+url
                 parsed=urlparse(url)
                 if parsed.scheme not in ('http','https') or not parsed.hostname or parsed.username:raise ValueError('Enter a valid brand website address.')
-                result=run(url,progress=progress);slug=result['slug']
+                result=run(url,progress=progress,audience_links=payload.get('audience_links',''),audience_excerpts=payload.get('audience_excerpts',''));slug=result['slug']
             else:slug=rebuild(payload,progress)
             with LOCK:JOBS[job_id].update(status='done',stage='Video ready',slug=slug)
         except Exception as error:
@@ -180,7 +195,7 @@ class H(SimpleHTTPRequestHandler):
         if route not in ('/api/make','/api/render'):return self.json_response({'error':'Not found'},404)
         try:
             length=int(self.headers.get('Content-Length','0'))
-            if not 0<length<=16000:raise ValueError('Request too large or empty')
+            if not 0<length<=100000:raise ValueError('Request too large or empty')
             payload={key:values[0] for key,values in parse_qs(self.rfile.read(length).decode()).items()}
             job_id=start_job('make' if route=='/api/make' else 'render',payload)
             self.json_response({'id':job_id},202)
