@@ -1,8 +1,14 @@
-# Frame — content studio
+# Frame: brand URL in, short-form video out
 
-A brand website becomes an editable short-form post and a playable vertical video.
-The local studio includes a reaction picker, live generation progress, caption editing,
-MP4 downloads and saved examples.
+HardLaunch Content Engineer trial, 12 Sept 2026. Paste a brand's website, get an on-brand
+long-overlay TikTok: a reaction clip with the copy burned on, editable and downloadable.
+
+- **Live demo:** https://ships-intent-convicted-anaheim.trycloudflare.com/ (runs from my laptop through a temporary link; if it is down, the examples in `out/` are the same outputs)
+- **Rationale:** [RATIONALE.md](RATIONALE.md) and the fuller [demo guide PDF](output/handoff/Frame%20-%20Demo%20Guide%20and%20Rationale.pdf) (pipeline now vs at scale, quality and reliability)
+- **The brief:** [brief.md](brief.md)
+
+Tested on 13 brands across niches: Cal AI, Quizlet, Wild, Allbirds, Duolingo, Headspace, Forest, Jenni, Opal,
+Blank Street, Fuse Energy, HardLaunch itself, and Rihal (an Omani B2B consultancy). Outputs are in `out/<brand>/`.
 
 ## Run locally
 
@@ -105,7 +111,7 @@ The usual six-draft workflow creates the evergreen winner. One extra AI call pro
 
 Jenni AI is the new rehearsal brand: HardLaunch's public agency page names it in the founders' experience and describes consumer AI and study-tool work. It is a relevant test, not a prediction of their live test URL.
 
-## Automatic research — default URL-only workflow
+## Automatic research: default URL-only workflow
 
 After profiling a brand, the app creates audience-problem search queries and uses [DDGS](https://github.com/deedy5/ddgs), an MIT-licensed metasearch library, to search indexed Reddit, TikTok and Instagram material. Searches run concurrently, with a recent-content filter for social references. A relevance review selects at most three audience and three content references. Every accepted summary must include an exact excerpt matching the returned search snippet; unknown IDs and invented evidence are rejected.
 
