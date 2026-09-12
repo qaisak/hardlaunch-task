@@ -251,13 +251,13 @@ def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None, audience_
 
     directions = {}
     if reference:
-        log("Adapting a second direction from trend references")
+        log("Adapting a second direction from content references")
         try:
             adapted = adapt(client, profile, final, reference, taste + "\n" + style)
             directions = {"evergreen": dict(final), "trend": adapted}
         except Exception as error:
             log("Trend adaptation unavailable; exporting evergreen: " + type(error).__name__)
-            research["adaptation_status"] = "Adaptation unavailable; evergreen exported"
+            research["adaptation_status"] = (str(error)[:240] if isinstance(error,ValueError) else "Adaptation unavailable") + "; evergreen exported"
             (outdir / "research.json").write_text(json.dumps(research, indent=2), encoding="utf-8")
     (outdir / "trends.json").write_text(json.dumps(reference or {}, indent=2, ensure_ascii=False), encoding="utf-8")
     (outdir / "directions.json").write_text(json.dumps(directions, indent=2, ensure_ascii=False), encoding="utf-8")

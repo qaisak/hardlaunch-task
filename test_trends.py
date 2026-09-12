@@ -3,11 +3,20 @@ import tempfile,json
 from datetime import date,timedelta
 from pathlib import Path
 from unittest.mock import patch
-from trends import trend_input,validate_direction
+from trends import trend_input,validate_direction,adapt
 import app
 URL='https://www.instagram.com/reel/example/'
 NOTES='A fictional test observation about a repeated setup followed by a surprising payoff.'
 class TrendTests(unittest.TestCase):
+ def test_unconnected_adaptation_rejected(self):
+  draft={'text':'word '*35,'caption':'caption','adaptation':'Avoid the price discussion entirely','why_this_brand':'brand','reaction':'deadpan','source_url':URL,'source_evidence':'waiting for expensive coffee'}
+  reference={'sources':[URL],'notes':'waiting for expensive coffee'}
+  with patch('trends.call_json',side_effect=[draft,{'supported':False,'reason':'sidesteps reference'}]):
+   with self.assertRaisesRegex(ValueError,'alignment'):adapt(None,{}, {},reference,'')
+ def test_unknown_adaptation_source_rejected(self):
+  draft={'text':'word '*35,'caption':'caption','adaptation':'connection','why_this_brand':'brand','reaction':'deadpan','source_url':'https://example.com','source_evidence':'waiting for expensive coffee'}
+  with patch('trends.call_json',return_value=draft):
+   with self.assertRaisesRegex(ValueError,'matching'):adapt(None,{}, {},{'sources':[URL],'notes':'waiting for expensive coffee'},'')
  def test_optional_input(self):self.assertIsNone(trend_input())
  def test_links_alone_are_not_evidence(self):
   with self.assertRaises(ValueError):trend_input(URL)
@@ -26,7 +35,7 @@ class TrendTests(unittest.TestCase):
    d=Path(directory);ref=trend_input(URL,NOTES,date.today().isoformat(),'UK / English');ref['notes']='<script>alert(1)</script>'
    (d/'trends.json').write_text(json.dumps(ref));draft={'text':'hello <img>','caption':'caption'}
    (d/'directions.json').write_text(json.dumps({'evergreen':draft,'trend':draft}))
-   rendered=app.trends_html(d);self.assertNotIn('<script>',rendered);self.assertIn('Use trend-inspired draft',rendered)
+   rendered=app.trends_html(d);self.assertNotIn('<script>',rendered);self.assertIn('Use reference-inspired draft',rendered)
  def test_selected_direction_uses_its_own_mood(self):
   with tempfile.TemporaryDirectory() as directory,patch.object(app,'render_mp4',return_value=(None,'rendered')) as render:
    root=Path(directory);d=root/'demo';d.mkdir();(d/'post.mp4').write_bytes(b'test');(d/'post.md').write_text('> old story\n**Caption:** old')

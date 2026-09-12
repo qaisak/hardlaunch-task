@@ -1,0 +1,58 @@
+{
+  "sources": [
+    "https://www.tiktok.com/@blankstreet",
+    "https://www.tiktok.com/tag/blankstreet",
+    "https://www.instagram.com/popular/blankstreet/"
+  ],
+  "notes": "Blank Street's own TikTok account, listed with 38.8K followers and 747.2K likes, posts drop-style announcements for drinks including matcha flavours and autumn items. A creative reference for dated, product-drop framing of seasonal specials.\nThe #blankstreet hashtag page is a topic-level signal, not a verified trend: the listed post ties a Blank Street blueberry matcha to celebrity and fashion tags, indicating the cup is used as an aesthetic prop in creator content.\nAn Instagram discovery page for Blankstreet reels shows creators covering a new UK store opening, describing mint green floors. Treat as a topic signal only, not a verified individual video or trend.",
+  "observed": "2026-09-12",
+  "market": "Inferred from brand audience; source markets may vary",
+  "status": "Automatically discovered references \u2014 momentum unverified",
+  "method": "DDGS indexed search; videos not watched",
+  "recorded_at": "2026-09-12",
+  "evidence": [
+    {
+      "id": "6",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@blankstreet",
+      "title": "Blank Street (@blankstreet) | TikTok#blankstreet - TikTokBlank Street on TikTokCrafting the Perfect Pumpkin Spice Latte at Blank Street ...Blank Street on TikTokBlank Street on TikTokBlank Street on TikTok",
+      "snippet": "Blank Street (@blankstreet) on TikTok | 747.2K Likes. 38.8K Followers. Watch Blank Street's popular videos: \"Our autumn drinks ar...\", \"18 NOV 2025 Blondie ...\". especially the blank street blueberry matcha #trap #guesswhowouldfallforthistrap #drewstarkey #timotheechalamet #blankstreet #blueberrymatcha #givenchyboots #daschund #rollsroyce #fyp original sound - bfsatoru 2256 Likes, TikTok video from Blank Street (@blankstreet): \u201c18 NOV 2025 Espresso Martini Latte Hazelnut, vanilla bean, honey, cinnamon, Hazelnut spread, Himalayan pink salt, 0.0% ABV.\u201d. espresso. original sound - Blank Street. Nov 2, 2022 \u00b7 486 Likes, 31 Comments. TikTok video from Blank Street (@blankstreet): \u201cExplore the art of making a delicious pumpkin spice latte at Blank Street Coffee in Ealing Broadway. Indulge in the flavors of fall with a touch of chocolate and admire the intricate nail art while savoring your drink. #blankstreetcoffee #barista #pumpkinspice #psl # ... Jun 19, 2024 \u00b7 445 Likes, TikTok video from Blank Street (@blankstreet): \u201cShes working late because she\u2019s a baristaaaa \ud83d\udc8b Thanks @Sabrina Carpenter for making a short n\u2019 sweet surprise appearance at our Charlotte St store \u2665\ufe0f #blankstreet #blankstreetcoffee #sabrinacarpenter\u201d. espresso sabrina - celebs media. 4606 Likes, 54 Comments. TikTok video from Blank Street (@blankstreet): \u201c10 MAR 2026 Cherry glaze matcha Available everywhere\u201d. matcha. original sound - Blank Street. TikTok video from Blank Street (@blankstreet): \u201cCOMING 17 JUNE Cookies and Cream Matcha. Available at all Blank Street stores.\u201d. matcha. original sound - Blank Street.",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference",
+      "summary": "Blank Street's own TikTok account, listed with 38.8K followers and 747.2K likes, posts drop-style announcements for drinks including matcha flavours and autumn items. A creative reference for dated, product-drop framing of seasonal specials.",
+      "evidence": "Blank Street (@blankstreet) on TikTok | 747.2K Likes. 38.8K Followers.",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "7",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/tag/blankstreet",
+      "title": "#blankstreet - TikTok",
+      "snippet": "especially the blank street blueberry matcha #trap #guesswhowouldfallforthistrap #drewstarkey #timotheechalamet #blankstreet #blueberrymatcha #givenchyboots #daschund #rollsroyce #fyp original sound - bfsatoru",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference",
+      "summary": "The #blankstreet hashtag page is a topic-level signal, not a verified trend: the listed post ties a Blank Street blueberry matcha to celebrity and fashion tags, indicating the cup is used as an aesthetic prop in creator content.",
+      "evidence": "especially the blank street blueberry matcha #trap",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "13",
+      "kind": "trends",
+      "url": "https://www.instagram.com/popular/blankstreet/",
+      "title": "Blankstreet \u2022 6.5K reels on Instagram",
+      "snippet": "Inside the new Blank Street in Leeds! \ud83e\udd29 The viral coffee brand is making its Leeds debut in style - opening the biggest Blank Street shop in the world \ud83c\udf0d\ud83e\udd2f The Albion Street Starbucks has been replaced with two mint green floors selling the drinks that made this brand famous!",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference",
+      "summary": "An Instagram discovery page for Blankstreet reels shows creators covering a new UK store opening, describing mint green floors. Treat as a topic signal only, not a verified individual video or trend.",
+      "evidence": "Inside the new Blank Street in Leeds!",
+      "evidence_level": "Search excerpt; full page not inspected"
+    }
+  ],
+  "label": "Research-inspired"
+}

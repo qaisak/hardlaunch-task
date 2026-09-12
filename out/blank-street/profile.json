@@ -1,0 +1,43 @@
+{
+  "brand_name": "Blank Street",
+  "one_liner": "Neighbourhood coffee and matcha shops with app ordering and rewards",
+  "niche": "specialty coffee and matcha cafés",
+  "product_type": "physical product",
+  "audience": "urban 18-34s in New York, LA and London: students, creatives, finance and agency workers who buy a drink on the walk to work or between classes, plus matcha-obsessed girls who post their cup (inferred)",
+  "core_pain": "the daily coffee run is either overpriced and slow, or cheap and tastes bad, and the matcha at most places is dusty, bitter and served in a boring cup",
+  "old_way_objects": [
+    "bodega drip coffee",
+    "keurig pods",
+    "home matcha whisk and bowl",
+    "dunkin iced coffee",
+    "office nespresso machine",
+    "instant matcha sachets",
+    "a 20 minute queue at the third wave place",
+    "cold brew in a carton from the corner store"
+  ],
+  "scenes": [
+    "8:40am on a Manhattan sidewalk, someone power-walking to the office holding a paper cup, already texting that they're five minutes away",
+    "a student in a Williamsburg flat whisking clumpy matcha in a mug with a fork, giving up and putting on shoes",
+    "two friends meeting on Prince Street, one holding the door with a drink in each hand, deciding which seasonal flavour to get before it's gone"
+  ],
+  "tone": "warm, design-led, understated, everyday-premium",
+  "proof_points": [
+    "serving since 2020",
+    "first store launched August 2020 as a coffee cart in the garden of the Wythe Diner in Williamsburg",
+    "over 100 shops across the US and UK",
+    "Autumn specials: Cinnamon Bun Matcha, Cinnamon Bun Latte, Harvest Chai Matcha, Harvest Chai Latte",
+    "retail range includes matcha tin, lighter roast, darker roast and The Sleeve",
+    "app ordering, Rewards programme and an Insiders programme",
+    "The Sleeve listed as sold out"
+  ],
+  "do_not_say": [
+    "health, energy or wellness claims about matcha or caffeine (no 'boosts metabolism', 'calms anxiety', 'better than coffee for you')",
+    "naming or comparing to Starbucks, Dunkin, Blue Bottle or any other chain",
+    "'cheapest coffee' or price promises the site does not state",
+    "invented store counts, wait times, sales figures or customer numbers",
+    "'organic', 'ceremonial grade' or sourcing claims not stated on the site",
+    "marketing-speak like 'revolutionary', 'game-changing', 'the best coffee in the world'"
+  ],
+  "cta": "order ahead in the app, join Rewards, or find your nearest store",
+  "source_url": "https://www.blankstreet.com/en-US"
+}

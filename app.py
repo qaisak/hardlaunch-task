@@ -99,10 +99,14 @@ def research_html(d):
     data=read_json(d/'research.json',{})
     if not data:return ''
     coverage=data.get('coverage',{})
-    sections=['<p class="footnote">Selected sources: '+e(' · '.join(f'{domain}: {count}' for domain,count in coverage.items()))+'</p>'] if coverage else []
+    sections=['<p class="footnote">Selected sources: '+e(' · '.join(f'{domain}: {data.get("found_counts",{}).get(domain,"?")} found / {count} selected' for domain,count in coverage.items()))+'</p>'] if coverage else []
     for kind,label in [('audience','Audience discussions'),('trends','Content references')]:
-        items=''.join(f'<li><a href="{e(row["url"])}" target="_blank" rel="noreferrer">{e(row.get("title") or row["url"])}</a><p>{e(row["summary"])}</p><blockquote>{e(row.get("evidence",""))}</blockquote><small>Source date: {e(str(row.get("page_age") or "unknown"))}</small></li>' for row in data.get(kind,[]))
+        items=''.join(f'<li><a href="{e(row["url"])}" target="_blank" rel="noreferrer">{e(row.get("title") or row["url"])}</a><small>{e(row.get("classification",""))} · {e(row.get("source_type",""))}</small><p>{e(row["summary"])}</p><blockquote>{e(row.get("evidence",""))}</blockquote><small>Search snippet date (unverified): {e(str(row.get("page_age") or "unknown"))}</small></li>' for row in data.get(kind,[]))
         sections.append(f'<h3>{label}</h3><ul>{items}</ul>' if items else f'<p>No usable {label.lower()} found.</p>')
+    rejected=data.get('rejected',[])
+    if rejected:sections.append('<details><summary>Why other sources were not selected</summary><ul>'+''.join('<li>'+e(r.get('title',''))+': '+e(r.get('reason',''))+'</li>' for r in rejected)+'</ul></details>')
+    attempts=data.get('attempts',[])
+    if attempts:sections.append('<details><summary>Searches and retries</summary><ul>'+''.join('<li>'+e(r['query'])+' · '+e(r['backend'])+' · '+str(r.get('usable',0))+' usable'+(' · '+e(r['error']) if r.get('error') else '')+'</li>' for r in attempts)+'</ul></details>')
     return '<details open><summary>Automatic research</summary><p>'+e(data.get('status',''))+'</p><p class="footnote">Collected '+e(data.get('collected_at','—'))+' · '+e(data.get('provider',''))+'</p>'+''.join(sections)+'<p class="footnote">'+e(data.get('scope',''))+'</p><p>'+e(data.get('adaptation_status','')+' '+ '; '.join(data.get('errors',[])))+'</p></details>'
 
 
@@ -111,13 +115,14 @@ def trends_html(d):
     directions=read_json(d/'directions.json',{})
     if not reference or not directions:return ''
     cards=[]
-    for key,label in [('evergreen','Evergreen'),('trend','Trend-inspired')]:
+    for key,label in [('evergreen','Evergreen'),('trend',reference.get('label','Reference-inspired'))]:
         draft=directions[key]
         download=f'<a class="button secondary" download href="/out/{d.name}/{key}.mp4">Download saved {label.lower()} video</a>' if (d/(key+'.mp4')).is_file() else ''
         payload=e(json.dumps({'text':draft['text'],'caption':draft.get('caption',''),'direction':key}))
-        cards.append(f'<div class="direction-card"><h3>{label}</h3><p>{e(draft["text"])}</p><p class="footnote">{e(draft.get("adaptation","A standalone story, independent of trend references."))}</p><button type="button" class="secondary" data-direction="{payload}">Use {label.lower()} draft</button>{download}</div>')
+        evidence=f'<p class="footnote">Based on: <a href="{e(draft["source_url"])}" target="_blank" rel="noreferrer">source ↗</a> · {e(draft.get("source_evidence",""))}</p>' if draft.get('source_url') else ''
+        cards.append(f'<div class="direction-card"><h3>{label}</h3><p>{e(draft["text"])}</p><p class="footnote">{e(draft.get("adaptation","A standalone story, independent of trend references."))}</p><button type="button" class="secondary" data-direction="{payload}">Use {label.lower()} draft</button>{download}{evidence}</div>')
     links=' · '.join(f'<a href="{e(url)}" target="_blank" rel="noreferrer">Reference {i+1} ↗</a>' for i,url in enumerate(reference['sources']))
-    return '<section class="directions"><h3>Compare writing directions</h3><p class="footnote">Choose a draft, review the words below, then rebuild. The video changes only after rebuilding.</p>'+''.join(cards)+f'<details><summary>Trend reference and context</summary><p>{e(reference["market"])} · observed {e(reference["observed"])}</p><p>{e(reference["status"])}</p><p>{e(reference["notes"])}</p><p>{links}</p><p class="footnote">{e(reference["method"])}. Audio is not imported. No view uplift has been measured.</p></details></section>'
+    return '<section class="directions"><h3>Compare writing directions</h3><p class="footnote">Choose a draft, review the words below, then rebuild. The video changes only after rebuilding.</p>'+''.join(cards)+f'<details><summary>Reference and context</summary><p>{e(reference["market"])} · observed {e(reference["observed"])}</p><p>{e(reference["status"])}</p><p>{e(reference["notes"])}</p><p>{links}</p><p class="footnote">{e(reference["method"])}. Audio is not imported. No view uplift has been measured.</p></details></section>'
 
 
 def page(slug=None):

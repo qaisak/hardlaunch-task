@@ -1,9 +1,23 @@
 import unittest,tempfile,json
 from unittest.mock import patch,Mock
-from discovery import allowed,select_evidence,discover,trend_reference
+from discovery import allowed,select_evidence,discover,trend_reference,build_queries,search_task,snippet_date
 class DiscoveryTests(unittest.TestCase):
  def data(self):
   return {'audience':[],'trends':[],'sources':[{'id':'1','kind':'audience','url':'https://www.reddit.com/r/test/comments/abc/','snippet':'I keep checking my phone instead of finishing my work.','title':'Focus problem'}]}
+ def test_snippet_date_is_not_invented(self):
+  self.assertEqual(snippet_date('5 days ago - source excerpt'),'5 days ago')
+  self.assertIsNone(snippet_date('No source date supplied'))
+ def test_brand_queries_are_mandatory(self):
+  tasks=build_queries({'brand_name':'Blank Street'},'coffee routines','matcha coffee')
+  self.assertEqual(len(tasks),6)
+  for domain in ['reddit.com','tiktok.com','instagram.com']:
+   self.assertTrue(any(t['query']=='site:'+domain+' "Blank Street"' and t['scope']=='brand' for t in tasks))
+ def test_search_retries_after_error_and_empty_snippets(self):
+  for first in [RuntimeError('blocked'),[{'href':'https://www.tiktok.com/discover/x','body':''}]]:
+   factory=Mock();factory.return_value.text.side_effect=[first,[{'href':'https://www.tiktok.com/@brand/video/1','body':'An actual search excerpt with enough text to use.'}]]
+   task=build_queries({'brand_name':'Blank Street'},'coffee','matcha')[2]
+   _,rows,history=search_task(task,factory)
+   self.assertEqual(len(rows),1);self.assertEqual([r['backend'] for r in history],['bing','duckduckgo'])
  def test_domain_boundary(self):
   self.assertFalse(allowed('https://reddit.com.evil.org','audience'))
   self.assertFalse(allowed('javascript:alert(1)','trends'))

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 4,
+      "voice": 5,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 5
+    },
+    "overall": 8,
+    "fix": "cut 'she drank it standing up' or the sink clause, one of the two is padding, and tighten so the fork stays the single image."
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 4,
+      "length": 4
+    },
+    "overall": 6,
+    "fix": "first-person confessions still need the observational sting; 'i genuinely thought that was what coffee was' explains the joke, cut it and let the radiator line land into the verdict."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 5,
+      "voice": 2,
+      "hook": 3,
+      "not_an_ad": 3,
+      "comment_bait": 4,
+      "honesty": 4,
+      "length": 3
+    },
+    "overall": 5,
+    "fix": "restore the 'no x. no y. no z.' fragment list; right now the brand sits mid-sentence as an app plug and the piece reads like two ideas stitched together."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 3
+    },
+    "overall": 6,
+    "fix": "trim the tail, 'he says he is saving money' and 'he has not left the building' are the same beat twice, keep one and let 'Concerning' hit sooner."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 3,
+      "length": 3
+    },
+    "overall": 6,
+    "fix": "drop the invented 'queued twenty minutes' and 'nineteen minutes late' precision, it reads as fabricated stat; keep the texting-five-minutes-away lie as the only specific."
+  },
+  {
+    "id": "v6",
+    "scores": {
+      "on_brand": 5,
+      "voice": 5,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "cut 'she calls it a treat' so 'the photo is grey' runs straight into the verdict, the ending is currently one beat too long."
+  }
+]

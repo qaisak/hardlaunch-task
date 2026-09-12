@@ -1,0 +1,38 @@
+{
+  "evergreen": {
+    "id": "v1",
+    "text": "just seen a girl making matcha in her kitchen with a fork. no whisk. no bowl. no sieve. no blank street. just her and a mug of green lumps going grey in the sink. Absolute soldier",
+    "word_count": 41,
+    "reaction": "deadpan",
+    "base_video": "Creator sits at a kitchen counter holding their own iced drink, looking off camera and slowly raising the cup an inch like a toast, no smile.",
+    "audio": "original audio, room tone",
+    "caption": "a fork. against a whole bowl of matcha. who do you know like this",
+    "why_this_brand": "The fork-whisked clumpy matcha in a mug is the exact home-matcha failure the brand's matcha drinkers are escaping.",
+    "what_changed": "Cut 'she drank it standing up' so the fork and the lumpy mug stay the single image.",
+    "direction": "evergreen",
+    "audience_used": true,
+    "video": "Jim: sarcastic wow \u00b7 16.4s \u00b7 silent",
+    "format": {
+      "format": "long_overlay",
+      "reason": "Blank Street's pull is the relatable morning ritual, the clumpy fork-whisked matcha at home and the queue you don't have time for, which lands hardest as a silent reacting face plus one block of text about the old way. It also avoids needing brand-supplied demo footage, and app ordering is a behaviour change more than a thing to watch working.",
+      "runner_up": "hook_demo",
+      "why_not_runner_up": "A drink being handed over is a weak demo and it needs footage the brand would have to shoot first."
+    },
+    "draft_score": 8,
+    "editor_fix": "cut 'she drank it standing up' or the sink clause, one of the two is padding, and tighten so the fork stays the single image."
+  },
+  "trend": {
+    "text": "just seen a girl trying to recreate the cinnamon bun matcha in her kitchen. no whisk. no sieve. no scales. no blank street. just a mug, a fork and a cinnamon jar she's shaking like it owes her money. tasting it off a spoon between attempts. Genuinely unwell",
+    "caption": "she's on attempt four. who do you know like this",
+    "adaptation": "Observed: the account posts dated drop announcements for named matcha flavours. Interpretation: people try to copy a drop at home. So the scene became recreating the site-listed Cinnamon Bun Matcha with a fork, not generic matcha.",
+    "why_this_brand": "Blank Street's autumn Cinnamon Bun Matcha is a named seasonal drink on the site, and the home version of it is exactly the clumpy fork-and-mug failure their matcha drinkers walk past on the way to work.",
+    "reaction": "deadpan",
+    "source_url": "https://www.tiktok.com/@blankstreet",
+    "source_evidence": "COMING 17 JUNE Cookies and Cream Matcha.",
+    "alignment_review": {
+      "supported": true,
+      "reason": "The reference is Blank Street's own drop-style announcements of named seasonal matcha flavours; the draft builds directly on that by dramatising someone trying to recreate one of those drops at home, and it names Cinnamon Bun Matcha, which is a site-listed autumn special (not invented). The adaptation note explains the link rather than sidestepping it, and the fork-in-a-mug scene matches the brand's stated old-way objects and scenes. No health, sourcing, price or competitor claims. Tone is deadpan rather than the brand's usual warm register, but that is a stylistic choice within bounds."
+    },
+    "label": "Research-inspired"
+  }
+}

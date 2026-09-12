@@ -114,3 +114,11 @@ Reddit evidence informs the main writing; relevant content references create the
 The **Automatic research** panel and `research.json` record queries, source URLs, excerpts, summaries, collection time, coverage and errors. Source publication dates may be unknown or older than the search window. TikTok discovery pages are labelled as topic signals. No direct social account credentials or Apify token are configured; search discovery works without them. It does not provide platform-wide rankings, watched-video analysis or measured growth. Full trend velocity would require time-series metrics from a separate collector. No recurring background job is created.
 
 Verified URL-only example: `https://opalapp.com/`. It found Reddit and TikTok evidence and produced drafts and a playable MP4; no manual research inputs were supplied. Instagram searches can yield no relevant results, which the coverage panel reports.
+
+## Brand research reliability
+
+The current research version always searches the quoted brand name on Reddit, TikTok and Instagram, separately from audience/category queries. Each search tries Bing first and retries empty, failed or unusable results through DuckDuckGo with a simpler query and no recency restriction. Six searches have at most two attempts each. Sources are deduplicated and labelled as brand mentions, audience discussions or category references; topic pages are identified explicitly.
+
+The results panel separates found and selected counts, shows search attempts and failures, and retains reasons for unselected candidates. Exact evidence checks still apply. Cache keys include the research version and profile to avoid reusing earlier broad-only searches. Dates extracted from snippets are labelled unverified.
+
+Automatic alternate drafts are labelled **Research-inspired**, not trending. They must cite a supplied URL and matching evidence, then pass a separate editorial alignment check. A draft that sidesteps its reference, invents product claims or shares only a broad category is rejected; the evergreen video remains the output. This validation is AI-assisted editorial review, not proof of trend performance.
