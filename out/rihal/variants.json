@@ -1,0 +1,47 @@
+[
+  {
+    "id": "v1",
+    "text": "just seen an officer in the ministry records room pull down five boxes to answer one citizen request. no index. no search. no rihal. just him. a torch on his phone. and a man in the lobby who has been waiting since nine. A hero in a room that shouldn't exist",
+    "word_count": 51,
+    "base_video": "A man in his 30s in office shirt and lanyard, sitting in a parked car or at a bare desk, staring flatly into the lens. Slow single blink, one small head shake at the end, no speech.",
+    "audio": "original audio, room tone with faint air con hum",
+    "caption": "the lobby man has a name and a number and he knows it",
+    "why_this_brand": "The ministry records room, the boxed citizen request file and the lobby queue are the exact paper backlog Rihal is hired to digitise."
+  },
+  {
+    "id": "v2",
+    "text": "i built last year's board report myself. 40 scanned invoices. no ocr. no data team. no rihal. just me. a calculator. and excel at 11pm typing numbers a machine could read in a second. i checked the totals four times and still got one column wrong. Genuinely unwell behaviour",
+    "word_count": 49,
+    "base_video": "A woman at an office desk late at night, one lamp on, eating from a takeaway container while looking straight down the lens between bites. No expression change.",
+    "audio": "original audio, room tone",
+    "caption": "the fourth check is the one that gets you",
+    "why_this_brand": "Scanned invoices, ocr and the 11pm board report rebuild are the manual data entry problem at the centre of Rihal's automation work."
+  },
+  {
+    "id": "v3",
+    "text": "director asks for last quarter's figures. three departments. three spreadsheets. three different numbers. no single source. no shared system. no rihal. just four men in a room arguing about which excel file is the real one while the quarter quietly ends. Everyone's right. that's the problem",
+    "word_count": 46,
+    "base_video": "A man sitting in an empty meeting room, tie slightly loose, laptop closed in front of him, staring dead ahead at the camera. One slow sip of water, nothing else.",
+    "audio": "original audio, room tone",
+    "caption": "which department's number do you believe",
+    "why_this_brand": "Three departments sending three mismatched spreadsheets for one board question is the reporting-trust gap Rihal's data management exists to close."
+  },
+  {
+    "id": "v4",
+    "text": "my cousin needed one signature to order a laptop. paper request form. wet signature. scan it. email it. forward it. print it again. no workflow. no rihal. six weeks and eleven people later the laptop model was discontinued. That's not a process. that's a hostage situation",
+    "word_count": 46,
+    "base_video": "A young man leaning against a corridor wall next to a printer, arms folded, looking into the lens with a tired flat stare. Tiny eyebrow raise at the end.",
+    "audio": "trending deadpan/slow build sound, low volume under the read",
+    "caption": "how many people signed your last one",
+    "why_this_brand": "Paper request forms, wet signatures and email approval chains are the exact process automation problem Rihal takes on inside ministries and large enterprises."
+  },
+  {
+    "id": "v5",
+    "text": "watched a transformation lead open his fourth roadmap in three years. slide 12 says go live. slide 12 always says go live. no owner. no data model. no rihal. just a shared drive called final_v9 and a pilot that has been ninety percent done since 2021. Brave. wrong. still brave",
+    "word_count": 50,
+    "base_video": "A man in his 40s seated in a conference chair, projector light on his face, looking at the camera rather than the screen. Completely still, one slow exhale.",
+    "audio": "original audio, room tone with faint projector fan",
+    "caption": "name a pilot that actually went live, i'll wait",
+    "why_this_brand": "Stalled pilot projects, orphaned shared drives and roadmaps that never go live are the transformation backlog Rihal is brought in to finish."
+  }
+]
