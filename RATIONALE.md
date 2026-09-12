@@ -8,6 +8,8 @@ The final post also supplies a reaction label. A catalogue of seven familiar rea
 
 Optional Reddit links and pasted excerpts supply audience frustrations and workarounds. Themes retain matching evidence and source links; only original summaries guide the writer. Unreadable discussions produce an explicit request for excerpts. This is inspiration from selected anecdotes, not audience statistics or product evidence.
 
+Optional trend references produce a second, selectable writing direction. Dates, markets and source links remain visible; the app does not claim to verify momentum. The editor compares the adaptation with the evergreen draft before rebuilding.
+
 The system uses Python, Claude through the Anthropic SDK, requests, BeautifulSoup, Pillow and FFmpeg. A small local web interface shows generation progress, previews results and downloads MP4s. Claude Code and Codex assisted development.
 
 The main tradeoffs are a small curated clip library, variable source resolution, and a formula that suits some brands better than others. Reaction references are included for this personal demonstration, not presented as a cleared commercial asset library. Thin websites can produce weak profiles, and AI editorial scores are not evidence of real performance. With more time I would strengthen fact checks, add a slideshow renderer, expand the labelled footage library and calibrate selection against actual creator feedback and audience results.

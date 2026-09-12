@@ -1,0 +1,20 @@
+{
+  "evergreen": {
+    "id": "v5",
+    "text": "my flatmate asked chatgpt for sources for her lit review then spent four hours on google scholar checking whether each one exists. two of them existed. no semantic scholar. no library database. no jenni. just her typing invented titles into a search bar hoping one lands. She's doing archaeology on a chatbot",
+    "word_count": 50,
+    "reaction": "deadpan",
+    "base_video": "Creator sat on a sofa with a mug, slowly rolling their eyes and looking off camera, then back to lens with a flat unimpressed face.",
+    "audio": "original audio, room tone with kettle in the background",
+    "caption": "four hours. two real papers. how is this the method",
+    "why_this_brand": "Hunting for whether a generated citation actually exists is exactly the trace back to a real source problem Jenni solves.",
+    "what_changed": "Softened the tally to 'two of them existed' and moved 'no jenni' to the end of the no-list beside 'no library database'."
+  },
+  "trend": {
+    "text": "girl in the library next to me spent the whole afternoon setting up. new notion template. highlighters lined up by shade. printed all 40 pdfs. then started the apa reference list by hand. no zotero. no semantic scholar. no jenni. wrote one sentence at 4pm and packed up. Curating a museum of not writing",
+    "caption": "the setup was the dissertation. tell me im wrong",
+    "adaptation": "Swapped the flatmate-and-fake-citations scene for a study-session setup ritual, per the editor's interpretation of #study and #studywithme tags. Observed: the tags are listed. Interpretation: the setup premise suits academic viewers. Kept UK library framing; brand named once, no claims.",
+    "why_this_brand": "Jenni sits in the list beside Zotero and Semantic Scholar as the ordinary thing a researcher would already have open while everyone else builds a shrine of tabs, printouts and hand-typed APA.",
+    "reaction": "deadpan"
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "v1",
+    "text": "just seen a guy in the library carrel at 1am hunting for the paper that said the thing he half remembers. no zotero. no jenni. no search history left. forty pdf tabs and a vague memory of a blue graph. just him and a feeling. Certified maniac behaviour",
+    "word_count": 48,
+    "reaction": "confused",
+    "base_video": "Creator sat at a desk in a quiet library, laptop open, slowly turning their head left and right like they are looking for someone, then back to camera. No speaking.",
+    "audio": "original audio, room tone with faint keyboard and aircon",
+    "caption": "the blue graph paper does not exist",
+    "why_this_brand": "The 1am carrel with forty pdf tabs and a half remembered figure is the exact academic search problem Jenni is built around."
+  },
+  {
+    "id": "v2",
+    "text": "i reformatted a sixty item reference list from apa to harvard by hand the night before submission. no citation generator site. no mendeley. no jenni. just me and a style guide pdf deciding where the italics stop. i fixed every full stop myself. Genuinely unwell and slightly proud",
+    "word_count": 48,
+    "reaction": "deadpan",
+    "base_video": "Creator sat up in bed at night in a hoodie, laptop light on their face, staring flatly into the lens and giving one slow blink and a tiny nod.",
+    "audio": "original audio, room tone",
+    "caption": "the italics were the hardest part honestly",
+    "why_this_brand": "Hand converting APA to Harvard the night before submission is the citation formatting pain Jenni's 10,000+ styles removes."
+  },
+  {
+    "id": "v3",
+    "text": "watched a postdoc reread her own draft the night before submission trying to guess which sentences a reviewer will flag as unsupported. no jenni. no second reader. no track changes. just her and a highlighter interrogating every claim like a suspect. she asked one paragraph out loud where it got that number. Peer reviewing herself into the ground",
+    "word_count": 58,
+    "reaction": "thoughtful",
+    "base_video": "Creator sat in an office chair holding a printed draft, slowly lowering the pages to look at the camera with a quiet judging stare, eyebrows slightly raised.",
+    "audio": "original audio, room tone with distant office noise",
+    "caption": "which claim in your draft would not survive a reviewer",
+    "why_this_brand": "Second guessing whether a claim is actually supported by its source is the precise thing Jenni's reviews feature flags."
+  },
+  {
+    "id": "v4",
+    "text": "guy in the department print room has just printed forty papers to read on paper. no zotero library. no jenni. no ctrl f. three highlighter colours and a system only he understands. he will type every quote back into the doc by hand. Running a medieval scriptorium out of a printer room",
+    "word_count": 52,
+    "reaction": "disbelief",
+    "base_video": "Creator stood next to a busy office printer holding a thick stack of paper, doing a slow double take at the stack then at the camera, blinking.",
+    "audio": "original audio, printer whirring and room tone",
+    "caption": "three highlighter colours is a whole methodology",
+    "why_this_brand": "Printed papers, highlighters and retyping quotes into a Word doc is the analogue version of the source workflow Jenni replaces."
+  },
+  {
+    "id": "v5",
+    "text": "my flatmate asked chatgpt for sources for her lit review then spent four hours on google scholar checking whether each one exists. two did. no jenni. no semantic scholar. no library database. just her typing invented titles into a search bar hoping one lands. She's doing archaeology on a chatbot",
+    "word_count": 50,
+    "reaction": "skeptical",
+    "base_video": "Creator sat on a sofa with a mug, slowly rolling their eyes and looking off camera, then back to lens with a flat unimpressed face.",
+    "audio": "original audio, room tone with kettle in the background",
+    "caption": "two out of how many",
+    "why_this_brand": "Hunting for whether a generated citation actually exists is exactly the trace back to a real source problem Jenni solves."
+  },
+  {
+    "id": "v6",
+    "text": "girl on the 7am train writing her discussion section off screenshots of papers she took on her phone. no pdfs. no jenni. no reference manager. just her zooming into a blurry table to read a p value. she typed the citation from memory. Absolute gladiator. Wrong but still a gladiator",
+    "word_count": 49,
+    "reaction": "approval",
+    "base_video": "Creator sat by a train window with headphones round their neck, glancing sideways at another seat then raising their coffee cup slightly to the camera.",
+    "audio": "original audio, train rumble and announcement in the background",
+    "caption": "citing from memory is a personality type",
+    "why_this_brand": "Reading a p value off a screenshot and typing the reference from memory is the unsourced claim habit Jenni's citation workflow kills."
+  }
+]

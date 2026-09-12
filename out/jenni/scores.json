@@ -1,0 +1,86 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "swap the generic verdict 'Certified maniac behaviour' for something specific to the scene, e.g. something about trusting a blue graph he may have dreamt."
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "cut 'i fixed every full stop myself' and front-load the pain: open with 'sixty references. apa to harvard. by hand. the night before submission.'"
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 3
+    },
+    "overall": 7,
+    "fix": "trim to under 50 words by cutting 'she asked one paragraph out loud where it got that number' so the highlighter-as-interrogator line lands straight into the verdict."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 5,
+      "voice": 5,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "tighten the opener to 'guy in the department print room just printed forty papers to read on paper' so the first eight words hit the absurdity sooner."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 5,
+      "voice": 5,
+      "hook": 5,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 4,
+      "length": 4
+    },
+    "overall": 9,
+    "fix": "soften the invented tally to 'two of them existed' reads fine, but make the no-list land harder by moving 'no jenni' to sit beside 'no library database' rather than leading it."
+  },
+  {
+    "id": "v6",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "replace the two-part gladiator verdict, it echoes the reference's 'built different and wrong'; write one fresh line about citing from memory on a moving train."
+  }
+]

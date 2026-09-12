@@ -22,3 +22,13 @@ const editor=document.getElementById('post-text');
 if(editor){const count=()=>document.getElementById('word-count').textContent=editor.value.trim().split(/\s+/).filter(Boolean).length+' words · 30–70 recommended';editor.addEventListener('input',count);count();}
 const copy=document.getElementById('copy-caption');
 if(copy)copy.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.getElementById('caption').value);copy.textContent='Copied';setTimeout(()=>copy.textContent='Copy caption',1500)}catch{copy.textContent='Select the caption to copy'}});
+document.querySelectorAll('[data-direction]').forEach(button=>button.addEventListener('click',()=>{
+ const draft=JSON.parse(button.dataset.direction);
+ document.getElementById('post-text').value=draft.text;
+ document.getElementById('caption').value=draft.caption;
+ document.getElementById('direction').value=draft.direction;
+ document.querySelectorAll('input[name=clip]').forEach(input=>input.checked=false);
+ document.getElementById('post-text').dispatchEvent(new Event('input'));
+ document.getElementById('post-text').focus();
+ statusBox.hidden=false;statusBox.className='status';statusBox.textContent='Draft loaded. Review your text, choose a reaction or leave automatic selection, then rebuild to update the video.';
+}));

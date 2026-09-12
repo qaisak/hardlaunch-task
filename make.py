@@ -12,6 +12,7 @@ Outputs land in out/<brand>/: post.png, post.md, profile.json, variants.json, sc
 from __future__ import annotations
 
 import argparse
+import shutil
 import json
 import re
 import sys
@@ -27,6 +28,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 from generate import PROMPTS, ROOT, call, call_json, extract_json, read
 from video import render_mp4
+from trends import trend_input, adapt
 from audience import build_insights, writing_context
 
 load_dotenv()
@@ -163,8 +165,9 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "brand"
 
 
-def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None, audience_links='', audience_excerpts='') -> dict:
+def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None, audience_links='', audience_excerpts='', trend_links='', trend_notes='', trend_observed='', trend_market='') -> dict:
     """The whole pipeline for one URL. Returns the result dict; also used by app.py."""
+    reference = trend_input(trend_links, trend_notes, trend_observed, trend_market)
     import anthropic
     client = anthropic.Anthropic()
     t0 = time.time()
@@ -222,12 +225,23 @@ def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None, audience_
         except Exception as e:  # revise is a bonus, never let it sink the run
             log(f"revise skipped: {e}")
 
+    directions = {}
+    if reference:
+        log("Adapting a second direction from trend references")
+        adapted = adapt(client, profile, final, reference, taste + "\n" + style)
+        directions = {"evergreen": dict(final), "trend": adapted}
+    (outdir / "trends.json").write_text(json.dumps(reference or {}, indent=2, ensure_ascii=False), encoding="utf-8")
+    (outdir / "directions.json").write_text(json.dumps(directions, indent=2, ensure_ascii=False), encoding="utf-8")
+    final["direction"] = "evergreen"
     final["audience_used"] = bool(insights)
     log("rendering preview")
     render_png(final["text"], outdir / "post.png", brand)
     log("rendering video")
     try:
         _, how = render_mp4(final["text"], outdir / "post.mp4", brand, still=outdir / "post.png", reaction=final.get("reaction"))
+        if reference:
+            shutil.copy2(outdir / "post.mp4", outdir / "evergreen.mp4")
+            (outdir / "trend.mp4").unlink(missing_ok=True)
         final["video"] = how
         log(f"video: {how}")
     except Exception as e:

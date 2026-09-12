@@ -1,6 +1,7 @@
 """Local content studio. Run python app.py, then open http://localhost:8000."""
 from __future__ import annotations
 import html
+import shutil
 import json
 import re
 import threading
@@ -62,15 +63,17 @@ def result_html(slug):
     variants=read_json(d/'variants.json',[])
     alternatives=''.join('<li>'+e(v['text'])+'</li>' for v in variants if v.get('text')!=text)
     source=f'<a href="{e(meta["source"])}" target="_blank" rel="noreferrer">Clip source ↗</a>' if meta.get('source') else 'Local stock library'
+    direction_panel=trends_html(d)
     return f'''
 <section class="workspace">
  <div class="preview"><video class="player" src="/out/{slug}/post.mp4?v={stamp}" poster="/out/{slug}/post.png?v={stamp}" controls autoplay muted loop playsinline></video>
  <div class="preview-meta"><span>1080 × 1920 · MP4</span><span>{meta.get('duration_s','—')}s · silent</span></div>
  <div class="actions"><a class="button" download="{slug}.mp4" href="/out/{slug}/post.mp4">Download video ↓</a><a class="button secondary" href="/out/{slug}/post.md">Post notes</a></div>
+ <p class="footnote">Exported direction: {e(final.get('direction','evergreen'))}</p>
  <p class="footnote">{e(meta.get('name',meta.get('reaction','Reaction')) or 'Reaction')} · {source}</p></div>
  <div><span class="badge">{e(profile.get('niche','Brand'))}</span><span class="badge">Reaction + text</span>
  <h2>{e(profile.get('brand_name',slug))}</h2><p class="muted">{e(profile.get('one_liner',''))}</p>
- <form action="/api/render" method="post" data-job><input type="hidden" name="slug" value="{slug}">
+ <form action="/api/render" method="post" data-job><input type="hidden" name="slug" value="{slug}"><input type="hidden" id="direction" name="direction" value="{e(final.get('direction','evergreen'))}">{direction_panel}
  <div class="field"><label for="post-text">The story</label><textarea id="post-text" name="text" required maxlength="900">{e(text)}</textarea><small id="word-count"></small></div>
  <div class="field"><label for="caption">Caption</label><input id="caption" name="caption" maxlength="300" value="{e(final.get('caption','') or '')}"></div>
  <h3>Choose the reaction</h3><p class="footnote">Top three suggestions match the saved story’s mood and situation. Pick any reaction below.</p><div class="clip-grid">{''.join(choices)}</div>
@@ -91,13 +94,31 @@ def audience_html(d):
         items.append(f'<li><strong>{e(theme["theme"])}</strong><p>{e(theme["angle"])}</p>{evidence}</li>')
     return '<details open><summary>Audience insights · Reddit</summary><p class="footnote">Selected anecdotes inspire the writing. They do not establish audience statistics or product claims. Pasted excerpts are supplied text, not independently verified comments.</p><ul class="alternatives">'+''.join(items)+'</ul></details>'
 
+def trends_html(d):
+    reference=read_json(d/'trends.json',{})
+    directions=read_json(d/'directions.json',{})
+    if not reference or not directions:return ''
+    cards=[]
+    for key,label in [('evergreen','Evergreen'),('trend','Trend-inspired')]:
+        draft=directions[key]
+        download=f'<a class="button secondary" download href="/out/{d.name}/{key}.mp4">Download saved {label.lower()} video</a>' if (d/(key+'.mp4')).is_file() else ''
+        payload=e(json.dumps({'text':draft['text'],'caption':draft.get('caption',''),'direction':key}))
+        cards.append(f'<div class="direction-card"><h3>{label}</h3><p>{e(draft["text"])}</p><p class="footnote">{e(draft.get("adaptation","A standalone story, independent of trend references."))}</p><button type="button" class="secondary" data-direction="{payload}">Use {label.lower()} draft</button>{download}</div>')
+    links=' · '.join(f'<a href="{e(url)}" target="_blank" rel="noreferrer">Reference {i+1} ↗</a>' for i,url in enumerate(reference['sources']))
+    return '<section class="directions"><h3>Compare writing directions</h3><p class="footnote">Choose a draft, review the words below, then rebuild. The video changes only after rebuilding.</p>'+''.join(cards)+f'<details><summary>Trend reference and context</summary><p>{e(reference["market"])} · observed {e(reference["observed"])}</p><p>{e(reference["status"])}</p><p>{e(reference["notes"])}</p><p>{links}</p><p class="footnote">{e(reference["method"])}. Audio is not imported. No view uplift has been measured.</p></details></section>'
+
+
 def page(slug=None):
     body=result_html(slug) if slug else ''
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Frame — Content studio</title><link rel="stylesheet" href="/static/studio.css"></head>
 <body><div class="shell"><header><a class="logo" href="/"><span></span>FRAME</a><span class="topnote">Brand URL → a finished video</span></header>
 <section class="hero"><div class="eyebrow">Short-form content studio</div><h1>A brand. A point of view.</h1><p>Turn a website into a sharp story and a familiar reaction.</p></section>
 <form class="url-form" action="/api/make" method="post" data-job><div class="url-row"><label for="brand-url" class="sr-only">Brand website</label><input id="brand-url" name="url" placeholder="Paste a brand website, e.g. duolingo.com" required><button type="submit">Create a video ↗</button></div>
-<details><summary>Add audience context from Reddit · optional</summary><p class="footnote">Choose up to three relevant discussions. We use their frustrations and workarounds to inspire original writing.</p><div class="field"><label for="audience-links">Discussion links — one per line</label><textarea id="audience-links" name="audience_links" maxlength="2000" placeholder="https://www.reddit.com/r/.../comments/..."></textarea></div><div class="field"><label for="audience-excerpts">Relevant post or comment excerpts</label><textarea id="audience-excerpts" name="audience_excerpts" maxlength="18000" placeholder="Paste useful discussion text here. For multiple discussions, put each URL on its own line above its excerpt."></textarea><small>Reddit may block page reading. Pasted excerpts keep this step usable and retain the source link.</small></div></details></form>
+<details><summary>Add audience context from Reddit · optional</summary><p class="footnote">Choose up to three relevant discussions. We use their frustrations and workarounds to inspire original writing.</p><div class="field"><label for="audience-links">Discussion links — one per line</label><textarea id="audience-links" name="audience_links" maxlength="2000" placeholder="https://www.reddit.com/r/.../comments/..."></textarea></div><div class="field"><label for="audience-excerpts">Relevant post or comment excerpts</label><textarea id="audience-excerpts" name="audience_excerpts" maxlength="18000" placeholder="Paste useful discussion text here. For multiple discussions, put each URL on its own line above its excerpt."></textarea><small>Reddit may block page reading. Pasted excerpts keep this step usable and retain the source link.</small></div></details>
+<details><summary>Add trend inspiration · optional</summary><p class="footnote">Find references in <a href="https://ads.tiktok.com/business/creativecenter/pc/en" target="_blank" rel="noreferrer">TikTok Creative Center ↗</a> or Instagram Reels. Supply what you observed to compare an original adaptation with an evergreen draft.</p>
+<div class="field"><label for="trend-links">TikTok or Instagram links — up to three</label><textarea id="trend-links" name="trend_links" maxlength="2000"></textarea></div>
+<div class="field"><label for="trend-notes">What did you observe?</label><textarea id="trend-notes" name="trend_notes" maxlength="6000" placeholder="Describe the hook, joke structure, visual pattern and any audio. Include visible growth evidence if available; leave unknowns unknown."></textarea><small>Links are saved as references. The app does not automatically watch videos or verify trend momentum.</small></div>
+<div class="url-row"><div class="field"><label for="trend-observed">Date observed</label><input id="trend-observed" name="trend_observed" type="date"></div><div class="field"><label for="trend-market">Target region / language</label><input id="trend-market" name="trend_market" maxlength="100" placeholder="UK / English"></div></div></details></form>
 <div id="status" class="status" role="status" aria-live="polite" hidden></div>{body}{gallery()}
 <footer>Personal demo · Curated reactions + editable content · Built for a human editor</footer></div><script src="/static/studio.js"></script></body></html>'''
 
@@ -106,16 +127,22 @@ def rebuild(payload, progress):
     text=payload.get('text',final['text']).strip();caption=payload.get('caption',final.get('caption','')).strip()
     if not 15<=len(text.split())<=90:raise ValueError('Use 15–90 words; 30–70 works best for this format.')
     if len(text)>900 or len(caption)>300:raise ValueError('The text or caption is too long.')
+    direction=payload.get('direction',final.get('direction','evergreen'))
+    directions=read_json(d/'directions.json',{})
+    if direction not in ('evergreen','trend') or (direction=='trend' and not directions.get('trend')):raise ValueError('Choose an available writing direction.')
+    reaction=directions.get(direction,{}).get('reaction',final.get('reaction'))
     profile=read_json(d/'profile.json',{})
     progress('Rendering your selected reaction and text')
-    _,how=render_mp4(text,d/'post.mp4',profile.get('brand_name',slug),reaction=final.get('reaction'),clip_name=payload.get('clip') or None)
+    _,how=render_mp4(text,d/'post.mp4',profile.get('brand_name',slug),reaction=reaction,clip_name=payload.get('clip') or None)
+    if directions:shutil.copy2(d/'post.mp4',d/(direction+'.mp4'))
     md=(d/'post.md').read_text(encoding='utf-8')
     lines=md.splitlines();replaced=False
     for i,line in enumerate(lines):
         if line.startswith('> ') and not replaced:lines[i]='> '+text.replace('\n',' ');replaced=True
         if line.startswith('**Caption:**'):lines[i]='**Caption:** '+caption
+        if line.startswith('**Why it is this brand:**'):lines[i]='**Why it is this brand:** '+directions.get(direction,{}).get('why_this_brand',final.get('why_this_brand',''))
     (d/'post.md').write_text('\n'.join(lines),encoding='utf-8')
-    final.update(text=text,caption=caption,video=how,edited_by_user=True,selected_clip=payload.get('clip') or None)
+    final.update(text=text,caption=caption,video=how,direction=direction,reaction=reaction,why_this_brand=directions.get(direction,{}).get('why_this_brand',final.get('why_this_brand','')),edited_by_user=True,selected_clip=payload.get('clip') or None)
     (d/'final.json').write_text(json.dumps(final,indent=2,ensure_ascii=False),encoding='utf-8')
     return slug
 
@@ -133,7 +160,7 @@ def start_job(kind,payload):
                 if not url.startswith(('http://','https://')):url='https://'+url
                 parsed=urlparse(url)
                 if parsed.scheme not in ('http','https') or not parsed.hostname or parsed.username:raise ValueError('Enter a valid brand website address.')
-                result=run(url,progress=progress,audience_links=payload.get('audience_links',''),audience_excerpts=payload.get('audience_excerpts',''));slug=result['slug']
+                result=run(url,progress=progress,audience_links=payload.get('audience_links',''),audience_excerpts=payload.get('audience_excerpts',''),trend_links=payload.get('trend_links',''),trend_notes=payload.get('trend_notes',''),trend_observed=payload.get('trend_observed',''),trend_market=payload.get('trend_market',''));slug=result['slug']
             else:slug=rebuild(payload,progress)
             with LOCK:JOBS[job_id].update(status='done',stage='Video ready',slug=slug)
         except Exception as error:

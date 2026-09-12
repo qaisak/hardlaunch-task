@@ -94,3 +94,13 @@ shared model-call helpers. `RATIONALE.md` describes the final implementation and
 Expand **Add audience context from Reddit** below the brand URL. Supply up to three discussion links and relevant excerpts. With multiple links, place each URL on its own line immediately above its excerpt. The reader attempts ordinary public HTML only when an excerpt is absent; Reddit often returns an unreadable shell. In that case the job asks for pasted text instead of inventing insights.
 
 One additional AI call identifies original writing angles with exact supporting quotes. Quotes are checked against the supplied source text. The writer receives summaries and angles, not copied comments, and the result shows linked evidence labelled as pasted or publicly read. Pasted text is not independently authenticated. These anecdotes do not establish prevalence or brand claims.
+
+## Trend inspiration and comparison
+
+Expand **Add trend inspiration** when creating a video. Add one to three TikTok, Creative Center or Instagram links, your observations, observation date, and target region/language. Links are retained as references; this version does not watch videos, download music, scrape a live trend feed or verify momentum. Observations older than 14 days at generation are labelled for review.
+
+The usual six-draft workflow creates the evergreen winner. One extra AI call produces an original adaptation using the supplied reference structure, with an explanation of the fit. Both appear in the editor. **Use trend-inspired draft** loads its words and clears the old clip selection; **Rebuild video** exports the selected direction with a matching reaction. Either draft can be edited. Saved exports of each direction have separate download links; the current choice also appears as `post.mp4`. Exports remain silent.
+
+`trends.json` records sources, date, market and observations. `directions.json` preserves both drafts; `final.json` identifies the currently exported direction. Editorial fit is not a prediction of views. Real performance comparison requires publishing and measuring results, outside this demo.
+
+Jenni AI is the new rehearsal brand: HardLaunch's public agency page names it in the founders' experience and describes consumer AI and study-tool work. It is a relevant test, not a prediction of their live test URL.

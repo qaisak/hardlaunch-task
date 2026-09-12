@@ -1,0 +1,50 @@
+{
+  "brand_name": "Jenni",
+  "one_liner": "AI writing workspace where every claim traces back to a real source",
+  "niche": "AI academic writing and research tool",
+  "product_type": "saas",
+  "audience": "PhD candidates, master's students and academic researchers writing theses, literature reviews and journal papers; also research teams in pharma, policy, consulting and clinical evidence",
+  "core_pain": "Writing a cited paper means juggling dozens of PDFs across tabs, manually formatting references, and second-guessing whether a claim is actually supported by the source",
+  "old_way_objects": [
+    "chatgpt",
+    "zotero",
+    "mendeley",
+    "google scholar",
+    "a word doc with 40 open pdf tabs",
+    "highlighters and printed papers",
+    "manual apa reference lists",
+    "citation generator websites"
+  ],
+  "scenes": [
+    "PhD student at 1am in a library carrel, 40 pdf tabs open, trying to find which paper said the thing they half remember",
+    "Master's student reformatting a reference list from APA to Harvard by hand the night before submission",
+    "Researcher rereading their draft before submitting, unsure which claims a reviewer will call unsupported"
+  ],
+  "tone": "precise, academic, no-nonsense, credible",
+  "proof_points": [
+    "Loved by over 6 million academics",
+    "Search across 200M+ / 248M+ academic sources",
+    "10,000+ citation styles including APA 7th, Chicago, Harvard, IEEE, Vancouver",
+    "10m+ full text open access papers",
+    "Users have published papers in 100+ journals, including IEEE, Springer, Elsevier",
+    "Imports from Zotero and Mendeley, exports to .docx, LaTeX, HTML",
+    "Reviews feature flags issues across six categories including unsupported, contradicted, overstated claims",
+    "Free to start, no credit card required",
+    "Testimonial: Michelle, PhD, Transport Planning",
+    "Testimonial: Gareth, Editor-in-chief, Taylor & Francis",
+    "Testimonial: Dr. Josmel Mendoza, Senior Researcher, Information Management",
+    "Searches Semantic Scholar, PubMed, arXiv, CrossRef"
+  ],
+  "do_not_say": [
+    "it writes your essay for you",
+    "undetectable by AI checkers",
+    "guaranteed to pass plagiarism checks",
+    "guaranteed publication or acceptance",
+    "cheat on your dissertation",
+    "it will get you a first / a higher grade",
+    "invents or fabricates citations (never imply fake citations are fine)",
+    "any named comparison beyond ChatGPT, which the site itself names"
+  ],
+  "cta": "Start writing free at jenni.ai (no credit card)",
+  "source_url": "https://jenni.ai/"
+}
