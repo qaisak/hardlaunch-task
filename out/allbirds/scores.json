@@ -2,33 +2,19 @@
   {
     "id": "v1",
     "scores": {
-      "on_brand": 5,
+      "on_brand": 4,
       "voice": 4,
       "hook": 4,
       "not_an_ad": 5,
       "comment_bait": 3,
       "honesty": 5,
-      "length": 5
+      "length": 3
     },
-    "overall": 8,
-    "fix": "the no-list is only two items and one of them is the brand. add a real crutch (\"no insoles. no shoe spray. no allbirds.\") and swap \"Respect honestly\" for a verdict people can argue with."
+    "overall": 7,
+    "fix": "cut the blister bandaid line, it adds a second idea and dilutes the queue image; end on the double knot then the verdict."
   },
   {
     "id": "v2",
-    "scores": {
-      "on_brand": 4,
-      "voice": 2,
-      "hook": 2,
-      "not_an_ad": 4,
-      "comment_bait": 2,
-      "honesty": 5,
-      "length": 3
-    },
-    "overall": 5,
-    "fix": "there is no \"no X. no Y. no Z.\" list, just one brand mention doing all the work. cut the three-pairs inventory to one line and build a real list (\"no packing cubes. no compression bag. no allbirds.\"), and open on the image not the admin (\"kneeling on a cabin bag at 1am\")."
-  },
-  {
-    "id": "v3",
     "scores": {
       "on_brand": 5,
       "voice": 4,
@@ -36,37 +22,51 @@
       "not_an_ad": 5,
       "comment_bait": 4,
       "honesty": 5,
-      "length": 4
+      "length": 5
     },
     "overall": 8,
-    "fix": "\"does this thing before a full day out\" is a soft first eight words. lead with the image: \"my flatmate stands at the front door doing shoe maths.\""
+    "fix": "replace 'Warrior behavior and completely wrong' with a fresh verdict, it is a near-copy of the sample line 'built different and wrong'."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 3,
+      "not_an_ad": 3,
+      "comment_bait": 2,
+      "honesty": 5,
+      "length": 2
+    },
+    "overall": 5,
+    "fix": "'no allbirds back then' turns the whole thing into a before/after testimonial; move the brand into the neutral shoe rack list and cut 15 words so the four minute standoff is the only idea."
   },
   {
     "id": "v4",
     "scores": {
-      "on_brand": 4,
+      "on_brand": 5,
       "voice": 4,
-      "hook": 4,
+      "hook": 5,
       "not_an_ad": 5,
       "comment_bait": 3,
-      "honesty": 4,
+      "honesty": 5,
       "length": 4
     },
-    "overall": 7,
-    "fix": "\"brave. genuinely brave\" is too soft to trigger tags, and the two walking lines say the same thing twice. cut \"a whole afternoon of walking and a face like nothing was happening\" and land a verdict with an opinion in it."
+    "overall": 8,
+    "fix": "'He's thriving and he is not' trips over itself, tighten to a single clean judgement so people can argue with it."
   },
   {
     "id": "v5",
     "scores": {
-      "on_brand": 5,
-      "voice": 3,
-      "hook": 4,
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 3,
       "not_an_ad": 5,
-      "comment_bait": 4,
+      "comment_bait": 3,
       "honesty": 5,
-      "length": 4
+      "length": 5
     },
     "overall": 7,
-    "fix": "the crutches are listed as possessions, not as a \"no\" list, so the rhythm never hits. convert to \"no plasters. no heel grips. no allbirds.\" and let the tape line be the absurd escalation instead."
+    "fix": "swap the generic 'no walking shoes' for a real object (plimsolls, thick cotton socks) and sharpen the verdict, 'the system part is what gets me' is an observation, not a judgement."
   }
 ]

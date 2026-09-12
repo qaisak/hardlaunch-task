@@ -1,44 +1,47 @@
 {
   "brand_name": "Allbirds",
   "one_liner": "Comfortable everyday shoes made from wool, tree fibre and sugarcane",
-  "niche": "sustainable everyday footwear and basics",
+  "niche": "everyday comfort sneakers and casual footwear",
   "product_type": "physical product",
-  "audience": "25-45 year old UK city dwellers who walk a lot, commute, travel and work hybrid, want one comfortable shoe that looks normal with jeans, and care about natural materials (inferred)",
-  "core_pain": "hot, sweaty, stiff synthetic trainers that need breaking in, plus owning separate shoes for commuting, travel, weekends and the office",
+  "audience": "adults roughly 25-45 who walk a lot in cities, travel often, work hybrid or on their feet, and care about natural materials over plastic-heavy synthetics (inferred)",
+  "core_pain": "everyday shoes that look fine but feel awful after a few hours, get sweaty and stinky, and are made of plastic foam and synthetics you have to break in",
   "old_way_objects": [
-    "plastic running trainers",
-    "sweaty gym socks",
-    "canvas plimsolls that destroy your heels",
-    "smart work shoes that need breaking in",
-    "flat ballet pumps with no support",
-    "shoe deodoriser spray",
-    "gel insoles",
-    "packing three pairs of shoes in a carry on"
+    "cheap canvas plimsolls",
+    "running trainers worn as casual shoes",
+    "plastic slides",
+    "leather loafers that need breaking in",
+    "flip flops in the airport security queue",
+    "gel insoles shoved into old sneakers",
+    "blister plasters in your bag",
+    "thick cotton socks to stop rubbing"
   ],
   "scenes": [
-    "a commuter on a packed London tube in August, feet boiling inside synthetic trainers, still two stops from the office",
-    "someone at the front door before a full day of city walking, standing over a pile of shoes trying to pick the pair that will not wreck their feet",
-    "a traveller kneeling on a bedroom floor trying to fit three pairs of shoes into a cabin bag the night before a flight"
+    "airport security at 6am, a traveller unlacing stiff trainers with one hand while the queue backs up behind them",
+    "day three of a city break, someone sitting on a kerb peeling a sock off a blistered heel",
+    "a hybrid worker at the front door at 8:40am, staring at a shoe rack, picking between shoes that look right and shoes that feel right"
   ],
-  "tone": "warm, playful, plain-spoken, low-key, nature-led",
+  "tone": "warm, plain-spoken, playful, low-ego",
   "proof_points": [
-    "made with natural materials like merino wool, eucalyptus tree fibre and sugarcane",
-    "free shipping on UK orders over £50",
-    "30 day returns or exchanges on unworn items with tags attached",
-    "Terralux collection made with animal-free, bio-fabricated leather alternative",
-    "Men's Varsity priced at £110",
+    "made with natural materials: merino wool, eucalyptus tree fibre, sugarcane",
+    "describes itself as 'the world's most comfortable shoes'",
+    "free ground shipping on orders over $100",
+    "30 day return policy on unworn, unwashed items with tags attached",
+    "optional return coverage at checkout includes a free return shipping label",
     "replaces petroleum-based synthetics with natural alternatives wherever possible",
-    "has physical retail stores"
+    "styles include Tree Runner NZ, Runner NZ, Cruiser, Canvas Cruiser, Dasher NZ",
+    "shoes, apparel, socks for men and women",
+    "site notes orders may take up to 30 days to ship due to increased demand"
   ],
   "do_not_say": [
-    "carbon neutral or zero emissions claims",
-    "medical claims about curing foot, knee or back pain",
-    "orthopaedic or podiatrist-approved unless stated",
-    "naming rival shoe brands",
-    "100% natural or 100% plastic free",
-    "waterproof (the site says water-repellent)",
-    "invented customer numbers, review counts or star ratings",
-    "free returns (customers pay return shipping)"
+    "any carbon footprint figure, percentage or offset claim not stated on the site",
+    "'carbon neutral', 'net zero' or certification claims",
+    "medical claims such as curing plantar fasciitis, correcting posture or preventing injury",
+    "naming rival footwear brands",
+    "'machine washable' or care instructions not confirmed on the site",
+    "'100% natural', '100% plastic free' or absolute material claims",
+    "invented durability claims like 'lasts five years'",
+    "'free returns' without noting coverage must be bought at checkout",
+    "'free shipping' without the $100 threshold"
   ],
-  "cta": "shop the shoes on allbirds.co.uk, men's or women's"
+  "cta": "shop men's or women's styles on allbirds.com"
 }
