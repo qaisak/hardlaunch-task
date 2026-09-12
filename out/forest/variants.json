@@ -1,0 +1,62 @@
+[
+  {
+    "id": "v1",
+    "text": "just seen a girl revising at 11pm with her phone face up next to her notes. no screen time limits. no greyscale. no forest. no deleting instagram at 2am and redownloading it by breakfast. just her and one second on tiktok that turned into forty minutes. brave i guess",
+    "word_count": 49,
+    "reaction": "deadpan",
+    "base_video": "Student sat at a bedroom desk late at night, highlighter in hand, open notes lit by a lamp. They stop writing, look straight down the lens with a flat sarcastic 'wow' face, then back to the page.",
+    "audio": "original audio, room tone, faint keyboard and street noise",
+    "caption": "one second on the phone is never one second",
+    "why_this_brand": "The 11pm exam-week desk and the one-second-turns-into-forty-minutes scroll is the exact core pain Forest's app blocking sits on."
+  },
+  {
+    "id": "v2",
+    "text": "wrote my whole dissertation with slack open one tab away. no app blocker. no forest. no phone in another room. no study with me video keeping me honest. just me rereading the same paragraph five times between notifications and calling that a work day. not proud",
+    "word_count": 46,
+    "reaction": "thoughtful",
+    "base_video": "Remote worker in a home office chair, laptop open behind them, staring quietly off to one side like they are recalling something painful, then a slow blink at the camera.",
+    "audio": "original audio, room tone, laptop fan",
+    "caption": "reread the same paragraph five times, still got no idea what it said",
+    "why_this_brand": "Slack one tab away and the reread-paragraph loop is the workday version of Forest's deep focus use case."
+  },
+  {
+    "id": "v3",
+    "text": "table next to us at dinner. both phones face up beside the plates. no forest. no phones stacked in the middle of the table. no rule about waiting until dessert. just two people scrolling in silence for an hour and calling it date night. harrowing honestly",
+    "word_count": 46,
+    "reaction": "disbelief",
+    "base_video": "Person sat at a restaurant table, fork paused halfway up, doing a slow sideways look at the table next to them, then a blink back at the camera.",
+    "audio": "original audio, restaurant room tone",
+    "caption": "who is sending this to their other half right now",
+    "why_this_brand": "Phone-face-up-next-to-the-plate dinners are the exact phone-free-together moment Forest's Plant Together is built around."
+  },
+  {
+    "id": "v4",
+    "text": "guy on the bus doing flashcards with his notifications going off every eight seconds. no do not disturb. no digital wellbeing. no forest. just him and a paper pomodoro list he stopped following at 9am. the list never stood a chance",
+    "word_count": 41,
+    "reaction": "skeptical",
+    "base_video": "Person sat by a bus window with headphones round their neck, tilting their head slowly at something off to the side, one eyebrow up, holding it.",
+    "audio": "original audio, engine hum",
+    "caption": "the paper list always loses",
+    "why_this_brand": "Digital wellbeing and an abandoned paper pomodoro list are the specific crutches Forest replaces with a timer that has stakes."
+  },
+  {
+    "id": "v5",
+    "text": "i have deleted instagram four times this month. no screen time limits. no greyscale. no forest. just me and the app store search bar at midnight typing the same nine letters like a password i can't forget. rock bottom has wifi",
+    "word_count": 41,
+    "reaction": "deadpan",
+    "base_video": "Person lying back against a headboard in a dark room, phone light on their face, looking dead into the lens with zero expression for the full clip.",
+    "audio": "slow melancholy trending sound, low volume",
+    "caption": "the redownload always happens around midnight",
+    "why_this_brand": "The delete-and-redownload cycle is the screen-time failure loop Forest's Deep Focus blocking is the alternative to."
+  },
+  {
+    "id": "v6",
+    "text": "my flatmate sets the built in phone timer for 25 minutes then just watches it count down. no blocking. no forest. no phone face down across the room. just her and a little clock she can swipe away with one thumb the second it gets hard. that's not a system that's a suggestion",
+    "word_count": 53,
+    "reaction": "confused",
+    "base_video": "Person stood in a kitchen doorway holding a mug, looking left then right like they are searching the room for someone to explain it, then back to camera.",
+    "audio": "original audio, room tone, kettle in background",
+    "caption": "tag the person whose focus system is a swipe away",
+    "why_this_brand": "The built-in phone timer with nothing stopping you swiping it away is precisely the gap Forest's growing tree fills."
+  }
+]

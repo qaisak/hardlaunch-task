@@ -1,0 +1,63 @@
+{
+  "pexels_31574449.mp4": {
+    "mood": "deadpan",
+    "description": "Direct look, then leans closer",
+    "crop_y": 300,
+    "collection": "stock",
+    "name": "Deadpan stock reaction"
+  },
+  "pexels_5697630.mp4": {
+    "mood": "skeptical",
+    "description": "Serious expression and slight head tilt",
+    "crop_y": 180,
+    "collection": "stock",
+    "name": "Skeptical stock reaction"
+  },
+  "pexels_8496672.mp4": {
+    "mood": "thoughtful",
+    "description": "Quiet contemplative close-up",
+    "crop_y": 550,
+    "collection": "stock",
+    "name": "Thoughtful stock reaction"
+  },
+  "pexels_8508690.mp4": {
+    "mood": "disbelief",
+    "description": "Questioning sideways look",
+    "crop_y": 380,
+    "collection": "stock",
+    "name": "Disbelief stock reaction"
+  },
+  "reaction_confused.mp4": {
+    "name": "Confused Travolta",
+    "mood": "confused",
+    "description": "Looking around for an explanation",
+    "fit": "contain",
+    "priority": 10,
+    "source": "https://gifdb.com/gif/confused-john-travolta-gif-qihgl7ev5fwg1ihu.html",
+    "collection": "reaction",
+    "usage": "Personal demonstration reference"
+  },
+  "reaction_disbelief.mp4": {
+    "name": "Blinking disbelief",
+    "mood": "disbelief",
+    "description": "A double take at an absurd decision",
+    "fit": "contain",
+    "priority": 10,
+    "source": "https://gifdb.com/gif/blinking-white-guy-meme-4opuoers8s0aznb0.html",
+    "collection": "reaction",
+    "usage": "Personal demonstration reference"
+  },
+  "reaction_deadpan.mp4": {
+    "name": "Jim: sarcastic wow",
+    "mood": "deadpan",
+    "description": "Dry, sarcastic response",
+    "fit": "contain",
+    "priority": 10,
+    "tags": [
+      "skeptical"
+    ],
+    "source": "https://gifdb.com/gif/jim-halpert-the-office-sarcastic-wow-0r6xdo0apv9mu5re.html",
+    "collection": "reaction",
+    "usage": "Personal demonstration reference"
+  }
+}

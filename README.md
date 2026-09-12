@@ -1,58 +1,90 @@
-# Brand URL in, on-brand short-form content out
+# Frame — content studio
 
-```
-python make.py https://www.somebrand.com
-```
+A brand website becomes an editable short-form post and a playable vertical video.
+The local studio includes a reaction picker, live generation progress, caption editing,
+MP4 downloads and saved examples.
 
-Produces, in `out/<brand>/`:
+## Run locally
 
-| File | What |
-|---|---|
-| `post.md` | The post: overlay text, base-video spec, audio, caption, why it is this brand, the format decision, runners-up, and the brand profile used |
-| `post.png` | 9:16 preview with the text burned on TikTok-style, where the silent reacting creator would be |
-| `profile.json` | Brand profile extracted from the site |
-| `variants.json`, `scores.json` | All drafts and the editor's scores |
-
-Around 90 seconds per brand, well under £1.
-
-## Setup
-```
+```powershell
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-copy .env.example .env        (paste ANTHROPIC_API_KEY into .env)
-python check_setup.py
-python make.py https://www.calai.app
-```
-
-## How it works
-1. **Ingest** (`ingest()`): GET the homepage plus up to two "about / how it works" pages, strip to text.
-   If the site is a JS shell or bot-gated (under 400 chars), fall back to Claude's server-side web fetch.
-2. **Brand profile** (`prompts/profile.md`): one call turns the site text into JSON: niche, audience,
-   the core pain, the exact objects and rival tools people use instead (`old_way_objects`), real scenes
-   where the pain shows, tone, proof points, do-not-say.
-3. **Format decision** (`prompts/format_select.md`): long overlay vs slideshow vs hook+demo, with a reason.
-   The system always renders long overlay (one content type was sufficient; it is the dominant format
-   and needs no footage), but the decision is recorded so a human can see it.
-4. **Drafts** (`prompts/overlay_generate.md` + `prompts/overlay_style.md`): N overlays in the house style,
-   each a different scene and verdict, brand name exactly once, niche-specific nouns from the profile.
-5. **Critique** (`prompts/overlay_critique.md`): a strict editor scores on-brand, voice, hook, not-an-ad,
-   comment bait, honesty, length, and names one fix per draft.
-6. **Revise** (`prompts/overlay_revise.md`): the editor's fix is applied to the winner.
-7. **Assemble** (`render_png()`): text burned onto a 9:16 frame with a black stroke, plus the markdown pack.
-
-The taste lives in `prompts/overlay_style.md` (what a long overlay is and the seven things every one must
-have, derived from the reference piece) and `prompts/taste.md` (general short-form rules). Editing those
-changes the output; the code is plumbing.
-
-## Also in the repo
-`generate.py` is the earlier, more general generator (any text input to N hook/format variants with a
-critique pass). `make.py` imports its `call()` and JSON helpers. `inputs/` and `out/sample_*` are from that.
-
-## Web page (for the walkthrough)
-```
+Copy-Item .env.example .env
+# Set ANTHROPIC_API_KEY in .env, then:
 python app.py
 ```
-Open http://localhost:8000, paste a URL, click make. About 90 seconds later you see the preview frame,
-the post, base-video spec, caption, the format decision, the brand profile and the runners-up.
-Stdlib only, one request at a time, no polish on purpose (UI was out of scope).
+
+Open http://localhost:8000. Leave the server running. Generation needs an Anthropic API key;
+viewing existing examples and rebuilding their videos does not make an AI call.
+
+The CLI is also available:
+
+```powershell
+python make.py https://www.forestapp.cc/ --n 6
+python revideo.py
+```
+
+`revideo.py` rebuilds saved posts using their final text and any saved manual clip choice.
+Generation and rendering can take a few minutes depending on the site and machine.
+
+## Walkthrough
+
+1. Open an example from the gallery and play its video.
+2. Select a different reaction, optionally edit the text/caption, and click **Rebuild video**.
+3. Download the MP4. Suggested music is not embedded: exports are silent.
+4. Paste another brand URL and follow the stages until the new video opens.
+
+## Pipeline
+
+1. Read the homepage and up to two useful supporting pages. A homepage yielding fewer than
+   1,500 characters triggers a model web-fetch fallback. Site access can still fail.
+2. Build a structured brand profile: audience, niche, problems, tone and supporting facts.
+3. Recommend a format. This is advisory; the implemented renderer exports reaction + text only.
+4. Generate six drafts, critique them and revise the winner. Scores are AI editorial opinions;
+   they are not audience performance data, and the revised version is not scored again.
+5. Match the final reaction label to `base/clips.json`. Older saved posts without a label use
+   deterministic text rules. A manual clip choice takes precedence.
+6. Assemble a 1080 x 1920 H.264 MP4. Text uses measured wrapping in a separate lower panel.
+   Reading time is 2.6 words/second plus 2.5 seconds, minimum eight seconds, without a 20-second cap.
+7. Extract the poster from the actual video and save the final post and provenance.
+
+## Outputs in `out/<brand>/`
+
+| File | Purpose |
+|---|---|
+| `post.mp4` | Finished silent vertical video |
+| `post.png` | Poster extracted from the MP4 |
+| `post.md` | Readable post, caption, editorial notes and other drafts |
+| `final.json` | Final text, caption, reaction and manual selection when present |
+| `post.video.json` | Actual clip, reaction, selection method, duration and source |
+| `profile.json` | Extracted brand profile |
+| `variants.json`, `scores.json` | Generated drafts and original editorial scores |
+
+## Clip library
+
+`base/clips.json` contains three familiar reaction references and four stock clips.
+Each entry records the observed expression, name and framing; reaction references also record
+source pages and personal-demo usage. This catalogue does not assert commercial clearance.
+The renderer preserves wide reaction clips using a blurred backdrop. Exporting at 1080p does
+not create extra detail in low-resolution source GIFs.
+
+To add a clip, place a video in `base/`, add its entry to `clips.json` and a matching `.jpg`
+thumbnail. Available reaction labels are `confused`, `disbelief`, `deadpan`, `skeptical`, and
+`thoughtful`. For non-cropped sources use `"fit": "contain"`; stock crop offsets are measured
+against a 1080 x 1920 scaled frame. No footage produces an explicitly labelled placeholder.
+
+## Validation and limitations
+
+```powershell
+python -m unittest test_video test_app -v
+```
+
+Tests cover clip matching and overrides, missing footage, reading time, long-text layout and
+editor path validation. The local server supports video range requests, asynchronous jobs and
+one rendering/generation job at a time. A failed render is reported as a failure, not a completed video.
+
+This is a local trial prototype, not a hosted multi-user service. Website extraction can be thin;
+brand profiles may include labelled inferences. The small clip collection cannot suit every brand.
+Nothing is posted to social media. `generate.py` is the earlier text-only pipeline and supplies
+shared model-call helpers. `RATIONALE.md` describes the final implementation and tradeoffs.

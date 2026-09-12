@@ -162,12 +162,15 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "brand"
 
 
-def run(url: str, n: int = 6, out: Path = ROOT / "out") -> dict:
+def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None) -> dict:
     """The whole pipeline for one URL. Returns the result dict; also used by app.py."""
     import anthropic
     client = anthropic.Anthropic()
     t0 = time.time()
-    log = lambda m: print(f"[{time.time()-t0:5.0f}s] {m}", flush=True)
+    def log(message):
+        print(f"[{time.time()-t0:5.0f}s] {message}", flush=True)
+        if progress:
+            progress(message)
 
     log(f"fetching {url}")
     site_text = ingest(url, client)
@@ -210,7 +213,7 @@ def run(url: str, n: int = 6, out: Path = ROOT / "out") -> dict:
             rev = call_json(client, taste + "\n\n" + style,
                                     read(PROMPTS / "overlay_revise.md").replace("{text}", win["text"]).replace("{fix}", ws["fix"]).replace("{profile}", profile_s),
                                     effort="medium")
-            final = {**win, "text": rev["text"], "caption": rev.get("caption", win.get("caption")), "what_changed": rev.get("what_changed", "")}
+            final = {**win, "text": rev["text"], "caption": rev.get("caption", win.get("caption")), "what_changed": rev.get("what_changed", ""), "reaction": rev.get("reaction", win.get("reaction"))}
         except Exception as e:  # revise is a bonus, never let it sink the run
             log(f"revise skipped: {e}")
 
@@ -218,12 +221,12 @@ def run(url: str, n: int = 6, out: Path = ROOT / "out") -> dict:
     render_png(final["text"], outdir / "post.png", brand)
     log("rendering video")
     try:
-        _, how = render_mp4(final["text"], outdir / "post.mp4", brand, still=outdir / "post.png")
+        _, how = render_mp4(final["text"], outdir / "post.mp4", brand, still=outdir / "post.png", reaction=final.get("reaction"))
         final["video"] = how
         log(f"video: {how}")
-    except Exception as e:  # video is a bonus on top of the pack, never sink the run
-        final["video"] = f"failed: {e}"
-        log(final["video"])
+    except Exception as e:
+        log(f"Video could not be completed: {e}")
+        raise RuntimeError("Video export failed; the written drafts were saved. " + str(e)) from e
 
     md = [f"# {brand}: long overlay\n",
           f"**Format decision:** {fmt.get('format')}. {fmt.get('reason')} Runner-up {fmt.get('runner_up')}: {fmt.get('why_not_runner_up')}\n",

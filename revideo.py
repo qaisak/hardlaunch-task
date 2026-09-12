@@ -12,5 +12,9 @@ for d in sorted((ROOT / "out").iterdir()):
     text = (json.loads(fj.read_text(encoding="utf-8"))["text"] if fj.exists()
             else next(ln[2:] for ln in md.read_text(encoding="utf-8").splitlines() if ln.startswith("> ")))
     brand = json.loads((d / "profile.json").read_text(encoding="utf-8")).get("brand_name", d.name)
-    _, how = render_mp4(text, d / "post.mp4", brand, still=d / "post.png")
+    final = json.loads(fj.read_text(encoding="utf-8")) if fj.exists() else {}
+    _, how = render_mp4(text, d / "post.mp4", brand, still=d / "post.png", reaction=final.get("reaction"), clip_name=final.get("selected_clip"))
+    if final:
+        final["video"] = how
+        fj.write_text(json.dumps(final, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"{d.name:12s} {how}")

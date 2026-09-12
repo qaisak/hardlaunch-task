@@ -1,0 +1,50 @@
+{
+  "brand_name": "Forest",
+  "one_liner": "Focus timer where staying off your phone grows a tree",
+  "niche": "focus and screen time app (gamified pomodoro timer with app blocking)",
+  "product_type": "app",
+  "audience": "students in exam season, remote and office workers fighting Slack and feeds, and adults with ADHD or executive function struggles; also parents and couples wanting phone-free dinners. Skews late teens to 30s (inferred)",
+  "core_pain": "Hours disappear into doomscrolling and app switching, so the day ends feeling wasted with nothing to show for the time",
+  "old_way_objects": [
+    "the built-in phone timer",
+    "screen time limits in ios settings",
+    "digital wellbeing on android",
+    "deleting instagram and redownloading it",
+    "putting the phone face down across the room",
+    "a paper pomodoro to-do list",
+    "greyscale mode",
+    "study with me videos on youtube"
+  ],
+  "scenes": [
+    "Bedroom desk at 11pm during exam week, a student opens revision notes, picks up the phone 'for one second' and resurfaces 40 minutes later on TikTok",
+    "Home office on a workday, a remote worker has Slack and X one tab away and rereads the same paragraph five times between notifications",
+    "Restaurant table on date night or family dinner, both people scrolling instead of talking, phone face up next to the plate"
+  ],
+  "tone": "calm, encouraging, non-preachy, mindful, warm",
+  "proof_points": [
+    "60M+ downloads, used by over 60 million people since 2014",
+    "4.8 on the App Store, 1M+ user ratings across App Store and Google Play",
+    "Google Play Editors' Choice and Best of the Year",
+    "App Store Best of the Year and Best New Apps",
+    "Chrome Web Store Favorite",
+    "Top productivity app in 157 countries",
+    "2,102,946 real trees planted through nonprofit partner Trees for the Future across Kenya, Senegal, Tanzania, Uganda and Cameroon since 2014",
+    "Forest covers the cost of tree planting from app revenue",
+    "Free tier includes Deep Focus app blocking, Plant Together and the tree-planting mechanic, no expiration",
+    "Can block Instagram, TikTok, X, Reddit, YouTube and other chosen apps",
+    "Core focus works offline; cross-platform sync across iPhone, iPad, Android and browser",
+    "New York Times quote: 'Forest works well, and if your goal is to be more in the moment, ignore your phone and actually talk to your friends when you are with them, this is the app for you.'",
+    "Featured by The New York Times, Business Insider, Mashable, TechRadar, Common Sense Media, ADDitude and others",
+    "Plus plan: exclusive and seasonal trees, all soundscapes, custom app allowlist, multi-app Time Guard, focus analytics, 3x coin boost, plant up to 5 real trees"
+  ],
+  "do_not_say": [
+    "any claim that Forest treats, cures or manages ADHD (the site states it is not a medical treatment)",
+    "guaranteed productivity gains or invented percentages of time saved",
+    "naming rival focus apps or comparing pricing to them by name",
+    "hustle or shame language: 'crush your goals', 'no excuses', 'you're lazy'",
+    "'plants trees for free forever' without noting real tree planting is via coins and Plus limits",
+    "claiming the app physically stops you using your phone (trees die, you can still give up)",
+    "invented download, user or tree numbers beyond those published"
+  ],
+  "cta": "Download Forest free (iOS, Android or browser) and start a focus session"
+}

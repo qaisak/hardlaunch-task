@@ -8,3 +8,5 @@ out/**/*.overlay.png
 out/app.log
 out/app.err
 out/run_*.log
+out/_review/
+out/**/*.rendering.mp4

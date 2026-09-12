@@ -1,0 +1,86 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "cut the long instagram fragment down to 'no deleting instagram at 2am' so the list keeps its rhythm, and replace 'brave i guess' with a verdict people can argue with"
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 2,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 6,
+    "fix": "pick one person: a dissertation and 'calling that a work day' are two different lives. Keep the remote worker, drop the dissertation, and end on something sharper than 'not proud'"
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "'no rule about waiting until dessert' is a soft invented item, swap it for a harder real habit so the list stays concrete"
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 5
+    },
+    "overall": 7,
+    "fix": "the verdict judges the list, not him. Turn it back on the person so viewers have someone to tag"
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 4,
+      "voice": 5,
+      "hook": 5,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 4,
+      "length": 5
+    },
+    "overall": 8,
+    "fix": "'four times this month' is a made-up count doing no work, make it 'i keep deleting instagram' and let 'rock bottom has wifi' carry it"
+  },
+  {
+    "id": "v6",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 3
+    },
+    "overall": 7,
+    "fix": "cut 'the second it gets hard', it explains the joke the verdict already lands, and tighten the opener so the first eight words hit the timer faster"
+  }
+]
