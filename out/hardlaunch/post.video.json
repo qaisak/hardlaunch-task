@@ -7,8 +7,8 @@
     {
       "clip": "reaction_deadpan.mp4",
       "name": "Jim: sarcastic wow",
-      "score": 9,
-      "reason": "deadpan expression; pointless effort",
+      "score": 6,
+      "reason": "deadpan expression",
       "mood": "deadpan"
     },
     {
@@ -19,16 +19,16 @@
       "mood": "deadpan"
     },
     {
-      "clip": "reaction_confused.mp4",
-      "name": "Confused Travolta",
-      "score": 3,
-      "reason": "pointless effort",
-      "mood": "confused"
+      "clip": "reaction_disbelief.mp4",
+      "name": "Blinking disbelief",
+      "score": 2,
+      "reason": "Related tone: disbelief",
+      "mood": "disbelief"
     }
   ],
   "selection": "model",
-  "duration_s": 18.7,
-  "word_count": 42,
+  "duration_s": 19.9,
+  "word_count": 45,
   "audio": "silent",
-  "description": "Jim: sarcastic wow \u00b7 18.7s \u00b7 silent"
+  "description": "Jim: sarcastic wow \u00b7 19.9s \u00b7 silent"
 }

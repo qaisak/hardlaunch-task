@@ -1,0 +1,26 @@
+Subject: Content Engineer trial - Frame demo and rationale
+
+Hi team,
+
+Here's Frame, my working prototype for the trial: a brand website goes in, and an editable short-form post plus a finished vertical video comes out.
+
+Live demo: https://ships-intent-convicted-anaheim.trycloudflare.com/r/blank-street
+
+No login is needed. I'd suggest starting with Blank Street, then pasting a different brand URL to test how it generalises. Generation takes a few minutes; the page shows progress throughout.
+
+What it does:
+- Reads the website and builds a brand profile.
+- Automatically searches brand and category terms across indexed Reddit, TikTok and Instagram content, retaining source links and excerpts.
+- Writes six candidates, critiques them and revises the strongest. When relevant references support it, it also creates a research-inspired direction with an explanation of the connection.
+- Matches the story to a curated reaction clip and exports a silent 1080 x 1920 MP4. You can edit the text or caption, swap the reaction, rebuild and download.
+
+I focused on the long-overlay format from the brief. Research is source-backed inspiration rather than verified trend-growth analysis; coverage varies, and music and posting are not implemented. The attached review guide includes the rationale and main tradeoffs.
+
+Validation included 36 automated tests, live brand-URL runs, video decoding and checks of the public demo. I'd particularly value your feedback on the writing, brand fit and how it handles a fresh URL.
+
+The demo currently runs through a temporary link from my computer, so it needs to remain online during review. The finished examples can also be downloaded directly from the page.
+
+Thanks,
+Qais
+
+Attachment: Frame - Demo Guide and Rationale.pdf

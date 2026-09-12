@@ -1,28 +1,51 @@
-open http://localhost:8000
-[    0s] fetching https://www.headspace.com
-[    6s] scraped 14000 chars
-[    6s] building brand profile
-[   21s] choosing format
-[   26s] writing 6 overlay drafts
-[   86s] critiquing
-[  109s] applying editor fix
-[  114s] rendering preview
-[  114s] done -> C:\Users\Qais\hardlaunch-task\out\headspace\post.md
-[    0s] fetching https://www.rihal.om/
-[    1s] scraped 5879 chars
+Content studio: http://localhost:8000
+[    0s] fetching https://www.bing.com/search?filters=ufn%3a"Duolingo"+sid%3a"c06f070d-1d4a-9399-4c77-adfe7a637e2b"&asbe=SC&qs=MB&pq=douli&sk=CSYN1&sc=16-5&pglt=169&q=duolingo&cvid=56402ec5dcd943d581c0c70b9c56c999&gs_lcrp=EgRlZGdlKgYIARAuGEAyBggAEEUYOTIGCAEQLhhAMgYIAhAAGEAyBggDEAAYQDIGCAQQLhhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEAyBggJEAAYQDIICAoQ6QcY_FXSAQg0NTA4ajBqN6gCALACAA&FORM=ANNAB1&PC=DCTS
+[    1s] scraped 2434 chars
 [    1s] building brand profile
-[   16s] choosing format
-[   21s] writing 6 overlay drafts
-[   72s] critiquing
-[   93s] applying editor fix
-[   99s] rendering preview
-[   99s] done -> C:\Users\Qais\hardlaunch-task\out\rihal\post.md
-[    0s] fetching https://www.rihal.om/
-[    1s] scraped 5879 chars
-[    1s] building brand profile
-[   16s] choosing format
-[   21s] writing 6 overlay drafts
-[   82s] critiquing
-[   92s] applying editor fix
-[   98s] rendering preview
-[   98s] done -> C:\Users\Qais\hardlaunch-task\out\rihal\post.md
+[   11s] Automatically searching Reddit, TikTok and Instagram for relevant context
+[   43s] choosing format
+[   48s] writing 6 overlay drafts
+[  106s] critiquing
+[  124s] applying editor fix
+[  127s] Adapting a second direction from content references
+[  141s] rendering preview
+[  141s] rendering video
+[  155s] video: Jim: sarcastic wow · 18.7s · silent
+[  155s] done -> C:\Users\Qais\hardlaunch-task\out\duolingo\post.md
+[    0s] fetching https://hardlaunch.com/
+[    2s] scraped 14000 chars
+[    2s] building brand profile
+[   20s] Automatically searching Reddit, TikTok and Instagram for relevant context
+[   43s] choosing format
+[   48s] writing 6 overlay drafts
+[  116s] critiquing
+[  139s] applying editor fix
+[  144s] rendering preview
+[  145s] rendering video
+[  161s] video: Jim: sarcastic wow · 21.4s · silent
+[  161s] done -> C:\Users\Qais\hardlaunch-task\out\hardlaunch\post.md
+[    0s] fetching https://hardlaunch.com/
+[    3s] scraped 14000 chars
+[    3s] building brand profile
+[   21s] Automatically searching Reddit, TikTok and Instagram for relevant context
+[   46s] choosing format
+[   51s] writing 6 overlay drafts
+[  117s] critiquing
+[  141s] applying editor fix
+[  146s] Adapting a second direction from content references
+[  161s] rendering preview
+[  161s] rendering video
+[  250s] video: Jim: sarcastic wow · 19.1s · silent
+[  250s] done -> C:\Users\Qais\hardlaunch-task\out\hardlaunch\post.md
+[    0s] fetching https://hardlaunch.com/
+[    4s] scraped 14000 chars
+[    4s] building brand profile
+[   22s] Automatically searching Reddit, TikTok and Instagram for relevant context
+[   50s] choosing format
+[   55s] writing 6 overlay drafts
+[  119s] critiquing
+[  145s] applying editor fix
+[  151s] rendering preview
+[  152s] rendering video
+[  221s] video: Jim: sarcastic wow · 19.9s · silent
+[  221s] done -> C:\Users\Qais\hardlaunch-task\out\hardlaunch\post.md

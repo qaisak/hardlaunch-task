@@ -1,10 +1,22 @@
 {
   "id": "v1",
-  "text": "just seen a lad on the 43 bus trying to learn german off a textbook. paper one. no app. no duolingo. no flashcards. no google translate. just him and a grammar table from 1998 at 8am on a wet tuesday. bookmark was a receipt. respect honestly.",
-  "word_count": 46,
-  "base_video": "Creator sitting on the top deck of a bus, hood up, phone propped at chest height, looking straight down the lens then glancing sideways at something off camera. Tiny eyebrow raise, no speaking.",
-  "audio": "original audio, room tone with bus engine",
-  "caption": "the receipt bookmark is what got me",
-  "why_this_brand": "Learning German off a paper grammar table on a commute is exactly the ten-spare-minutes moment Duolingo owns.",
-  "video": "Confused Travolta · 20.2s · silent"
+  "text": "just seen a guy order in french at a bakery counter. no google translate. no phrasebook. no duolingo. no notes app vocab list. two years of school textbooks and pure nerve against an entire country. the queue went silent. Absolute lunatic behaviour",
+  "word_count": 49,
+  "reaction": "deadpan",
+  "base_video": "Creator sitting outside a cafe holding a coffee, looking off to the side at someone out of frame, then a slow blinking double take straight down the lens. No talking.",
+  "audio": "original audio, room tone with faint street noise",
+  "caption": "would you have risked it or pointed at the croissant",
+  "why_this_brand": "The bakery-counter freeze after years of school French is the exact language-learner moment Duolingo users joke about.",
+  "what_changed": "Removed the line 'he said a full sentence out loud.' so the escalation runs straight into the silent queue and the verdict.",
+  "direction": "evergreen",
+  "audience_used": true,
+  "video": "Jim: sarcastic wow · 18.7s · silent",
+  "format": {
+    "format": "long_overlay",
+    "reason": "Duolingo is an app with no physical demo and a very relatable old way: five years of school French and still freezing at a Paris bakery counter, which lands hardest as a silent reaction to a block of text. The meme-literate, self-aware tone is exactly what this format rewards, and the streak anxiety angle is a built-in comment trigger without needing any footage from the brand.",
+    "runner_up": "slideshow",
+    "why_not_runner_up": "A language app has nothing visual to carousel through, so slides would just be text on images doing the same job with weaker hold in the first 1.5 seconds."
+  },
+  "draft_score": 8,
+  "editor_fix": "cut 'he said a full sentence out loud.' so the escalation runs straight into the queue going silent and then the verdict."
 }

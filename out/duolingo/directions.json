@@ -1,0 +1,27 @@
+{
+  "evergreen": {
+    "id": "v1",
+    "text": "just seen a guy order in french at a bakery counter. no google translate. no phrasebook. no duolingo. no notes app vocab list. two years of school textbooks and pure nerve against an entire country. the queue went silent. Absolute lunatic behaviour",
+    "word_count": 49,
+    "reaction": "deadpan",
+    "base_video": "Creator sitting outside a cafe holding a coffee, looking off to the side at someone out of frame, then a slow blinking double take straight down the lens. No talking.",
+    "audio": "original audio, room tone with faint street noise",
+    "caption": "would you have risked it or pointed at the croissant",
+    "why_this_brand": "The bakery-counter freeze after years of school French is the exact language-learner moment Duolingo users joke about.",
+    "what_changed": "Removed the line 'he said a full sentence out loud.' so the escalation runs straight into the silent queue and the verdict."
+  },
+  "trend": {
+    "text": "just seen a man in his eighties doing his lesson at the bus stop at half seven. no reminders. no streak freeze. no widget on the home screen. no leaderboard to shame him. just him his duolingo and a bus that comes when it comes. every morning. meanwhile i skipped mine because i had a long day. Outlived by a pensioner's consistency",
+    "caption": "what's your excuse then",
+    "adaptation": "Observed: an older man doing lessons each morning as a no-excuses story. Interpretation: moved the scene to a bus stop and flipped the verdict onto the viewer, replacing the bakery ordering moment with pure daily consistency crutches.",
+    "why_this_brand": "Duolingo's own channels celebrate an 87 year old doing lessons every morning, so an older person out-consisting the audience is squarely a Duolingo joke about daily streaks.",
+    "reaction": "deadpan",
+    "source_url": "https://www.instagram.com/p/DQuYwBYER6U/",
+    "source_evidence": "87 years young and doing his Duolingo lessons every morning",
+    "alignment_review": {
+      "supported": true,
+      "reason": "The draft directly adapts the cited Instagram reference (87-year-old doing Duolingo lessons every morning as a no-excuses consistency story), keeping the elderly-learner hook and shaming-the-viewer punchline while shifting the scene to a bus stop. Tone is playful/self-aware, on-brand streak references, no invented claims or banned phrases."
+    },
+    "label": "Research-inspired"
+  }
+}

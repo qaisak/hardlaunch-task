@@ -1,0 +1,24 @@
+{
+  "id": "v1",
+  "text": "just seen a bloke in his kitchen at half eleven squinting at the in home display. turning the tumble dryer on and off to watch the number move. no app. no spreadsheet. no fuse. just him and a blinking screen trying to price a load of towels. Like an absolute lunatic",
+  "word_count": 54,
+  "reaction": "deadpan",
+  "base_video": "Creator stands in a dim kitchen holding a mug, slowly looks off camera then back at the lens with a flat stare. No speaking, tiny head shake at the end.",
+  "audio": "original audio, room tone",
+  "caption": "how much do you reckon that load of towels cost him",
+  "why_this_brand": "The in-home display and pricing a tumble dryer load is the exact UK smart meter panic Fuse's 30 minute forecasts exist for.",
+  "what_changed": "Swapped the overlapping 'no forecast' for the concrete 'no spreadsheet' and cut the over-clever tea leaves line to a blunter verdict.",
+  "direction": "evergreen",
+  "audience_used": true,
+  "video": "Kermit: quietly judging · 22.2s · silent",
+  "format": {
+    "format": "long_overlay",
+    "reason": "Fuse is an app-led energy service with a painfully relatable old way: squinting at the in-home display, 18 minutes of hold music just to ask why the direct debit jumped. A silent reacting person over one block of text lets that whole story land in 20 seconds without needing footage of a product that is really just a bill, and the app benefit gets discovered at the end rather than announced.",
+    "runner_up": "hook_demo",
+    "why_not_runner_up": "It needs real demo footage and the interesting bit, bills updating every 30 minutes, is a screen recording that reads as an ad before the hook has earned attention."
+  },
+  "draft_score": 7,
+  "editor_fix": "'no fuse' sits oddly between 'no app' and 'no forecast' since app and forecast are the same idea; swap one for a concrete object like 'no spreadsheet' and tighten the verdict, 'tea leaves in a power station' is one word too clever to be deadpan.",
+  "edited_by_user": true,
+  "selected_clip": "reaction_tea.mp4"
+}

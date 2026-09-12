@@ -1,0 +1,58 @@
+{
+  "sources": [
+    "https://www.tiktok.com/@duolingo/video/7655036871587679502",
+    "https://www.tiktok.com/@duolingo/video/7478760561468067114",
+    "https://www.instagram.com/p/DQuYwBYER6U/"
+  ],
+  "notes": "Duolingo's own TikTok post frames saving a lapsing streak with step-by-step tips — a brand creative reference for the consistency angle (engagement figures as stated in the snippet, unverified).\nA Duolingo TikTok presents a personal learning strategy with tips for the app — a brand-side creative reference for how-I-study framing.\nA dated Instagram post (Nov 6, 2025) features an 87-year-old doing Duolingo lessons each morning, used as a no-excuses consistency story.",
+  "observed": "2026-09-12",
+  "market": "Inferred from brand audience; source markets may vary",
+  "status": "Automatically discovered references — momentum unverified",
+  "method": "DDGS indexed search; videos not watched",
+  "recorded_at": "2026-09-12",
+  "evidence": [
+    {
+      "id": "14",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@duolingo/video/7655036871587679502",
+      "title": "Revive Your Duolingo Streak: How to Save It With One Week Left | TikTok",
+      "snippet": "60.6K Likes, 3286 Comments. TikTok video from Duolingo (@duolingo): \"Only one week left to revive your streak — step-by-step tips to save your Duolingo streak before it lapses. #streak #DuolingoEspanol #duolingo\".",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference",
+      "summary": "Duolingo's own TikTok post frames saving a lapsing streak with step-by-step tips — a brand creative reference for the consistency angle (engagement figures as stated in the snippet, unverified).",
+      "evidence": "Only one week left to revive your streak",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "12",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@duolingo/video/7478760561468067114",
+      "title": "Revealing My Duolingo Learning Strategy | TikTok",
+      "snippet": "138.6K Likes, 4504 Comments. TikTok video from Duolingo (@duolingo): \"Explore my unique strategy for mastering languages on Duolingo! Uncover tips and insights to enhance your learning experience. #duolingo #duolingobrasil #duolingoespanol\".",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference",
+      "summary": "A Duolingo TikTok presents a personal learning strategy with tips for the app — a brand-side creative reference for how-I-study framing.",
+      "evidence": "Explore my unique strategy for mastering languages on Duolingo!",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "22",
+      "kind": "trends",
+      "url": "https://www.instagram.com/p/DQuYwBYER6U/",
+      "title": "Instagram",
+      "snippet": "Nov 6, 2025 · Meet Roger, 87 years young and doing his Duolingo lessons every morning! Makes you realize that you have no excuse for skipping yours 😉 Thanks to Roger’s granddaughter Kristen for sharing his story with us!",
+      "page_age": "Nov 6, 2025",
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference",
+      "summary": "A dated Instagram post (Nov 6, 2025) features an 87-year-old doing Duolingo lessons each morning, used as a no-excuses consistency story.",
+      "evidence": "87 years young and doing his Duolingo lessons every morning",
+      "evidence_level": "Search excerpt; full page not inspected"
+    }
+  ],
+  "label": "Research-inspired"
+}

@@ -1,0 +1,53 @@
+{
+  "brand_name": "Fuse",
+  "one_liner": "UK energy supplier with cheaper tariffs and 24/7 support",
+  "niche": "home and business energy supply (gas, electricity, EV charging)",
+  "product_type": "service",
+  "audience": "UK bill payers aged roughly 25-45, renters and homeowners who actually read their statements, EV drivers, solar and battery owners, landlords with multiple properties, small business owners (inferred)",
+  "core_pain": "not knowing what your energy bill will be until it lands, then waiting days for a human at your old supplier to answer a question about it",
+  "old_way_objects": [
+    "a paper energy bill",
+    "price comparison sites",
+    "smart meter in-home display",
+    "a spreadsheet of meter readings",
+    "photos of the meter on your camera roll",
+    "supplier call centre hold music",
+    "the ofgem price cap news headlines",
+    "a standard variable tariff you never switched off"
+  ],
+  "scenes": [
+    "kitchen at night, someone squinting at the in-home display trying to work out if the tumble dryer just cost them a fiver",
+    "on hold in the car outside work, 18 minutes deep with the old supplier, just to ask why the direct debit went up",
+    "moving day, boxes everywhere, someone kneeling in a cupboard photographing a meter and Googling who supplies the new flat"
+  ],
+  "tone": "blunt, playful, anti-faff, human",
+  "proof_points": [
+    "Rated 4.8 on Trustpilot",
+    "Switch and save up to £200 (asterisked on site)",
+    "beats the UK price cap to be cheaper than major UK suppliers",
+    "one of the UK's cheapest fixed tariffs",
+    "sign up in under 3 minutes",
+    "bills and forecasts updated every 30 minutes",
+    "24hrs a day support",
+    "AI assistant called Plugs",
+    "variable, fixed and multi-rate tariffs",
+    "customisable peak and off-peak periods",
+    "upload an old bill to speed up sign-up",
+    "Fuse handles the switch with your old supplier",
+    "EV charger linking and installation",
+    "solar and battery export tracking",
+    "manage multiple properties from one account",
+    "smart home device management for rewards (coming soon)"
+  ],
+  "do_not_say": [
+    "guaranteed savings or a fixed £ amount everyone will save",
+    "always the cheapest supplier in the UK (site says beats the price cap and major suppliers, not all)",
+    "naming rival suppliers",
+    "100% green or fully renewable (site says greener goals, not green supply)",
+    "promises about future energy prices or the price cap",
+    "no bills ever / free energy",
+    "financial advice framing"
+  ],
+  "cta": "Get a quote and switch to Fuse (sign up online in under 3 minutes)",
+  "source_url": "https://www.fuseenergy.com/"
+}

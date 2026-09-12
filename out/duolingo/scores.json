@@ -2,63 +2,77 @@
   {
     "id": "v1",
     "scores": {
-      "on_brand": 5,
+      "on_brand": 4,
       "voice": 4,
       "hook": 4,
       "not_an_ad": 5,
-      "comment_bait": 3,
+      "comment_bait": 4,
       "honesty": 5,
       "length": 4
     },
     "overall": 8,
-    "fix": "cut \"no app.\" since it duplicates the duolingo item, and swap \"respect honestly\" for a fresher verdict that points at the receipt bookmark so the caption and text stop repeating each other."
+    "fix": "cut 'he said a full sentence out loud.' so the escalation runs straight into the queue going silent and then the verdict."
   },
   {
     "id": "v2",
     "scores": {
       "on_brand": 4,
-      "voice": 4,
+      "voice": 3,
       "hook": 3,
       "not_an_ad": 5,
-      "comment_bait": 4,
+      "comment_bait": 3,
       "honesty": 5,
       "length": 3
     },
     "overall": 7,
-    "fix": "tighten the opening so the pain lands in the first 8 words (\"i spent nine days in madrid ordering in english\") and cut \"came home saying i'd pick it up next time\" so the twist verdict hits faster."
+    "fix": "tighten the opener to 'eight months learning my girlfriend's family language at sunday dinner' so the no-list arrives before the reader's attention goes."
   },
   {
     "id": "v3",
     "scores": {
       "on_brand": 4,
-      "voice": 3,
-      "hook": 3,
+      "voice": 5,
+      "hook": 4,
       "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "drop 'did not even look annoyed' and let 'missed his stop writing out the past perfect' hit the verdict directly."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 4,
       "comment_bait": 4,
       "honesty": 5,
       "length": 4
     },
     "overall": 7,
-    "fix": "\"she's built different and wrong\" is lifted straight from the reference verdict bank, write a new one off the whiteboard and six adults image; also drop \"no app on the bus there\" as it doubles the duolingo line."
-  },
-  {
-    "id": "v4",
-    "scores": {
-      "on_brand": 5,
-      "voice": 4,
-      "hook": 5,
-      "not_an_ad": 5,
-      "comment_bait": 4,
-      "honesty": 5,
-      "length": 5
-    },
-    "overall": 8,
-    "fix": "restore the rhythm of the no-list by fronting the fragments (\"textbook unopened. three flashcards from january. anki downloaded never opened. no duolingo.\") so it reads as the house cadence rather than a paragraph."
+    "fix": "strip the brand item back to plain 'no duolingo' and move the nine-hours-of-screen-time gag into the escalation line instead."
   },
   {
     "id": "v5",
     "scores": {
       "on_brand": 5,
+      "voice": 3,
+      "hook": 5,
+      "not_an_ad": 4,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 2
+    },
+    "overall": 7,
+    "fix": "it's two stories; cut the language exchange night or cut the streak deletion, keep one and get under 55 words."
+  },
+  {
+    "id": "v6",
+    "scores": {
+      "on_brand": 4,
       "voice": 4,
       "hook": 4,
       "not_an_ad": 5,
@@ -67,6 +81,6 @@
       "length": 4
     },
     "overall": 7,
-    "fix": "the verdict is too soft, \"hope she makes it honestly\" gives nobody anything to argue with, replace with a flat judgement on the phrasebook buyer that people will defend or tag."
+    "fix": "add a proper escalation before the verdict, something like 'just her and a dead phrasebook against an entire alphabet', so the punchline has a ramp."
   }
 ]

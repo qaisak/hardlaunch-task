@@ -1,42 +1,34 @@
 {
   "brand_name": "Duolingo",
-  "one_liner": "Free app that teaches languages through short game-like lessons",
+  "one_liner": "Free app for learning languages in short daily lessons",
   "niche": "language learning app",
   "product_type": "app",
-  "audience": "13 to 35 year olds learning a language on their phone in spare minutes: students, people with a holiday booked, people dating or living abroad, hobby learners who quit textbooks (inferred)",
-  "core_pain": "wanting to speak another language but never sticking with it, because textbooks, classes and grammar drills are boring, expensive and easy to abandon after a week",
+  "audience": "(inferred) 13-35 year olds learning a language for travel, school, a partner's family, games or heritage reasons, mostly on phones in spare minutes",
+  "core_pain": "(inferred) wanting to actually speak another language but never sticking with textbooks, classes or apps long enough to get past week two",
   "old_way_objects": [
-    "textbooks",
-    "paper flashcards",
+    "duolingo",
+    "school textbooks",
+    "flashcards",
     "anki",
-    "evening class at the local college",
-    "youtube grammar videos",
-    "a phrasebook bought at the airport",
     "google translate",
-    "a notes app list of vocab"
+    "evening classes",
+    "youtube grammar videos",
+    "a notes app vocab list"
   ],
   "scenes": [
-    "on the bus to work, phone in hand, scrolling instead of doing the ten minutes of study they promised themselves (inferred)",
-    "in an airbnb kitchen in Madrid, ordering in English because the Spanish freezes in their throat (inferred)",
-    "at a desk at 11pm with an unopened grammar textbook and three untouched paper flashcards from January (inferred)"
+    "(inferred) someone on a bus at 8am opening the app to keep a streak alive before their stop",
+    "(inferred) a traveller frozen at a Paris bakery counter after two years of 'studying' French",
+    "(inferred) a person on the sofa at 11.58pm doing a two minute lesson so the streak does not break"
   ],
-  "tone": "playful, plain-spoken, cheeky, game-like",
-  "proof_points": [
-    "\"the world's most popular way to learn a language\"",
-    "\"100% free\"",
-    "\"fun and science-based\"",
-    "\"scientifically proven to work\"",
-    "available on duolingo.com and on the apps",
-    "courses listed include spanish, german, french, portuguese, italian, english"
-  ],
+  "tone": "(inferred) playful, cheeky, meme-literate, self-aware",
+  "proof_points": [],
   "do_not_say": [
-    "fluent in X weeks or any timeline-to-fluency guarantee",
-    "invented streak, user or course-completion numbers",
-    "naming rival apps or tutors",
-    "'replaces a teacher' or 'better than living abroad'",
-    "pricing or Super/Max tier details (not confirmed in the retrieved copy)",
-    "exam pass or job outcome guarantees",
-    "aggressive owl threat jokes that read as harassment"
+    "guaranteed fluency",
+    "replaces a teacher or a degree",
+    "learn a language in X days (no number stated on site)",
+    "named comparisons to rival apps",
+    "anything implying certification or official qualification"
   ],
-  "cta": "download the app and start a free lesson"
+  "cta": "(inferred) download the app and start a lesson today",
+  "source_url": "https://www.bing.com/search?filters=ufn%3a\"Duolingo\"+sid%3a\"c06f070d-1d4a-9399-4c77-adfe7a637e2b\"&asbe=SC&qs=MB&pq=douli&sk=CSYN1&sc=16-5&pglt=169&q=duolingo&cvid=56402ec5dcd943d581c0c70b9c56c999&gs_lcrp=EgRlZGdlKgYIARAuGEAyBggAEEUYOTIGCAEQLhhAMgYIAhAAGEAyBggDEAAYQDIGCAQQLhhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEAyBggJEAAYQDIICAoQ6QcY_FXSAQg0NTA4ajBqN6gCALACAA&FORM=ANNAB1&PC=DCTS"
 }

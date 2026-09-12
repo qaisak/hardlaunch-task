@@ -1,0 +1,86 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "swap the soft closer 'Respect the commitment i guess' for a verdict people can argue with, and cut 'that ever printed' to 'that ever worked' so the first line lands faster."
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "'couldn't pay me enough' is a recycle of the sample verdict; write a new one built from the tulum detail, and tighten the opener to 'my friend has spent nine days typing hey just circling back'."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 5,
+      "voice": 5,
+      "hook": 5,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 9,
+    "fix": "pick one absurd image: either the mirror doing fifty voices or the cousin booked for saturday, not both, so the block stays one moment."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 2,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 3,
+      "length": 3
+    },
+    "overall": 6,
+    "fix": "the triple ending ('i learned nothing. i would do it again. genuinely unwell') is padding and the invented 'hundred ads' adds nothing; cut to one verdict and open on the spreadsheet of forty creators instead of the quarter recap."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 4,
+      "length": 2
+    },
+    "overall": 6,
+    "fix": "you run two lists before the no-list; kill 'sign up sheet. ring light. six people who all want usage rights' down to one detail and open with 'just seen a guy' instead of 'there is a guy'."
+  },
+  {
+    "id": "v6",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 4,
+      "length": 3
+    },
+    "overall": 7,
+    "fix": "cut 'the client loved it. the P&L did not.' so 'unhinged in eleven languages' hits straight after the eleven markets line."
+  }
+]

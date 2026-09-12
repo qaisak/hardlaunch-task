@@ -1,8 +1,8 @@
 {
-  "clip": "reaction_deadpan.mp4",
+  "clip": "reaction_tea.mp4",
   "reaction": "deadpan",
-  "name": "Jim: sarcastic wow",
-  "source": "https://gifdb.com/gif/jim-halpert-the-office-sarcastic-wow-0r6xdo0apv9mu5re.html",
+  "name": "Kermit: quietly judging",
+  "source": "https://gifdb.com/gif/kermit-drinking-tea-meme-mj3nwngyb2y0dpdv.html",
   "recommendations": [
     {
       "clip": "reaction_deadpan.mp4",
@@ -26,9 +26,9 @@
       "mood": "confused"
     }
   ],
-  "selection": "model",
-  "duration_s": 18.7,
-  "word_count": 42,
+  "selection": "manual",
+  "duration_s": 22.2,
+  "word_count": 51,
   "audio": "silent",
-  "description": "Jim: sarcastic wow \u00b7 18.7s \u00b7 silent"
+  "description": "Kermit: quietly judging \u00b7 22.2s \u00b7 silent"
 }

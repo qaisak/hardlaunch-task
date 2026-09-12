@@ -1,0 +1,86 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "'no fuse' sits oddly between 'no app' and 'no forecast' since app and forecast are the same idea; swap one for a concrete object like 'no spreadsheet' and tighten the verdict, 'tea leaves in a power station' is one word too clever to be deadpan."
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 3,
+      "not_an_ad": 4,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 3
+    },
+    "overall": 5,
+    "fix": "cut the engine line or the hold music loop, one of them is padding, and replace the double 'genuinely' verdict which reads written rather than muttered."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "first eight words are admin, open on the cupboard and torch image instead of 'i moved flat last year and spent'."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 4,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "'no comparison site open. no fixed tariff' are states not objects, make them physical crutches and let the verdict land harder than a mild observation."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "'no dashboard. no single account' is soft product language dressed as a list, swap for real landlord objects (no reminders. no notes app. no fuse) so the brand isn't the third feature word in a row."
+  },
+  {
+    "id": "v6",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 4,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "'no charger linked' is a feature claim in disguise; make the list observable objects and drop the explaining line 'because that's when he gets home' to let the absurdity breathe."
+  }
+]

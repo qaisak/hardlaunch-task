@@ -1,0 +1,649 @@
+{
+  "audience": [
+    {
+      "id": "9",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/duolingo/comments/1ad31xs/why_did_you_quit_learning_a_language/",
+      "title": "Why did you quit learning a language? : r/duolingo - Reddit",
+      "snippet": "Yep. I'm not talking about major stress but put it this way, I stopped enjoying it. Forget it's an app and just think about trying to learn something difficult like another language. I don't think it's unreasonable to think it can be stressful at times.",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Discussion",
+      "summary": "A thread in the Duolingo subreddit asks why people quit learning a language; one commenter says they stopped enjoying it and found learning something difficult stressful at times.",
+      "evidence": "I stopped enjoying it.",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "7",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/languagelearning/comments/ubu485/what_makes_you_stop_learning_a_language/",
+      "title": "What makes you stop learning a language? : r/languagelearning",
+      "snippet": "I think there is a general expectation that language learning is supposed to be quick, and unless you reach semi fluency is a matter of weeks you aren't designed for language learning as an adult.",
+      "page_age": null,
+      "brand_match": false,
+      "classification": "Audience discussion",
+      "source_type": "Discussion",
+      "summary": "Language learners discuss what makes them stop, pointing to an expectation that fluency should come within weeks and self-doubt about adult learning ability when it doesn't.",
+      "evidence": "unless you reach semi fluency is a matter of weeks you aren't designed for language learning as an adult",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "6",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/languagelearning/comments/16nfr6y/what_were_your_main_reasons_for_stopping_to_learn/",
+      "title": "What were your main reasons for stopping to learn a language?",
+      "snippet": "In my experience, it’s like this: if you suddenly stop learning a language, your abilities will deteriorate very quickly…until you get to this point of proficiency where it’s like the language just sticks. Weird analogy, but I experienced the same phenomenon with guitar playing.",
+      "page_age": null,
+      "brand_match": false,
+      "classification": "Audience discussion",
+      "source_type": "Discussion",
+      "summary": "Learners describe how quickly skills deteriorate after stopping, until a proficiency point where the language finally sticks — framing the drop-off problem learners face early on.",
+      "evidence": "if you suddenly stop learning a language, your abilities will deteriorate very quickly",
+      "evidence_level": "Search excerpt; full page not inspected"
+    }
+  ],
+  "trends": [
+    {
+      "id": "14",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@duolingo/video/7655036871587679502",
+      "title": "Revive Your Duolingo Streak: How to Save It With One Week Left | TikTok",
+      "snippet": "60.6K Likes, 3286 Comments. TikTok video from Duolingo (@duolingo): \"Only one week left to revive your streak — step-by-step tips to save your Duolingo streak before it lapses. #streak #DuolingoEspanol #duolingo\".",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference",
+      "summary": "Duolingo's own TikTok post frames saving a lapsing streak with step-by-step tips — a brand creative reference for the consistency angle (engagement figures as stated in the snippet, unverified).",
+      "evidence": "Only one week left to revive your streak",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "12",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@duolingo/video/7478760561468067114",
+      "title": "Revealing My Duolingo Learning Strategy | TikTok",
+      "snippet": "138.6K Likes, 4504 Comments. TikTok video from Duolingo (@duolingo): \"Explore my unique strategy for mastering languages on Duolingo! Uncover tips and insights to enhance your learning experience. #duolingo #duolingobrasil #duolingoespanol\".",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference",
+      "summary": "A Duolingo TikTok presents a personal learning strategy with tips for the app — a brand-side creative reference for how-I-study framing.",
+      "evidence": "Explore my unique strategy for mastering languages on Duolingo!",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "22",
+      "kind": "trends",
+      "url": "https://www.instagram.com/p/DQuYwBYER6U/",
+      "title": "Instagram",
+      "snippet": "Nov 6, 2025 · Meet Roger, 87 years young and doing his Duolingo lessons every morning! Makes you realize that you have no excuse for skipping yours 😉 Thanks to Roger’s granddaughter Kristen for sharing his story with us!",
+      "page_age": "Nov 6, 2025",
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference",
+      "summary": "A dated Instagram post (Nov 6, 2025) features an 87-year-old doing Duolingo lessons each morning, used as a no-excuses consistency story.",
+      "evidence": "87 years young and doing his Duolingo lessons every morning",
+      "evidence_level": "Search excerpt; full page not inspected"
+    }
+  ],
+  "sources": [
+    {
+      "id": "1",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/duolingo/?feedViewType=classicView",
+      "title": "Duolingo on reddit",
+      "snippet": "Welcome to the official Duolingo community of Reddit - a forum where you can discuss all things Duolingo! Duolingo is a free educational learning site and mobile app that motivates you with game-like lessons and rewards!",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Discussion"
+    },
+    {
+      "id": "2",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/duolingo/top/",
+      "title": "Duolingo - Reddit",
+      "snippet": "Welcome to the official Duolingo community of Reddit - a forum where you can discuss all things Duolingo! Duolingo is a free educational learning site and mobile app that motivates you with game-like lessons and rewards!",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Discussion"
+    },
+    {
+      "id": "3",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/duolingo/wiki/index/",
+      "title": "Duolingo - Reddit",
+      "snippet": "Join our community to explore the extensive offerings of Duolingo, share your progress, and connect with fellow enthusiasts. Whether you're learning a language, delving into music, or solving math puzzles, r/Duolingo is your hub for all things educational and engaging!",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Discussion"
+    },
+    {
+      "id": "4",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/DuolingoEnglishTest/",
+      "title": "DuolingoEnglishTest - Reddit",
+      "snippet": "For the English proficiency requirement, I practiced DUOLINGO ENGLISH TEST and purchased a two attempt bundle. luckily I got a valid test in first attempt for god's sake . Since I was little panic, I couldn't achieve a good score. My requirement was 120 and I got 110.",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Discussion"
+    },
+    {
+      "id": "5",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/duolingo/rising/",
+      "title": "Duolingo - Reddit",
+      "snippet": "r/duolingo: Welcome to r/duolingo, a welcoming community for sharing insights and tips on language, music, and math learning through Duolingo. Here…",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Discussion"
+    },
+    {
+      "id": "6",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/languagelearning/comments/16nfr6y/what_were_your_main_reasons_for_stopping_to_learn/",
+      "title": "What were your main reasons for stopping to learn a language?",
+      "snippet": "In my experience, it’s like this: if you suddenly stop learning a language, your abilities will deteriorate very quickly…until you get to this point of proficiency where it’s like the language just sticks. Weird analogy, but I experienced the same phenomenon with guitar playing.",
+      "page_age": null,
+      "brand_match": false,
+      "classification": "Audience discussion",
+      "source_type": "Discussion"
+    },
+    {
+      "id": "7",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/languagelearning/comments/ubu485/what_makes_you_stop_learning_a_language/",
+      "title": "What makes you stop learning a language? : r/languagelearning",
+      "snippet": "I think there is a general expectation that language learning is supposed to be quick, and unless you reach semi fluency is a matter of weeks you aren't designed for language learning as an adult.",
+      "page_age": null,
+      "brand_match": false,
+      "classification": "Audience discussion",
+      "source_type": "Discussion"
+    },
+    {
+      "id": "8",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/languagelearning/comments/ok7auu/i_stopped_learning_a_language_after_a_few_years/",
+      "title": "I stopped learning a language after a few years, and I don't ...",
+      "snippet": "There's a lot of things I've quit after a few years that I don't regret. Since Language Learning feels like work to some, its quantified as time lost. Most people use that time doing wasteful things, like browsing reddit or other socials, TV, etc.",
+      "page_age": null,
+      "brand_match": false,
+      "classification": "Audience discussion",
+      "source_type": "Discussion"
+    },
+    {
+      "id": "9",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/duolingo/comments/1ad31xs/why_did_you_quit_learning_a_language/",
+      "title": "Why did you quit learning a language? : r/duolingo - Reddit",
+      "snippet": "Yep. I'm not talking about major stress but put it this way, I stopped enjoying it. Forget it's an app and just think about trying to learn something difficult like another language. I don't think it's unreasonable to think it can be stressful at times.",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Discussion"
+    },
+    {
+      "id": "10",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/languagelearning/comments/19cy7ko/what_is_a_good_reason_to_give_up_on_a_language/",
+      "title": "What is a good reason to give up on a language? : r ... - Reddit",
+      "snippet": "I decided to quit learning a language a couple times, one because I found another that is better for me (in terms of passion and opportunities) and the other one because I was struggling with work load and priorities, so it's still a potential goal but I had to be realistic and pause it.",
+      "page_age": null,
+      "brand_match": false,
+      "classification": "Audience discussion",
+      "source_type": "Discussion"
+    },
+    {
+      "id": "11",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@duolingo",
+      "title": "Duolingo (@duolingo) | TikTok",
+      "snippet": "Duolingo (@duolingo) on TikTok | 498.7M Likes. 18M Followers. hot owl summer 🔥🦉.Watch Duolingo's popular videos: \"petah… the owl is he...\", \"are my abs distracti...\". Join 18M followers on TikTok for more nyfw, ss27, duolingo content",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "12",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@duolingo/video/7478760561468067114",
+      "title": "Revealing My Duolingo Learning Strategy | TikTok",
+      "snippet": "138.6K Likes, 4504 Comments. TikTok video from Duolingo (@duolingo): \"Explore my unique strategy for mastering languages on Duolingo! Uncover tips and insights to enhance your learning experience. #duolingo #duolingobrasil #duolingoespanol\".",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "13",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/tag/duolingo",
+      "title": "#duolingo - TikTok",
+      "snippet": "duo lingo | 415.3K posts Watch the latest videos about #duolingo on TikTok.",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "14",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@duolingo/video/7655036871587679502",
+      "title": "Revive Your Duolingo Streak: How to Save It With One Week Left | TikTok",
+      "snippet": "60.6K Likes, 3286 Comments. TikTok video from Duolingo (@duolingo): \"Only one week left to revive your streak — step-by-step tips to save your Duolingo streak before it lapses. #streak #DuolingoEspanol #duolingo\".",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "15",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@duolingo/video/7675830399439916301",
+      "title": "could've sworn there were 7 | duolingo | TikTok",
+      "snippet": "458K Likes, 6035 Comments. TikTok video from Duolingo (@duolingo): \"could've sworn there were 7\". duolingo. sonido original - ISAAC.",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "16",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@theinnersanctuary/video/7682677757905620256",
+      "title": "Underground Transformation: How to Grow When Life Looks the ...",
+      "snippet": "5 days ago · 126 j'aime,Vidéo TikTok de 🪭 (@theinnersanctuary) : « Learn why the quiet phase of self-development matters and how to stay consistent while results remain invisible. #lockedin #selfdevelopment #motivation #selfgrowth #femininepower ».",
+      "page_age": "5 days ago",
+      "brand_match": false,
+      "classification": "Category reference",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "17",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@babitamagar82/video/7682591304638795009",
+      "title": "Practice Tips to Improve Your Skills Fast | TikTok",
+      "snippet": "6 days ago · 6. End with a quick review: play the whole piece or run the full technique once to consolidate learning. Daily routine suggestions - 10–20 minutes daily: ideal for steady progress if time is limited. - Alternate focus areas: technique one day, repertoire another, creativity another. - Track small wins: note what improved to stay motivated.",
+      "page_age": "6 days ago",
+      "brand_match": false,
+      "classification": "Category reference",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "18",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@samfrenchteacher/video/7680996209707781407",
+      "title": "Learn French Easily: Simple Steps to Speak French Faster | TikTok",
+      "snippet": "Sep 2, 2026 · Want to learn French easily and start speaking with confidence? This guide gathers simple, practical steps from proven learning techniques to help beginners and improvers build everyday French fluency. Use short, consistent practice, real phrases, and teacher-tested habits to make steady progress. How to begin: set realistic goals",
+      "page_age": "Sep 2, 2026",
+      "brand_match": false,
+      "classification": "Category reference",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "19",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@shee_iconic/video/7682402475986439444",
+      "title": "Back Workout Progress: How Consistent Training Builds a ...",
+      "snippet": "6 days ago · Lead Training the back is a process — the goal isn’t overnight transformation but consistent effort. This guide centers on the mindset and small, repeatable actions that let back training results appear over time. Keep showing up, put in the work, and let progress speak for itself.",
+      "page_age": "6 days ago",
+      "brand_match": false,
+      "classification": "Category reference",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "20",
+      "kind": "trends",
+      "url": "https://www.tiktok.com/@tessainmiami/video/7683568545355058445",
+      "title": "Move to Miami: How to Start Exploring, Meeting People ...",
+      "snippet": "3 days ago · Learn new skills: invest in yourself and social capital - Short courses and workshops: culinary classes, coding bootcamps, art studios, or language lessons double as skill builders and social settings. - Community colleges and co-learning spaces: affordable options to grow professionally and meet motivated peers.",
+      "page_age": "3 days ago",
+      "brand_match": false,
+      "classification": "Category reference",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "21",
+      "kind": "trends",
+      "url": "https://www.instagram.com/duolingo/",
+      "title": "Duolingo (@duolingo) • Instagram photos and videos",
+      "snippet": "5M Followers, 352 Following, 1,126 Posts - Duolingo (@duolingo) on Instagram: \"hot owl summer 🔥🦉\"",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "22",
+      "kind": "trends",
+      "url": "https://www.instagram.com/p/DQuYwBYER6U/",
+      "title": "Instagram",
+      "snippet": "Nov 6, 2025 · Meet Roger, 87 years young and doing his Duolingo lessons every morning! Makes you realize that you have no excuse for skipping yours 😉 Thanks to Roger’s granddaughter Kristen for sharing his story with us!",
+      "page_age": "Nov 6, 2025",
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "23",
+      "kind": "trends",
+      "url": "https://www.instagram.com/p/DF79IjgxfuE/",
+      "title": "Duolingo | an important message from Duolingo | Instagram",
+      "snippet": "2M likes, 38K comments - duolingo on February 11, 2025: \"an important message from Duolingo\".",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "24",
+      "kind": "trends",
+      "url": "https://www.instagram.com/p/DdEzakyB28x/",
+      "title": "Duolingo | let’s hope i don’t get cracked - Instagram",
+      "snippet": "213K likes, 3,197 comments - duolingo on September 9, 2026: \"let’s hope i don’t get cracked 😭\".",
+      "page_age": null,
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "25",
+      "kind": "trends",
+      "url": "https://www.instagram.com/p/DS5na9lkQis/",
+      "title": "Instagram",
+      "snippet": "Dec 30, 2025 · 9,108 likes, 64 comments - duolingo on December 19, 2025: \"that’s what you get for trying to get rid of me #befreemyduolings #duolingo #comic 🎨: @joeyellis\".",
+      "page_age": "Dec 30, 2025",
+      "brand_match": true,
+      "classification": "Brand mention",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "26",
+      "kind": "trends",
+      "url": "https://www.instagram.com/reel/DdCNWaBPK83/",
+      "title": "notes by nita | If you’re serious about learning Chinese ...",
+      "snippet": "4 days ago · A lot of people have been asking me how I learned Chinese, what resources I used, and how I knew what to study next So I decided to put everything into one notion template and create the Chinese Fluency Roadmap 🇨🇳It’s basically the study system I wish I had when I first started learning Chinese! ☺️Inside you’ll find: Personalized ...",
+      "page_age": "4 days ago",
+      "brand_match": false,
+      "classification": "Category reference",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "27",
+      "kind": "trends",
+      "url": "https://www.instagram.com/reel/DdJU-5LTc06/",
+      "title": "Instagram",
+      "snippet": "1 day ago · No one-size-fits-all learning. Just personal attention, practical English & consistent improvement. 🤍 📚 1-on-1 Personalised Classes 🎯 Goal-oriented learning 🗣️ Communication + Confidence 👩🏫 5+ Years of Teaching Experience If you’re ready to become more confident in English, DM me to enquire about 1-on-1 classes.",
+      "page_age": "1 day ago",
+      "brand_match": false,
+      "classification": "Category reference",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "28",
+      "kind": "trends",
+      "url": "https://www.instagram.com/reel/Dcd3DJTIh9l/",
+      "title": "master's academy | Exam strategy | Instagram",
+      "snippet": "Aug 25, 2026 · Secret to Success! Ever wondered why Japanese students stay so consistent and focused? Here are 5 proven study techniques you should try if you???re an Indian student:1. Kaizen - Roz Thoda Better Bano Even 15???20 mins daily can transform your skills in months. Consistency > Intensity. 2. Ikigai - Know Your Why Don???t just study for exams.",
+      "page_age": "Aug 25, 2026",
+      "brand_match": false,
+      "classification": "Category reference",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "29",
+      "kind": "trends",
+      "url": "https://www.instagram.com/p/DVIMyIvDjO_/",
+      "title": "The Entrepreneur Central Magazine | Hard work isn’t a linear ...",
+      "snippet": "Aug 27, 2026 · But if you stay consistent, several mechanisms kick in to create compounding returns. When you first learn a skill, you’re focused on the basics. However, once those become second nature, they form a foundation that makes learning the next level significantly faster. • Linear Growth: Learning how to code one language.",
+      "page_age": "Aug 27, 2026",
+      "brand_match": false,
+      "classification": "Category reference",
+      "source_type": "Post reference"
+    },
+    {
+      "id": "30",
+      "kind": "trends",
+      "url": "https://www.instagram.com/reel/DdFtMkUpmBc/",
+      "title": "Nicole Denise || Slow • Intentional • Eco-Conscious Living ...",
+      "snippet": "2 days ago · When children learn these words, they are also given everyday opportunities to practice culturally meaningful ways of relating to people around them. This Buwan ng Wika, let’s remember that teaching our language is also one way of passing on our culture.",
+      "page_age": "2 days ago",
+      "brand_match": false,
+      "classification": "Category reference",
+      "source_type": "Post reference"
+    }
+  ],
+  "errors": [],
+  "queries": [
+    "site:reddit.com \"Duolingo\"",
+    "site:reddit.com why I quit learning language",
+    "site:tiktok.com \"Duolingo\"",
+    "site:tiktok.com how to stay consistent learning a language",
+    "site:instagram.com \"Duolingo\"",
+    "site:instagram.com how to stay consistent learning a language"
+  ],
+  "attempts": [
+    {
+      "platform": "reddit.com",
+      "scope": "brand",
+      "query": "site:reddit.com \"Duolingo\"",
+      "backend": "bing",
+      "window": null,
+      "found": 5,
+      "usable": 5
+    },
+    {
+      "platform": "reddit.com",
+      "scope": "category",
+      "query": "site:reddit.com why I quit learning language",
+      "backend": "bing",
+      "window": null,
+      "found": 5,
+      "usable": 5
+    },
+    {
+      "platform": "tiktok.com",
+      "scope": "brand",
+      "query": "site:tiktok.com \"Duolingo\"",
+      "backend": "bing",
+      "window": null,
+      "found": 5,
+      "usable": 5
+    },
+    {
+      "platform": "tiktok.com",
+      "scope": "category",
+      "query": "site:tiktok.com how to stay consistent learning a language",
+      "backend": "bing",
+      "window": "m",
+      "found": 5,
+      "usable": 5
+    },
+    {
+      "platform": "instagram.com",
+      "scope": "brand",
+      "query": "site:instagram.com \"Duolingo\"",
+      "backend": "bing",
+      "window": null,
+      "found": 5,
+      "usable": 5
+    },
+    {
+      "platform": "instagram.com",
+      "scope": "category",
+      "query": "site:instagram.com how to stay consistent learning a language",
+      "backend": "bing",
+      "window": "m",
+      "found": 5,
+      "usable": 5
+    }
+  ],
+  "rejected": [
+    {
+      "id": "1",
+      "url": "https://www.reddit.com/r/duolingo/?feedViewType=classicView",
+      "title": "Duolingo on reddit",
+      "reason": "Subreddit landing page description, no first-hand pain."
+    },
+    {
+      "id": "2",
+      "url": "https://www.reddit.com/r/duolingo/top/",
+      "title": "Duolingo - Reddit",
+      "reason": "Generic subreddit listing page, no individual testimony."
+    },
+    {
+      "id": "3",
+      "url": "https://www.reddit.com/r/duolingo/wiki/index/",
+      "title": "Duolingo - Reddit",
+      "reason": "Wiki index boilerplate, no first-hand frustration."
+    },
+    {
+      "id": "4",
+      "url": "https://www.reddit.com/r/DuolingoEnglishTest/",
+      "title": "DuolingoEnglishTest - Reddit",
+      "reason": "About the Duolingo English Test score, not the core retention pain."
+    },
+    {
+      "id": "5",
+      "url": "https://www.reddit.com/r/duolingo/rising/",
+      "title": "Duolingo - Reddit",
+      "reason": "Subreddit feed page, no specific user account."
+    },
+    {
+      "id": "8",
+      "url": "https://www.reddit.com/r/languagelearning/comments/ok7auu/i_stopped_learning_a_language_after_a_few_years/",
+      "title": "I stopped learning a language after a few years, and I don't ...",
+      "reason": "About not regretting quitting; less aligned and weaker than selected items."
+    },
+    {
+      "id": "10",
+      "url": "https://www.reddit.com/r/languagelearning/comments/19cy7ko/what_is_a_good_reason_to_give_up_on_a_language/",
+      "title": "What is a good reason to give up on a language? : r ... - Reddit",
+      "reason": "Overlaps with selected quitting threads; slot limit reached."
+    },
+    {
+      "id": "11",
+      "url": "https://www.tiktok.com/@duolingo",
+      "title": "Duolingo (@duolingo) | TikTok",
+      "reason": "Account profile page, not an individual post."
+    },
+    {
+      "id": "13",
+      "url": "https://www.tiktok.com/tag/duolingo",
+      "title": "#duolingo - TikTok",
+      "reason": "Hashtag discovery page, not a specific video or verified trend."
+    },
+    {
+      "id": "15",
+      "url": "https://www.tiktok.com/@duolingo/video/7675830399439916301",
+      "title": "could've sworn there were 7 | duolingo | TikTok",
+      "reason": "Brand joke post with no connection to learning consistency."
+    },
+    {
+      "id": "16",
+      "url": "https://www.tiktok.com/@theinnersanctuary/video/7682677757905620256",
+      "title": "Underground Transformation: How to Grow When Life Looks the ...",
+      "reason": "Self-development content, no language learning or brand link."
+    },
+    {
+      "id": "17",
+      "url": "https://www.tiktok.com/@babitamagar82/video/7682591304638795009",
+      "title": "Practice Tips to Improve Your Skills Fast | TikTok",
+      "reason": "Music practice tips, off-topic."
+    },
+    {
+      "id": "18",
+      "url": "https://www.tiktok.com/@samfrenchteacher/video/7680996209707781407",
+      "title": "Learn French Easily: Simple Steps to Speak French Faster | TikTok",
+      "reason": "Generic French teacher promo, no brand match."
+    },
+    {
+      "id": "19",
+      "url": "https://www.tiktok.com/@shee_iconic/video/7682402475986439444",
+      "title": "Back Workout Progress: How Consistent Training Builds a ...",
+      "reason": "Gym training content, irrelevant."
+    },
+    {
+      "id": "20",
+      "url": "https://www.tiktok.com/@tessainmiami/video/7683568545355058445",
+      "title": "Move to Miami: How to Start Exploring, Meeting People ...",
+      "reason": "Miami relocation content, only passing mention of lessons."
+    },
+    {
+      "id": "21",
+      "url": "https://www.instagram.com/duolingo/",
+      "title": "Duolingo (@duolingo) • Instagram photos and videos",
+      "reason": "Profile page, not a specific post."
+    },
+    {
+      "id": "23",
+      "url": "https://www.instagram.com/p/DF79IjgxfuE/",
+      "title": "Duolingo | an important message from Duolingo | Instagram",
+      "reason": "Brand announcement with no substance on learning habits."
+    },
+    {
+      "id": "24",
+      "url": "https://www.instagram.com/p/DdEzakyB28x/",
+      "title": "Duolingo | let’s hope i don’t get cracked - Instagram",
+      "reason": "Brand joke post, no relevance to core pain."
+    },
+    {
+      "id": "25",
+      "url": "https://www.instagram.com/p/DS5na9lkQis/",
+      "title": "Instagram",
+      "reason": "Comic post, no connection to learner consistency."
+    },
+    {
+      "id": "26",
+      "url": "https://www.instagram.com/reel/DdCNWaBPK83/",
+      "title": "notes by nita | If you’re serious about learning Chinese ...",
+      "reason": "Promotional template pitch, not brand or audience testimony."
+    },
+    {
+      "id": "27",
+      "url": "https://www.instagram.com/reel/DdJU-5LTc06/",
+      "title": "Instagram",
+      "reason": "Promotion for 1-on-1 English classes."
+    },
+    {
+      "id": "28",
+      "url": "https://www.instagram.com/reel/Dcd3DJTIh9l/",
+      "title": "master's academy | Exam strategy | Instagram",
+      "reason": "General study techniques, no brand or language pain."
+    },
+    {
+      "id": "29",
+      "url": "https://www.instagram.com/p/DVIMyIvDjO_/",
+      "title": "The Entrepreneur Central Magazine | Hard work isn’t a linear ...",
+      "reason": "Entrepreneurship commentary, off-topic."
+    },
+    {
+      "id": "30",
+      "url": "https://www.instagram.com/reel/DdFtMkUpmBc/",
+      "title": "Nicole Denise || Slow • Intentional • Eco-Conscious Living ...",
+      "reason": "Cultural language post, not related to app retention."
+    }
+  ],
+  "status": "Sources found",
+  "coverage": {
+    "reddit.com": 3,
+    "tiktok.com": 2,
+    "instagram.com": 1
+  },
+  "found_counts": {
+    "reddit.com": 10,
+    "tiktok.com": 10,
+    "instagram.com": 10
+  },
+  "collected_at": "2026-09-12",
+  "collected_timestamp": 1789207670.4832814,
+  "cached": false,
+  "provider": "DDGS indexed search + Claude relevance review",
+  "scope": "Indexed public search evidence. No full-feed coverage, video viewing, verified momentum or predicted views."
+}

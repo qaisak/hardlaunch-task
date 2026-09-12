@@ -1,0 +1,104 @@
+{
+  "audience": [
+    {
+      "id": "1",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/HousingUK/comments/1azj0qc/energy_bill_ev_owners/",
+      "title": "Energy bill (EV owners) : r/HousingUK - Reddit",
+      "snippet": "Energy bill (EV owners) What's your bill throughout this winter? Do you have an EV that you charge at home? Ours is £450 average between Nov to Jan. Car charge at home. Electricity is about £300 and gas approx £150. I am considering to change back to a petrol car as charging at home is actually more expensive than filling up petrol.",
+      "page_age": null,
+      "summary": "UK Reddit thread where an EV-owning household shares winter bills (~£450/month average, ~£300 electricity and ~£150 gas) and questions whether home charging is cheaper than petrol — first-hand confusion about what energy actually costs.",
+      "evidence": "Ours is £450 average between Nov to Jan. Car charge at home. Electricity is about £300 and gas approx £150.",
+      "evidence_level": "Search excerpt; full page not inspected"
+    },
+    {
+      "id": "3",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/HousingUK/comments/1b40elw/billing_for_ev_charging_in_the_communal_garage_is/",
+      "title": "Billing for EV charging in the communal garage is passed to all ...",
+      "snippet": "Following the departure of Landlord 1, residents discovered an issue with individual billing for EV charger electricity consumption. Essentially, there is no billing (EV Cars owners have been charging \"for free\"), and EV electricity is billed to everyone via the service charge as part of the communal garage electricity consumption.",
+      "page_age": null,
+      "summary": "Residents found EV charger electricity in a communal garage isn't individually billed and is spread across everyone's service charge — a first-hand billing-transparency frustration relevant to renters, landlords and EV drivers.",
+      "evidence": "there is no billing (EV Cars owners have been charging \"for free\"), and EV electricity is billed to everyone via the service charge",
+      "evidence_level": "Search excerpt; full page not inspected"
+    }
+  ],
+  "trends": [],
+  "sources": [
+    {
+      "id": "1",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/HousingUK/comments/1azj0qc/energy_bill_ev_owners/",
+      "title": "Energy bill (EV owners) : r/HousingUK - Reddit",
+      "snippet": "Energy bill (EV owners) What's your bill throughout this winter? Do you have an EV that you charge at home? Ours is £450 average between Nov to Jan. Car charge at home. Electricity is about £300 and gas approx £150. I am considering to change back to a petrol car as charging at home is actually more expensive than filling up petrol.",
+      "page_age": null
+    },
+    {
+      "id": "2",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/electricvehicles/comments/sarper/uk_government_considering_taxing_evs_as_pay_per/",
+      "title": "UK government considering taxing EVs as pay per mile, are you ... - Reddit",
+      "snippet": "This is the Reddit community for EV owners and enthusiasts. Join and Discuss evolving technology, new entrants, charging infrastructure, government policy, and the ins and outs of EV ownership right here.",
+      "page_age": null
+    },
+    {
+      "id": "3",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/HousingUK/comments/1b40elw/billing_for_ev_charging_in_the_communal_garage_is/",
+      "title": "Billing for EV charging in the communal garage is passed to all ...",
+      "snippet": "Following the departure of Landlord 1, residents discovered an issue with individual billing for EV charger electricity consumption. Essentially, there is no billing (EV Cars owners have been charging \"for free\"), and EV electricity is billed to everyone via the service charge as part of the communal garage electricity consumption.",
+      "page_age": null
+    },
+    {
+      "id": "4",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/unitedkingdom/comments/17l6hl0/uk_bill_payers_may_have_to_cover_6bn_cost_of/",
+      "title": "UK bill payers may have to cover £6bn cost of failed energy ... - Reddit",
+      "snippet": "National Grid is a small percentage of the costs you actually pay on your bill, and the rate is negotiated by Ofgem. It has nothing to do with the energy suppliers going bust.",
+      "page_age": null
+    },
+    {
+      "id": "5",
+      "kind": "audience",
+      "url": "https://www.reddit.com/r/electricvehicles/comments/1doa1lz/on_average_how_much_do_ev_owners_save_on_fuel_and/",
+      "title": "On average how much do EV owners save on fuel and standard ... - Reddit",
+      "snippet": "This is the Reddit community for EV owners and enthusiasts. Join and Discuss evolving technology, new entrants, charging infrastructure, government policy, and the ins and outs of EV ownership right here.",
+      "page_age": null
+    },
+    {
+      "id": "6",
+      "kind": "trends",
+      "url": "https://www.instagram.com/reel/DcWzoLsynlI/",
+      "title": "Instagram",
+      "snippet": "Aug 24, 2026 · Good morning. I was the winner of the Ambev campaign, of the Budweiser brand that would give a commemorative can with the autograph in his own hand of the player Erling Haaland. I received it 1 week ago. Box, packed commemorative can and Ambev invoice certifying its value. I’m looking to sell it to some collector, because I unpretentiously participated and ended up winning. AS I’M IN A lot ...",
+      "page_age": null
+    },
+    {
+      "id": "7",
+      "kind": "trends",
+      "url": "https://www.instagram.com/reel/DcY3jcdFI74/",
+      "title": "Instagram",
+      "snippet": "Aug 23, 2026 · 153 likes, 1 comments - upsschools_om on August 23, 2026: \" Back to School at UIS Bawshar | 2026/2027 The doors are open, the classrooms are ready, and our Bawshar students are back! Here’s to a new academic year filled with learning, new experiences, friendships and achievements. Welcome back, Bawshar! العودة إلى المدرسة في المدارس المتحدة الدولية ...",
+      "page_age": null
+    }
+  ],
+  "errors": [
+    "trends search unavailable: DDGSException"
+  ],
+  "queries": [
+    "site:reddit.com UK energy bill payers EV owners",
+    "site:tiktok.com unpredictable energy bills slow supplier support",
+    "site:instagram.com/reel/ unpredictable energy bills slow supplier support"
+  ],
+  "status": "Sources found (partial coverage)",
+  "coverage": {
+    "reddit.com": 2,
+    "tiktok.com": 0,
+    "instagram.com": 0
+  },
+  "collected_at": "2026-09-12",
+  "collected_timestamp": 1789204514.7979555,
+  "cached": false,
+  "provider": "DDGS indexed search + Claude relevance review",
+  "scope": "Indexed public search evidence. No full-feed coverage, video viewing, verified momentum or predicted views."
+}

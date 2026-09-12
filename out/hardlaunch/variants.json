@@ -1,0 +1,62 @@
+[
+  {
+    "id": "v1",
+    "text": "just seen a media buyer at 11pm watching CPMs climb on the one ad that ever printed. no new brief. no reshoot booked. no hardlaunch. just him and one clip he has already run into the ground. refreshing the dashboard like it is going to grow a new actor. Respect the commitment i guess",
+    "word_count": 52,
+    "reaction": "deadpan",
+    "base_video": "Creator sits in a dim room at a desk, laptop glow on their face, slowly sipping from a mug and staring past the camera with zero expression, one small eyebrow raise near the end.",
+    "audio": "original audio, room tone with faint keyboard clicks",
+    "caption": "the ad is dead and he knows it",
+    "why_this_brand": "Only a paid media buyer watching one winning creative decay at 11pm with nothing in the pipeline lives this exact 2am problem."
+  },
+  {
+    "id": "v2",
+    "text": "my friend has been in her kitchen for nine days typing hey just circling back on that reshoot. no reply. no footage. no backup creator. no hardlaunch. just her and a read receipt from a guy who is currently in tulum. she is still drafting the follow up. couldn't pay me enough",
+    "word_count": 51,
+    "reaction": "disbelief",
+    "base_video": "Creator leans on a kitchen counter eating cereal, glances down at their phone, does a slow blink and a tiny double take at the camera, then keeps eating.",
+    "audio": "original audio, room tone",
+    "caption": "nine days. nine.",
+    "why_this_brand": "Chasing a booked creator on WhatsApp for a reshoot that never lands is the founder version of this brand's core bottleneck."
+  },
+  {
+    "id": "v3",
+    "text": "watched a growth guy set up fifty posting accounts then realize every single one needs a different person on camera. no swaps. no recasts. no hardlaunch. just him in the mirror doing fifty different voices for fifty different brands. he has booked his cousin for saturday. we lost a good one today",
+    "word_count": 51,
+    "reaction": "confused",
+    "base_video": "Creator stands in a bedroom holding two phones, looking slowly left then right off camera like they are trying to find who said that, then back to lens.",
+    "audio": "original audio, room tone",
+    "caption": "fifty accounts, one face, you do the maths",
+    "why_this_brand": "Fifty warmed posting accounts all needing a different face on camera is the exact wall this product is built at."
+  },
+  {
+    "id": "v4",
+    "text": "i shipped a hundred ads last quarter the old way. every one a new brief. a new casting call. a new invoice line. no ai avatars. no face library. no hardlaunch. just me and a spreadsheet of forty creators i now text more than my family. i learned nothing. i would do it again. genuinely unwell",
+    "word_count": 55,
+    "reaction": "thoughtful",
+    "base_video": "Creator sits in a parked car, keys still in hand, staring slightly upward doing silent maths, then gives one small resigned nod at the camera.",
+    "audio": "original audio, car interior tone",
+    "caption": "the spreadsheet has a tab called chasers",
+    "why_this_brand": "The invoice spreadsheet and the per-ad casting call are the literal operating cost this tool removes for high volume creative teams."
+  },
+  {
+    "id": "v5",
+    "text": "there is a guy in a WeWork in austin running an open casting call for a 22 second ad. sign up sheet. ring light. six people who all want usage rights. no recasts. no face library. no hardlaunch. just him and a clipboard trying to hire nineteen more faces by friday. he brought snacks. that is the saddest part",
+    "word_count": 57,
+    "reaction": "skeptical",
+    "base_video": "Creator sits on a shared office sofa with a lanyard on, looks off camera at something happening, rolls their eyes once and goes back to their coffee.",
+    "audio": "original audio, office murmur",
+    "caption": "the snacks did it for me",
+    "why_this_brand": "Casting twenty humans for one 22 second ad is the sourcing tax this brand replaces with recasts of a single base video."
+  },
+  {
+    "id": "v6",
+    "text": "my old agency flew a crew to three countries to shoot the same script in three languages. three crews. three catering budgets. three creators with three different flight rows. no dubs. no recasts. no hardlaunch. just a producer and eleven markets to go. the client loved it. the P&L did not. unhinged in eleven languages",
+    "word_count": 55,
+    "reaction": "approval",
+    "base_video": "Creator sits at a table with a drink, hears the story, raises the glass slightly toward camera with a closed mouth smile and holds it.",
+    "audio": "original audio, restaurant room tone",
+    "caption": "somewhere a producer is still on a layover",
+    "why_this_brand": "Shooting the same script market by market with local crews is the exact problem eleven language recasting from one video solves."
+  }
+]

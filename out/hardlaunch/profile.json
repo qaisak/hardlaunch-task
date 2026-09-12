@@ -1,0 +1,55 @@
+{
+  "brand_name": "HardLaunch",
+  "one_liner": "AI face swap turns one creator video into twenty",
+  "niche": "AI video tooling for UGC ads and paid social creative",
+  "product_type": "saas",
+  "audience": "paid media buyers, ecommerce and app founders, UGC agency and creator-team operators running high-volume short-form, typically 22-40, shipping new ad creative weekly and running many posting accounts",
+  "core_pain": "every new video needs a new human on camera, so sourcing, briefing, paying and chasing creators caps how much creative you can ship, winners decay and one clip can't go out from fifty accounts",
+  "old_way_objects": [
+    "creator briefs",
+    "ugc marketplaces",
+    "casting calls and dm outreach",
+    "reshoots",
+    "a spreadsheet of creator invoices",
+    "ai avatar generators",
+    "capcut re-edits of the same clip",
+    "burner posting accounts",
+    "local production crews for each market"
+  ],
+  "scenes": [
+    "media buyer at a desk at 11pm watching CPMs climb on the one ad that used to print, with no new creative in the pipeline",
+    "founder in a kitchen chasing a creator on WhatsApp for a reshoot that was due last week",
+    "growth marketer holding fifty phones worth of posting accounts, realising every account needs a different person in the video"
+  ],
+  "tone": "blunt, operator-to-operator, confident, unfussy",
+  "proof_points": [
+    "one video recast up to twenty times",
+    "eleven languages, translation at no surcharge",
+    "1 credit per face-second at 720p, half a credit at 480p",
+    "pricing scanned in your browser before upload, nothing uploads until you say go",
+    "failed renders are refunded in credits",
+    "Starter $99/month for 165 credits, Growth $499/month for 1,000 credits, Scale $1,499/month for 3,000 credits",
+    "top-ups start at $62.50 for 125 credits and never expire",
+    "screened face library cleared for commercial use",
+    "own characters built from a single photo, consent required",
+    "$1M MRR built (Jenni AI)",
+    "1B+ short-form views shipped",
+    "6M+ users acquired organically",
+    "7.5M+ coaching-team following",
+    "agency arm films base videos with hand-picked creators and a dedicated campaign manager",
+    "accounts arm runs hand-made, hand-warmed TikTok and Instagram profiles posting daily",
+    "accounts temporarily sold out"
+  ],
+  "do_not_say": [
+    "guaranteed ROAS, CPM or view results",
+    "deepfake, or any framing that suggests using someone's face without consent",
+    "'replaces your creators' (brand line is creators are the asset)",
+    "claims about beating platform detection or evading duplicate-content enforcement",
+    "naming rival avatar or ugc tools",
+    "'undetectable' as a promise of fooling anyone (site says judge it from the comparisons)",
+    "invented client names or case study numbers beyond those on the site",
+    "promising account availability while accounts are sold out"
+  ],
+  "cta": "upload your best-performing video and get an instant in-browser price to recast it (sign up on a monthly credit plan)",
+  "source_url": "https://hardlaunch.com/"
+}
