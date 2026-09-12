@@ -1,0 +1,34 @@
+{
+  "brand_name": "Wild",
+  "one_liner": "Refillable natural deodorant in a reusable case (inferred)",
+  "niche": "natural refillable deodorant and personal care",
+  "product_type": "physical product",
+  "audience": "UK 18-35s, mostly women, environmentally minded, sensitive to aluminium and synthetic ingredients, buy on subscription (inferred)",
+  "core_pain": "binning a plastic deodorant stick every few weeks, and natural alternatives that either stop working by lunchtime or irritate skin (inferred)",
+  "old_way_objects": [
+    "plastic deodorant sticks",
+    "aerosol antiperspirant cans",
+    "roll-ons",
+    "bicarb paste in a tin",
+    "crystal alum stick",
+    "supermarket own-brand deodorant",
+    "the bathroom bin full of empties",
+    "body spray as a cover-up"
+  ],
+  "scenes": [
+    "bathroom cabinet at 7am, someone rummaging past four half-used plastic sticks to find one that isn't crusty",
+    "office toilets at 2pm, someone sniffing their own sleeve and deciding whether to go home and change",
+    "packing a weekend bag on the bedroom floor, chucking in a bulky aerosol that then leaks or gets binned at airport security"
+  ],
+  "tone": "playful, direct, cheeky, eco-confident (inferred)",
+  "proof_points": [],
+  "do_not_say": [
+    "antiperspirant (do not imply it stops sweat)",
+    "100% plastic free unless the site states it",
+    "medical claims about aluminium, parabens or cancer",
+    "cures or treats body odour",
+    "invented customer numbers, review counts or awards",
+    "named competitor brands"
+  ],
+  "cta": "order a starter case and pick your scents at wildcosmetics.com"
+}

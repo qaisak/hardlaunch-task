@@ -1,0 +1,72 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "swap the borrowed verdict 'Respect honestly' for something written for this scene, e.g. 'rubbing a rock on herself like it's the iron age' is already the escalation, so end on a fresh judgement like 'and she says it works'."
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "tighten the middle: 'no spare in my bag. no refill in my desk. no wild.' is good but the hand dryer line runs long, cut to 'just me and a hand dryer doing a full body wash in a cubicle'."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 5,
+      "voice": 3,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "you skipped the absurd escalation. after the no-X list add a 'just her and a bulky aerosol against airport security' beat before the verdict."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 2,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 4,
+      "length": 2
+    },
+    "overall": 5,
+    "fix": "kill the location preamble and open on the action: 'watched a bloke stand in the deodorant aisle for six minutes', then build the no-X list to three items."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 4,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "the red raw arms edges toward a skin claim, soften to 'left my arms in a state for a wedding' to stay clear of irritation claims."
+  }
+]

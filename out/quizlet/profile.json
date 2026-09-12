@@ -1,0 +1,41 @@
+{
+  "brand_name": "Quizlet",
+  "one_liner": "Turns your notes into flashcards, practice tests and study games",
+  "niche": "study tool / flashcard and exam prep app",
+  "product_type": "app",
+  "audience": "high school and university students (roughly 14-22) cramming for exams, plus teachers who need low-prep classroom activities; US-centric but used worldwide (inferred)",
+  "core_pain": "sitting with a pile of messy lecture notes and no idea how to turn them into something you can actually revise from, then rewriting flashcards by hand the night before a test",
+  "old_way_objects": [
+    "paper index cards",
+    "highlighters",
+    "a notes app",
+    "google docs notes",
+    "rewriting notes by hand",
+    "a photo of the whiteboard",
+    "printed lecture slides",
+    "reading the textbook over and over"
+  ],
+  "scenes": [
+    "library at 11pm, student with three highlighters and a 40-page lecture PDF, hasn't started revising",
+    "bedroom floor the night before an exam, someone hand-writing index cards and running out of time",
+    "teacher at their desk on a Sunday evening building a starter activity from scratch for Monday's lesson"
+  ],
+  "tone": "encouraging, plain, student-first, upbeat",
+  "proof_points": [
+    "free flashcards, premium study tools",
+    "free for teachers",
+    "integrates with Google Classroom",
+    "turns recorded, written or typed notes into study guides, flashcards, practice tests and games",
+    "study modes include Flashcards, Learn, Test, Study Guides, Expert Solutions, study groups, learning games, Live",
+    "available in 20+ languages"
+  ],
+  "do_not_say": [
+    "guaranteed grade improvements or 'get an A'",
+    "'millions of students' as a hard number unless quoting the site's own wording",
+    "naming rival study apps",
+    "anything implying it does your homework or helps you cheat",
+    "claims about specific exam boards or official endorsement",
+    "'AI does the studying for you'"
+  ],
+  "cta": "sign up for free (or sign up as a teacher)"
+}

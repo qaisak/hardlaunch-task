@@ -66,11 +66,37 @@ def html_to_text(html: str) -> tuple[str, list[str]]:
     return "\n".join(bits), links
 
 
-def ingest(url: str) -> str:
-    """Homepage plus up to two informative internal pages, trimmed to MAX_CHARS."""
+def ingest_via_model(client, url: str) -> str:
+    """Fallback for JS-rendered or bot-gated sites: Claude's server-side web fetch reads the page
+    (it renders more than a bare GET) and returns the visible copy verbatim-ish."""
+    r = client.messages.create(
+        model="claude-opus-5",
+        max_tokens=8000,
+        output_config={"effort": "low"},
+        tools=[{"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": 3}],
+        messages=[{"role": "user", "content":
+                   f"Fetch {url} (and one 'about' or 'how it works' page if linked). Return the visible marketing "
+                   f"copy of the site as plain text, as close to verbatim as you can: headline, subheads, product "
+                   f"descriptions, claims, prices, reviews, FAQs. No commentary, no summary, just the text."}],
+    )
+    text = "".join(b.text for b in r.content if b.type == "text")
+    if len(text) < 400:
+        raise RuntimeError(f"Could not read {url} by scraping or by web fetch.")
+    return f"URL: {url}\n{text}"
+
+
+def ingest(url: str, client=None) -> str:
+    """Homepage plus up to two informative internal pages, trimmed to MAX_CHARS.
+    Falls back to model web fetch when a bare GET returns a JS shell."""
     if not url.startswith("http"):
         url = "https://" + url
-    text, links = html_to_text(fetch_page(url))
+    try:
+        text, links = html_to_text(fetch_page(url))
+    except Exception as e:
+        text, links = "", []
+        print(f"  scrape failed ({e}); trying web fetch fallback", flush=True)
+    if len(text) < 400 and client is not None:
+        return ingest_via_model(client, url)[:MAX_CHARS]
     base = f"{urlparse(url).scheme}://{urlparse(url).netloc}"
     seen, extra = set(), []
     for h in links:
@@ -147,7 +173,7 @@ def main() -> None:
     log = lambda m: print(f"[{time.time()-t0:5.0f}s] {m}", flush=True)
 
     log(f"fetching {args.url}")
-    site_text = ingest(args.url)
+    site_text = ingest(args.url, client)
     log(f"scraped {len(site_text)} chars")
 
     taste = read(PROMPTS / "taste.md")
@@ -180,8 +206,19 @@ def main() -> None:
     win = ranked[0]
     ws = by_id.get(win["id"], {})
 
+    log("applying editor fix")
+    final = win
+    if ws.get("fix"):
+        try:
+            rev = extract_json(call(client, taste + "\n\n" + style,
+                                    read(PROMPTS / "overlay_revise.md").replace("{text}", win["text"]).replace("{fix}", ws["fix"]).replace("{profile}", profile_s),
+                                    effort="medium"))
+            final = {**win, "text": rev["text"], "caption": rev.get("caption", win.get("caption")), "what_changed": rev.get("what_changed", "")}
+        except Exception as e:  # revise is a bonus, never let it sink the run
+            log(f"revise skipped: {e}")
+
     log("rendering preview")
-    render_png(win["text"], outdir / "post.png", brand)
+    render_png(final["text"], outdir / "post.png", brand)
 
     md = [f"# {brand}: long overlay\n",
           f"**Format decision:** {fmt.get('format')}. {fmt.get('reason')} Runner-up {fmt.get('runner_up')}: {fmt.get('why_not_runner_up')}\n",
@@ -196,7 +233,7 @@ def main() -> None:
     (outdir / "post.md").write_text("\n".join(md), encoding="utf-8")
 
     log(f"done -> {outdir / 'post.md'}")
-    print("\n" + win["text"] + "\n")
+    print("\n" + final["text"] + "\n")
 
 
 if __name__ == "__main__":

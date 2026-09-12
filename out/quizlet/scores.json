@@ -1,0 +1,72 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "you name highlighters twice; cut 'three highlighters' from the setup and let 'just her and a yellow highlighter on the fourth read of the same paragraph' carry it, then swap 'Absolute madness' for a verdict people can argue with."
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 3,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 3
+    },
+    "overall": 7,
+    "fix": "'no learn mode. no test mode. no quizlet' is three brand mentions in a row and reads like a feature list; keep one ('no quizlet') and replace the others with real objects ('no photos of the slides. no study group'), and cut 'from the store'."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "the opening eight words are admin, not a scene; start on the image ('sunday night. my chemistry teacher building monday's starter quiz from scratch') and let the verdict do the tagging instead of the caption."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 3
+    },
+    "overall": 8,
+    "fix": "trim the setup to one action ('print all 200 lecture slides six per page. then highlight every line') so the pink escalation lands faster, and drop 'no practice test' to keep the list at three."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "open in house voice with the observation, not 'there's a guy' ('just seen a guy in the 24 hour study room read the same chapter eleven times'), which also gets the number into the first eight words."
+  }
+]
