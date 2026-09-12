@@ -13,6 +13,8 @@ from __future__ import annotations
 
 import argparse
 import shutil
+import ipaddress
+import socket
 import json
 import re
 import sys
@@ -41,10 +43,27 @@ MIN_CHARS = 1500  # below this a bare GET is a JS shell or a thin page: use the 
 
 # ---------------------------------------------------------------- ingest ----
 
+def validate_public_url(url):
+    parsed=urlparse(url)
+    if parsed.scheme not in ('http','https') or not parsed.hostname or parsed.username or parsed.password:
+        raise ValueError('Enter a public HTTP or HTTPS brand website.')
+    try:addresses=socket.getaddrinfo(parsed.hostname,parsed.port or (443 if parsed.scheme=='https' else 80),type=socket.SOCK_STREAM)
+    except (socket.gaierror,ValueError) as error:raise ValueError('Could not resolve the brand website.') from error
+    if not addresses or any(not ipaddress.ip_address(item[4][0]).is_global for item in addresses):
+        raise ValueError('Use a public brand website; local and private network addresses are unavailable.')
+    return url
+
+
 def fetch_page(url: str) -> str:
-    r = requests.get(url, headers=UA, timeout=20)
-    r.raise_for_status()
-    return r.text
+    for _ in range(5):
+        validate_public_url(url)
+        r = requests.get(url, headers=UA, timeout=20, allow_redirects=False)
+        if r.is_redirect:
+            url=urljoin(url,r.headers['Location'])
+            continue
+        r.raise_for_status()
+        return r.text
+    raise ValueError('Too many website redirects.')
 
 
 def html_to_text(html: str) -> tuple[str, list[str]]:
@@ -168,6 +187,7 @@ def slug(s: str) -> str:
 
 def run(url: str, n: int = 6, out: Path = ROOT / "out", progress=None, audience_links='', audience_excerpts='', trend_links='', trend_notes='', trend_observed='', trend_market='', auto_research=True) -> dict:
     """The whole pipeline for one URL. Returns the result dict; also used by app.py."""
+    validate_public_url(url if url.startswith(("http://","https://")) else "https://"+url)
     reference = trend_input(trend_links, trend_notes, trend_observed, trend_market)
     import anthropic
     client = anthropic.Anthropic()

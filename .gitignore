@@ -11,3 +11,5 @@ out/run_*.log
 out/_review/
 out/**/*.rendering.mp4
 out/_research/
+
+.tools/
