@@ -4,3 +4,25 @@ open http://localhost:8000
 [    6s] building brand profile
 [   21s] choosing format
 [   26s] writing 6 overlay drafts
+[   86s] critiquing
+[  109s] applying editor fix
+[  114s] rendering preview
+[  114s] done -> C:\Users\Qais\hardlaunch-task\out\headspace\post.md
+[    0s] fetching https://www.rihal.om/
+[    1s] scraped 5879 chars
+[    1s] building brand profile
+[   16s] choosing format
+[   21s] writing 6 overlay drafts
+[   72s] critiquing
+[   93s] applying editor fix
+[   99s] rendering preview
+[   99s] done -> C:\Users\Qais\hardlaunch-task\out\rihal\post.md
+[    0s] fetching https://www.rihal.om/
+[    1s] scraped 5879 chars
+[    1s] building brand profile
+[   16s] choosing format
+[   21s] writing 6 overlay drafts
+[   82s] critiquing
+[   92s] applying editor fix
+[   98s] rendering preview
+[   98s] done -> C:\Users\Qais\hardlaunch-task\out\rihal\post.md

@@ -23,7 +23,7 @@ PAGE = """<!doctype html><meta charset="utf-8"><title>brand url in, post out</ti
  body{{font:16px/1.5 system-ui,sans-serif;max-width:1000px;margin:40px auto;padding:0 20px;color:#111}}
  form{{display:flex;gap:10px;margin-bottom:30px}} input{{flex:1;font-size:18px;padding:10px}}
  button{{font-size:18px;padding:10px 20px;background:#111;color:#fff;border:0;cursor:pointer}}
- .row{{display:flex;gap:30px;align-items:flex-start}} img{{width:360px;border-radius:14px;box-shadow:0 6px 30px #0003}}
+ .row{{display:flex;gap:30px;align-items:flex-start}} img,video{{width:360px;border-radius:14px;box-shadow:0 6px 30px #0003}}
  blockquote{{font-size:20px;background:#f4f4f5;padding:16px 20px;border-radius:10px}}
  .meta{{color:#555;font-size:14px}} h2{{margin-top:32px}} li{{margin:8px 0}}
  .prev a{{margin-right:12px}}
@@ -56,10 +56,14 @@ def result_html(slug: str) -> str:
         win = json.loads((d / "final.json").read_text(encoding="utf-8"))
         final = win["text"]
     e = html.escape
+    if (d / "post.mp4").exists():
+        media = f'<video src="/out/{slug}/post.mp4" width="360" controls autoplay muted loop playsinline style="border-radius:14px;box-shadow:0 6px 30px #0003"></video>'
+    else:
+        media = f'<img src="/out/{slug}/post.png" alt="preview">'
     runners = "".join(f"<li>({scores.get(v['id'], {}).get('overall', '?')}/10) {e(v['text'])}</li>" for v in ranked[1:])
     return f"""
 <div class="row">
- <img src="/out/{slug}/post.png" alt="preview">
+ {media}
  <div>
   <h2 style="margin-top:0">{e(profile.get('brand_name', slug))}</h2>
   <blockquote>{e(final)}</blockquote>
@@ -67,6 +71,7 @@ def result_html(slug: str) -> str:
      <b>Audio:</b> {e(str(win.get('audio','')))}<br>
      <b>Caption:</b> {e(str(win.get('caption','')))}<br>
      <b>Why this brand:</b> {e(str(win.get('why_this_brand','')))}</p>
+  <p class="meta">Video: {e(str(win.get('video','')))}</p>
   <p class="meta">{e(fmt.replace('**',''))}</p>
   <p class="meta">Profile: {e(profile.get('one_liner',''))} | niche: {e(profile.get('niche',''))}<br>
      old way: {e(', '.join(profile.get('old_way_objects', [])))}</p>

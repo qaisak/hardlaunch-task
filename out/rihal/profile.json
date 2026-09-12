@@ -1,45 +1,44 @@
 {
   "brand_name": "Rihal",
-  "one_liner": "Omani tech firm turning paper-based organisations into data-driven ones",
-  "niche": "enterprise digital transformation, AI and process automation",
+  "one_liner": "Omani tech firm turning government and enterprise paperwork into usable data",
+  "niche": "enterprise AI, data and process automation (digital transformation consultancy)",
   "product_type": "service",
-  "audience": "Government digitalisation leads, IT directors and operations managers at Omani and wider MENA ministries, energy companies and large enterprises, roughly 30-55, accountable for backlogs of paper records and stalled transformation programmes (inferred). Secondary: Omani tech graduates and engineers eyeing careers there (inferred)",
-  "core_pain": "Decades of documents, PDFs and scanned forms sitting in cabinets and shared drives, with staff manually keying, sorting and searching them, so nobody can actually report on or trust the data",
+  "audience": "Government digital transformation leads, IT directors and operations managers at Omani and wider MENA ministries, banks and large enterprises, typically 30-55, sitting on decades of paper and PDF archives (inferred). Secondary: Omani engineering graduates and mid-career tech talent looking at Careers (inferred)",
+  "core_pain": "Critical information is locked in scanned documents, PDFs and paper files, so staff re-key, search and cross-check by hand, and nobody can report on anything without weeks of manual work",
   "old_way_objects": [
-    "filing cabinets",
+    "paper files",
     "scanned pdfs",
     "excel spreadsheets",
     "shared drives",
+    "email attachments",
     "manual data entry teams",
-    "email approval chains",
-    "paper request forms",
-    "pilot projects that never went live"
+    "physical archive rooms",
+    "legacy on-premise systems"
   ],
   "scenes": [
-    "A ministry records room in Muscat, an officer pulling boxed files off a shelf to answer one citizen request",
-    "An operations manager at 11pm in an office, copying numbers from 40 scanned invoices into a spreadsheet for a board report",
-    "A director in a meeting asked for last quarter's figures, three departments send three different spreadsheets that do not match"
+    "A ministry office at 9pm, an employee typing figures from a stack of scanned forms into a spreadsheet row by row",
+    "A records room in Muscat, a clerk pulling box files off shelves to find one signed document a director asked for",
+    "A board meeting where the ops director says the monthly report is late again because three departments sent numbers in three different formats"
   ],
-  "tone": "confident, technical, national-pride, matter-of-fact",
+  "tone": "Serious, technical, national-pride, understated",
   "proof_points": [
-    "one of the fastest-growing technology companies in MENA (as stated on site)",
     "team of 300+",
+    "describes itself as one of the fastest-growing technology companies in MENA",
     "systems used across governments and enterprises",
-    "deployed on-premise or within national infrastructure",
-    "co-founded and led by an Omani leadership team (Azzan Al Kindi, Asim Al Shabibi, Waleed Al Harthi)",
+    "deployments on-premise and within national infrastructure",
     "products: Siraaj, Iqraa, Jadawel",
-    "testimonial from Raoul Restucci, former Managing Director, Petroleum Development Oman, calling Rihal 'a role model in entrepreneurial creativity, intensity and commitment to make a difference in unleashing Omani talent'",
-    "services: Intelligent Process Automation, Artificial Intelligence, Data Management, Software Engineering, IT Resourcing"
+    "testimonial from Raoul Restucci, Former Managing Director, Petroleum Development Oman, calling Rihal a role model in entrepreneurial creativity and commitment to unleashing Omani talent",
+    "services: Intelligent Process Automation, AI, Data Management, Software Engineering, IT Resourcing",
+    "based in Industrial Ghala, Muscat, Oman"
   ],
   "do_not_say": [
-    "named client lists or logos beyond PDO, which is the only one quoted",
-    "invented percentages on time saved, cost cut or accuracy",
-    "claims that AI replaces staff or headcount reduction promises",
-    "security or compliance guarantees such as 'unhackable', 'fully compliant', 'zero risk'",
-    "guaranteed delivery timelines or fixed pricing",
-    "competitor consultancies or software vendors by name",
-    "political statements about government entities",
-    "'revolutionary', 'world-class', 'cutting-edge' style marketing filler in scripts"
+    "named client lists or logos beyond the PDO quote already published",
+    "any percentage of cost saved, hours saved or accuracy rate (no numbers on site)",
+    "claims about handling classified or national security data",
+    "guarantees that AI output is error-free",
+    "revenue, funding or valuation figures",
+    "comparisons naming other consultancies or software vendors",
+    "political commentary about government bodies"
   ],
-  "cta": "Book a free demo session, talk to us at rihal.om (careers page for job seekers)"
+  "cta": "Book a free demo session / Talk to us (and for talent: check Careers)"
 }

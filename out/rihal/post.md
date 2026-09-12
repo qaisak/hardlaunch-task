@@ -1,73 +1,75 @@
 # Rihal: long overlay
 
-**Format decision:** long_overlay. Rihal sells an invisible service, so there is no product to film, but the 'old way' is extremely visual in the mind: records rooms, 40 scanned invoices at 11pm, three departments sending three spreadsheets that disagree. A silent reacting person plus one block of text lets an IT director or ops manager read their own Tuesday back to them, which is what drives the send-to-a-colleague share. Runner-up slideshow: Slideshow would work for the filing cabinet imagery but splits attention across slides and reads more like a corporate deck than a person quietly agreeing with you.
+**Format decision:** long_overlay. Rihal sells an invisible service, so there's no demo footage to show, but the old way is painfully visual and relatable: a ministry employee at 9pm re-keying scanned forms into a spreadsheet row by row while the director waits on a report. A silent reacting person plus one block of text lets that 9pm feeling land with the IT director and ops manager scrolling at night, without any claim or number that the brand can't back up. Runner-up slideshow: Paper files, archive rooms and spreadsheets photograph as generic stock rather than a before/after worth swiping through, so it would stall on hold rate.
 
 ## The post
 
-> director asks for last quarter's figures. three departments. three spreadsheets. three different numbers. no single source. no shared system. no rihal. just four men in a room arguing about which excel file is the real one while the quarter quietly ends. Everyone's right. that's the problem
+> watched a clerk at a bank counter in muscat photocopy a file so he could scan the photocopy so he could email the scan to himself. no index. no rihal. no reason. just a man and a machine locked in a long private conversation. the original was on the desk the whole time. Hardest working man in that building. and the reason nothing works.
 
-**Base video:** A man sitting in an empty meeting room, tie slightly loose, laptop closed in front of him, staring dead ahead at the camera. One slow sip of water, nothing else.  
-**Audio:** original audio, room tone  
-**Caption:** which department's number do you believe  
-**Why it is this brand:** Three departments sending three mismatched spreadsheets for one board question is the reporting-trust gap Rihal's data management exists to close.
+**Base video:** A woman standing in a queue indoors, phone held low at chest height, filming herself. She raises her eyebrows once and looks slightly off camera, then back.  
+**Audio:** trending low-key instrumental, no lyrics  
+**Caption:** the original was right there. who's he doing it for?  
+**Why it is this brand:** The scan-of-a-photocopy loop at a MENA bank counter is the legacy document workflow Rihal turns into structured data.
 
-Score 8/10. Editor: Make the no-list nouns as concrete as the rest, swap 'no single source. no shared system' for real objects ('no data model. no shared drive that matters'), so the fragments stop sounding like consultant language.
+Draft scored 9/10. Editor fix applied: 'art, arguably' is close but soft, sharpen to a verdict people can disagree with out loud  
+What changed: Replaced the soft 'art, arguably' with a blunt two-part verdict people can argue with out loud.  
+Original draft: watched a clerk at a bank counter in muscat photocopy a file so he could scan the photocopy so he could email the scan to himself. no index. no rihal. no reason. just a man and a machine locked in a long private conversation. the original was on the desk the whole time. art, arguably.
 
 Preview: `post.png`
 
 ## Runners-up
 
-- (7/10) just seen an officer in the ministry records room pull down five boxes to answer one citizen request. no index. no search. no rihal. just him. a torch on his phone. and a man in the lobby who has been waiting since nine. A hero in a room that shouldn't exist
-- (7/10) i built last year's board report myself. 40 scanned invoices. no ocr. no data team. no rihal. just me. a calculator. and excel at 11pm typing numbers a machine could read in a second. i checked the totals four times and still got one column wrong. Genuinely unwell behaviour
-- (7/10) my cousin needed one signature to order a laptop. paper request form. wet signature. scan it. email it. forward it. print it again. no workflow. no rihal. six weeks and eleven people later the laptop model was discontinued. That's not a process. that's a hostage situation
-- (7/10) watched a transformation lead open his fourth roadmap in three years. slide 12 says go live. slide 12 always says go live. no owner. no data model. no rihal. just a shared drive called final_v9 and a pilot that has been ninety percent done since 2021. Brave. wrong. still brave
+- (8/10) just seen a guy in a ministry office at 9pm typing figures off a stack of scanned forms into a spreadsheet. row by row. no ocr. no rihal. no second pair of eyes. just him, a highlighter and forty years of paper. the lift was already switched off. that's not overtime. that's devotion, and it's wrong.
+- (7/10) i spent one whole morning in a records room in muscat looking for a single signed page a director asked for before lunch. no index. no scanner. no rihal. just me, a ladder and 300 box files stacked by nobody's logic. found it at half three. wrong file. i tell people i work in data.
+- (7/10) sat in a board meeting where the ops director explained the monthly report is late again. three departments. three formats. one of them still emails a pdf of a screenshot of a spreadsheet. no shared source. no rihal. just four grown adults reading numbers to each other out loud. that's not a report. that's a group project.
+- (7/10) i graduated in software engineering and my first job was moving pdfs from one shared drive to another shared drive. no scripts. no rihal. no explanation. just me, a mouse and 14,000 files named scan0001. i renamed them by hand for six weeks. i've never felt more employed and less useful.
+- (6/10) my cousin joined a company as an analyst and got put on a team of nine people whose entire job is retyping email attachments into a system. no automation. no api. no rihal. just nine humans and a shared drive called final_final. he says you can hear the clock. quietest room in the building and the loudest waste of a degree.
 
 ## Brand profile used
 
 ```json
 {
  "brand_name": "Rihal",
- "one_liner": "Omani tech firm turning paper-based organisations into data-driven ones",
- "niche": "enterprise digital transformation, AI and process automation",
+ "one_liner": "Omani tech firm turning government and enterprise paperwork into usable data",
+ "niche": "enterprise AI, data and process automation (digital transformation consultancy)",
  "product_type": "service",
- "audience": "Government digitalisation leads, IT directors and operations managers at Omani and wider MENA ministries, energy companies and large enterprises, roughly 30-55, accountable for backlogs of paper records and stalled transformation programmes (inferred). Secondary: Omani tech graduates and engineers eyeing careers there (inferred)",
- "core_pain": "Decades of documents, PDFs and scanned forms sitting in cabinets and shared drives, with staff manually keying, sorting and searching them, so nobody can actually report on or trust the data",
+ "audience": "Government digital transformation leads, IT directors and operations managers at Omani and wider MENA ministries, banks and large enterprises, typically 30-55, sitting on decades of paper and PDF archives (inferred). Secondary: Omani engineering graduates and mid-career tech talent looking at Careers (inferred)",
+ "core_pain": "Critical information is locked in scanned documents, PDFs and paper files, so staff re-key, search and cross-check by hand, and nobody can report on anything without weeks of manual work",
  "old_way_objects": [
-  "filing cabinets",
+  "paper files",
   "scanned pdfs",
   "excel spreadsheets",
   "shared drives",
+  "email attachments",
   "manual data entry teams",
-  "email approval chains",
-  "paper request forms",
-  "pilot projects that never went live"
+  "physical archive rooms",
+  "legacy on-premise systems"
  ],
  "scenes": [
-  "A ministry records room in Muscat, an officer pulling boxed files off a shelf to answer one citizen request",
-  "An operations manager at 11pm in an office, copying numbers from 40 scanned invoices into a spreadsheet for a board report",
-  "A director in a meeting asked for last quarter's figures, three departments send three different spreadsheets that do not match"
+  "A ministry office at 9pm, an employee typing figures from a stack of scanned forms into a spreadsheet row by row",
+  "A records room in Muscat, a clerk pulling box files off shelves to find one signed document a director asked for",
+  "A board meeting where the ops director says the monthly report is late again because three departments sent numbers in three different formats"
  ],
- "tone": "confident, technical, national-pride, matter-of-fact",
+ "tone": "Serious, technical, national-pride, understated",
  "proof_points": [
-  "one of the fastest-growing technology companies in MENA (as stated on site)",
   "team of 300+",
+  "describes itself as one of the fastest-growing technology companies in MENA",
   "systems used across governments and enterprises",
-  "deployed on-premise or within national infrastructure",
-  "co-founded and led by an Omani leadership team (Azzan Al Kindi, Asim Al Shabibi, Waleed Al Harthi)",
+  "deployments on-premise and within national infrastructure",
   "products: Siraaj, Iqraa, Jadawel",
-  "testimonial from Raoul Restucci, former Managing Director, Petroleum Development Oman, calling Rihal 'a role model in entrepreneurial creativity, intensity and commitment to make a difference in unleashing Omani talent'",
-  "services: Intelligent Process Automation, Artificial Intelligence, Data Management, Software Engineering, IT Resourcing"
+  "testimonial from Raoul Restucci, Former Managing Director, Petroleum Development Oman, calling Rihal a role model in entrepreneurial creativity and commitment to unleashing Omani talent",
+  "services: Intelligent Process Automation, AI, Data Management, Software Engineering, IT Resourcing",
+  "based in Industrial Ghala, Muscat, Oman"
  ],
  "do_not_say": [
-  "named client lists or logos beyond PDO, which is the only one quoted",
-  "invented percentages on time saved, cost cut or accuracy",
-  "claims that AI replaces staff or headcount reduction promises",
-  "security or compliance guarantees such as 'unhackable', 'fully compliant', 'zero risk'",
-  "guaranteed delivery timelines or fixed pricing",
-  "competitor consultancies or software vendors by name",
-  "political statements about government entities",
-  "'revolutionary', 'world-class', 'cutting-edge' style marketing filler in scripts"
+  "named client lists or logos beyond the PDO quote already published",
+  "any percentage of cost saved, hours saved or accuracy rate (no numbers on site)",
+  "claims about handling classified or national security data",
+  "guarantees that AI output is error-free",
+  "revenue, funding or valuation figures",
+  "comparisons naming other consultancies or software vendors",
+  "political commentary about government bodies"
  ],
- "cta": "Book a free demo session, talk to us at rihal.om (careers page for job seekers)"
+ "cta": "Book a free demo session / Talk to us (and for talent: check Careers)"
 }
 ```

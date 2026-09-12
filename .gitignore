@@ -4,3 +4,7 @@ __pycache__/
 
 *.pyc
 *.code-workspace
+out/**/*.overlay.png
+out/app.log
+out/app.err
+out/run_*.log

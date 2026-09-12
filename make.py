@@ -26,6 +26,7 @@ from dotenv import load_dotenv
 from PIL import Image, ImageDraw, ImageFont
 
 from generate import PROMPTS, ROOT, call, call_json, extract_json, read
+from video import render_mp4
 
 load_dotenv()
 
@@ -215,6 +216,14 @@ def run(url: str, n: int = 6, out: Path = ROOT / "out") -> dict:
 
     log("rendering preview")
     render_png(final["text"], outdir / "post.png", brand)
+    log("rendering video")
+    try:
+        _, how = render_mp4(final["text"], outdir / "post.mp4", brand, still=outdir / "post.png")
+        final["video"] = how
+        log(f"video: {how}")
+    except Exception as e:  # video is a bonus on top of the pack, never sink the run
+        final["video"] = f"failed: {e}"
+        log(final["video"])
 
     md = [f"# {brand}: long overlay\n",
           f"**Format decision:** {fmt.get('format')}. {fmt.get('reason')} Runner-up {fmt.get('runner_up')}: {fmt.get('why_not_runner_up')}\n",

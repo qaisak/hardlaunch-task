@@ -1,47 +1,56 @@
 [
   {
     "id": "v1",
-    "text": "just seen an officer in the ministry records room pull down five boxes to answer one citizen request. no index. no search. no rihal. just him. a torch on his phone. and a man in the lobby who has been waiting since nine. A hero in a room that shouldn't exist",
-    "word_count": 51,
-    "base_video": "A man in his 30s in office shirt and lanyard, sitting in a parked car or at a bare desk, staring flatly into the lens. Slow single blink, one small head shake at the end, no speech.",
-    "audio": "original audio, room tone with faint air con hum",
-    "caption": "the lobby man has a name and a number and he knows it",
-    "why_this_brand": "The ministry records room, the boxed citizen request file and the lobby queue are the exact paper backlog Rihal is hired to digitise."
+    "text": "just seen a guy in a ministry office at 9pm typing figures off a stack of scanned forms into a spreadsheet. row by row. no ocr. no rihal. no second pair of eyes. just him, a highlighter and forty years of paper. the lift was already switched off. that's not overtime. that's devotion, and it's wrong.",
+    "word_count": 55,
+    "base_video": "A man in a shirt and lanyard sitting in a quiet office at night, lit by one desk lamp, slowly looking off camera then back with a small head shake. He does nothing else for the whole clip.",
+    "audio": "original audio, room tone with faint aircon hum",
+    "caption": "someone in your department is doing this tonight",
+    "why_this_brand": "The 9pm ministry desk and re-keying scanned forms into a spreadsheet is the exact government paperwork bottleneck Rihal exists to remove."
   },
   {
     "id": "v2",
-    "text": "i built last year's board report myself. 40 scanned invoices. no ocr. no data team. no rihal. just me. a calculator. and excel at 11pm typing numbers a machine could read in a second. i checked the totals four times and still got one column wrong. Genuinely unwell behaviour",
-    "word_count": 49,
-    "base_video": "A woman at an office desk late at night, one lamp on, eating from a takeaway container while looking straight down the lens between bites. No expression change.",
+    "text": "i spent one whole morning in a records room in muscat looking for a single signed page a director asked for before lunch. no index. no scanner. no rihal. just me, a ladder and 300 box files stacked by nobody's logic. found it at half three. wrong file. i tell people i work in data.",
+    "word_count": 55,
+    "base_video": "A woman filming herself in her car in a car park, still in office clothes, holding a dusty folder on the steering wheel. Deadpan stare, one long blink, no speaking.",
     "audio": "original audio, room tone",
-    "caption": "the fourth check is the one that gets you",
-    "why_this_brand": "Scanned invoices, ocr and the 11pm board report rebuild are the manual data entry problem at the centre of Rihal's automation work."
+    "caption": "the archive room always wins",
+    "why_this_brand": "A Muscat records room and box files hiding one signed document is Rihal's paper-to-usable-data problem stated as a scene."
   },
   {
     "id": "v3",
-    "text": "director asks for last quarter's figures. three departments. three spreadsheets. three different numbers. no single source. no shared system. no rihal. just four men in a room arguing about which excel file is the real one while the quarter quietly ends. Everyone's right. that's the problem",
-    "word_count": 46,
-    "base_video": "A man sitting in an empty meeting room, tie slightly loose, laptop closed in front of him, staring dead ahead at the camera. One slow sip of water, nothing else.",
+    "text": "sat in a board meeting where the ops director explained the monthly report is late again. three departments. three formats. one of them still emails a pdf of a screenshot of a spreadsheet. no shared source. no rihal. just four grown adults reading numbers to each other out loud. that's not a report. that's a group project.",
+    "word_count": 57,
+    "base_video": "A man sitting alone in an empty meeting room after the meeting, tie loosened, printed deck in front of him. He stares at the camera, taps the paper once, says nothing.",
     "audio": "original audio, room tone",
-    "caption": "which department's number do you believe",
-    "why_this_brand": "Three departments sending three mismatched spreadsheets for one board question is the reporting-trust gap Rihal's data management exists to close."
+    "caption": "three departments, three formats, one headache",
+    "why_this_brand": "Three departments sending the same numbers in three formats is the reporting pain Rihal's data management work is built around."
   },
   {
     "id": "v4",
-    "text": "my cousin needed one signature to order a laptop. paper request form. wet signature. scan it. email it. forward it. print it again. no workflow. no rihal. six weeks and eleven people later the laptop model was discontinued. That's not a process. that's a hostage situation",
-    "word_count": 46,
-    "base_video": "A young man leaning against a corridor wall next to a printer, arms folded, looking into the lens with a tired flat stare. Tiny eyebrow raise at the end.",
-    "audio": "trending deadpan/slow build sound, low volume under the read",
-    "caption": "how many people signed your last one",
-    "why_this_brand": "Paper request forms, wet signatures and email approval chains are the exact process automation problem Rihal takes on inside ministries and large enterprises."
+    "text": "my cousin joined a company as an analyst and got put on a team of nine people whose entire job is retyping email attachments into a system. no automation. no api. no rihal. just nine humans and a shared drive called final_final. he says you can hear the clock. quietest room in the building and the loudest waste of a degree.",
+    "word_count": 61,
+    "base_video": "A young guy on a sofa at home, laptop shut beside him, eating from a takeaway box. He stops chewing for two seconds mid clip, then carries on.",
+    "audio": "original audio, room tone",
+    "caption": "tag the analyst who lived this",
+    "why_this_brand": "Manual data entry teams re-keying email attachments is a named old-way object from Rihal's intelligent process automation niche."
   },
   {
     "id": "v5",
-    "text": "watched a transformation lead open his fourth roadmap in three years. slide 12 says go live. slide 12 always says go live. no owner. no data model. no rihal. just a shared drive called final_v9 and a pilot that has been ninety percent done since 2021. Brave. wrong. still brave",
-    "word_count": 50,
-    "base_video": "A man in his 40s seated in a conference chair, projector light on his face, looking at the camera rather than the screen. Completely still, one slow exhale.",
-    "audio": "original audio, room tone with faint projector fan",
-    "caption": "name a pilot that actually went live, i'll wait",
-    "why_this_brand": "Stalled pilot projects, orphaned shared drives and roadmaps that never go live are the transformation backlog Rihal is brought in to finish."
+    "text": "watched a clerk at a bank counter in muscat photocopy a file so he could scan the photocopy so he could email the scan to himself. no index. no rihal. no reason. just a man and a machine locked in a long private conversation. the original was on the desk the whole time. art, arguably.",
+    "word_count": 53,
+    "base_video": "A woman standing in a queue indoors, phone held low at chest height, filming herself. She raises her eyebrows once and looks slightly off camera, then back.",
+    "audio": "trending low-key instrumental, no lyrics",
+    "caption": "he scanned the photocopy. i watched it happen.",
+    "why_this_brand": "The scan-of-a-photocopy loop at a MENA bank counter is the legacy document workflow Rihal turns into structured data."
+  },
+  {
+    "id": "v6",
+    "text": "i graduated in software engineering and my first job was moving pdfs from one shared drive to another shared drive. no scripts. no rihal. no explanation. just me, a mouse and 14,000 files named scan0001. i renamed them by hand for six weeks. i've never felt more employed and less useful.",
+    "word_count": 51,
+    "base_video": "A young engineer sitting at a desk in front of two monitors, hands off the keyboard, chair slowly swivelling. Flat expression straight down the lens for the full clip.",
+    "audio": "original audio, room tone with keyboard clicks in the background",
+    "caption": "first job or a prison sentence",
+    "why_this_brand": "The graduate stuck renaming scan0001 files on a shared drive speaks to Rihal's Omani engineering talent audience and its legacy archive problem at once."
   }
 ]

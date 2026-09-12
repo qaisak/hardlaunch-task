@@ -6,12 +6,12 @@
       "voice": 4,
       "hook": 4,
       "not_an_ad": 5,
-      "comment_bait": 2,
+      "comment_bait": 3,
       "honesty": 5,
       "length": 4
     },
-    "overall": 7,
-    "fix": "Replace the soft, abstract verdict with a deadpan judgement someone can argue with or tag a colleague under, e.g. 'the boxes are winning'; also cut 'a torch on his phone' so the no-list stays the spine."
+    "overall": 8,
+    "fix": "the verdict is two ideas fighting, cut 'that's not overtime' and land on one line so the ending snaps instead of trailing"
   },
   {
     "id": "v2",
@@ -21,52 +21,66 @@
       "hook": 3,
       "not_an_ad": 5,
       "comment_bait": 4,
-      "honesty": 4,
-      "length": 3
+      "honesty": 5,
+      "length": 4
     },
     "overall": 7,
-    "fix": "Cut 'typing numbers a machine could read in a second' (that is the benefit claim sneaking in, and it explains the joke) and tighten the opening so the first eight words carry a stake, e.g. 'i rebuilt last year's board report by hand'."
+    "fix": "the opening eight words are admin, start on 'no index. no scanner' energy by leading with the director asking before lunch"
   },
   {
     "id": "v3",
     "scores": {
       "on_brand": 5,
       "voice": 4,
-      "hook": 4,
+      "hook": 3,
       "not_an_ad": 5,
       "comment_bait": 4,
       "honesty": 5,
-      "length": 5
+      "length": 3
     },
-    "overall": 8,
-    "fix": "Make the no-list nouns as concrete as the rest, swap 'no single source. no shared system' for real objects ('no data model. no shared drive that matters'), so the fragments stop sounding like consultant language."
+    "overall": 7,
+    "fix": "trim the setup sentence and let 'a pdf of a screenshot of a spreadsheet' arrive inside the first eight words, that is the whole post"
   },
   {
     "id": "v4",
     "scores": {
-      "on_brand": 5,
-      "voice": 4,
-      "hook": 4,
+      "on_brand": 4,
+      "voice": 3,
+      "hook": 3,
       "not_an_ad": 5,
-      "comment_bait": 5,
-      "honesty": 3,
-      "length": 4
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 2
     },
-    "overall": 7,
-    "fix": "The 'six weeks and eleven people' numbers are invented specifics about a customer situation, soften to an honest but concrete phrasing ('by the time it came back the model was discontinued')."
+    "overall": 6,
+    "fix": "cut to 55 words and kill the double verdict, 'loudest waste of a degree' is the line, everything before it is throat clearing"
   },
   {
     "id": "v5",
     "scores": {
       "on_brand": 5,
       "voice": 5,
-      "hook": 4,
+      "hook": 5,
       "not_an_ad": 5,
       "comment_bait": 4,
-      "honesty": 3,
+      "honesty": 5,
+      "length": 5
+    },
+    "overall": 9,
+    "fix": "'art, arguably' is close but soft, sharpen to a verdict people can disagree with out loud"
+  },
+  {
+    "id": "v6",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
       "length": 4
     },
     "overall": 7,
-    "fix": "Drop 'ninety percent done since 2021', it invents a stat and a date, replace with 'a pilot that has been almost done for years' and keep 'final_v9', which is the best noun in the set."
+    "fix": "'no explanation' is a dead item in the list, swap it for a real tool like 'no batch rename' so all three fragments are niche objects"
   }
 ]
