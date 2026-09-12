@@ -1,0 +1,86 @@
+[
+  {
+    "id": "v1",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 4,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 7,
+    "fix": "Cut 'phone face down. eyes open.' so the list is the only fragment run, and sharpen the verdict past 'feral behavior honestly' into something taggable."
+  },
+  {
+    "id": "v2",
+    "scores": {
+      "on_brand": 3,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 6,
+    "fix": "Swap 'no breathing exercise. no podcast.' for the specific crutches (the health app breathing circle, the 3 minute reset) so it can't be reskinned for any app, and kill 'Certified maniac' for a fresh verdict."
+  },
+  {
+    "id": "v3",
+    "scores": {
+      "on_brand": 5,
+      "voice": 4,
+      "hook": 3,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "The hook 'third bedtime attempt tonight' is flat in the first 8 words. Lead with the staredown: 'me and a four year old staring each other down at 8:40'."
+  },
+  {
+    "id": "v4",
+    "scores": {
+      "on_brand": 4,
+      "voice": 4,
+      "hook": 5,
+      "not_an_ad": 5,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "'no journal. no walks.' is generic self-help. Make it the actual objects (the journal with four pages filled, the free breathing circle on your phone) so the list only fits this niche."
+  },
+  {
+    "id": "v5",
+    "scores": {
+      "on_brand": 3,
+      "voice": 3,
+      "hook": 4,
+      "not_an_ad": 4,
+      "comment_bait": 3,
+      "honesty": 5,
+      "length": 3
+    },
+    "overall": 5,
+    "fix": "Duplicate of v2's car-sit scene with a thinner list, and putting 'no headspace' first makes the brand read as the punchline. Either bin it or rebuild the list around sleep-adjacent nouns and move the brand to the middle."
+  },
+  {
+    "id": "v6",
+    "scores": {
+      "on_brand": 4,
+      "voice": 5,
+      "hook": 5,
+      "not_an_ad": 5,
+      "comment_bait": 4,
+      "honesty": 5,
+      "length": 4
+    },
+    "overall": 8,
+    "fix": "Trim 'until his eyes give up before his brain does' to just 'four hours of other people's opinions' so the escalation lands in one beat instead of two."
+  }
+]

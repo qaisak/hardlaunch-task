@@ -161,20 +161,15 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "brand"
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("url")
-    ap.add_argument("--n", type=int, default=6, help="overlay drafts to generate")
-    ap.add_argument("--out", type=Path, default=ROOT / "out")
-    args = ap.parse_args()
-
+def run(url: str, n: int = 6, out: Path = ROOT / "out") -> dict:
+    """The whole pipeline for one URL. Returns the result dict; also used by app.py."""
     import anthropic
     client = anthropic.Anthropic()
     t0 = time.time()
     log = lambda m: print(f"[{time.time()-t0:5.0f}s] {m}", flush=True)
 
-    log(f"fetching {args.url}")
-    site_text = ingest(args.url, client)
+    log(f"fetching {url}")
+    site_text = ingest(url, client)
     log(f"scraped {len(site_text)} chars")
 
     taste = read(PROMPTS / "taste.md")
@@ -182,8 +177,8 @@ def main() -> None:
 
     log("building brand profile")
     profile = call_json(client, taste, read(PROMPTS / "profile.md").replace("{text}", site_text), effort="medium")
-    brand = profile.get("brand_name", urlparse(args.url).netloc)
-    outdir = args.out / slug(brand)
+    brand = profile.get("brand_name", urlparse(url).netloc)
+    outdir = out / slug(brand)
     outdir.mkdir(parents=True, exist_ok=True)
     (outdir / "profile.json").write_text(json.dumps(profile, indent=2, ensure_ascii=False), encoding="utf-8")
     profile_s = json.dumps(profile, indent=1, ensure_ascii=False)
@@ -191,9 +186,9 @@ def main() -> None:
     log("choosing format")
     fmt = call_json(client, taste, read(PROMPTS / "format_select.md").replace("{profile}", profile_s), effort="low")
 
-    log(f"writing {args.n} overlay drafts")
+    log(f"writing {n} overlay drafts")
     variants = call_json(client, taste + "\n\n" + style,
-                                 read(PROMPTS / "overlay_generate.md").replace("{n}", str(args.n)).replace("{profile}", profile_s))
+                                 read(PROMPTS / "overlay_generate.md").replace("{n}", str(n)).replace("{profile}", profile_s))
     (outdir / "variants.json").write_text(json.dumps(variants, indent=2, ensure_ascii=False), encoding="utf-8")
 
     log("critiquing")
@@ -223,18 +218,31 @@ def main() -> None:
 
     md = [f"# {brand}: long overlay\n",
           f"**Format decision:** {fmt.get('format')}. {fmt.get('reason')} Runner-up {fmt.get('runner_up')}: {fmt.get('why_not_runner_up')}\n",
-          "## The post\n", f"> {win['text']}\n",
-          f"**Base video:** {win.get('base_video')}  \n**Audio:** {win.get('audio')}  \n**Caption:** {win.get('caption')}  \n**Why it is this brand:** {win.get('why_this_brand')}\n",
-          f"Score {ws.get('overall','?')}/10. Editor: {ws.get('fix','')}\n",
+          "## The post\n", f"> {final['text']}\n",
+          f"**Base video:** {final.get('base_video')}  \n**Audio:** {final.get('audio')}  \n**Caption:** {final.get('caption')}  \n**Why it is this brand:** {final.get('why_this_brand')}\n",
+          f"Draft scored {ws.get('overall','?')}/10. Editor fix applied: {ws.get('fix','')}  \nWhat changed: {final.get('what_changed','nothing')}  \nOriginal draft: {win['text']}\n",
           f"Preview: `post.png`\n", "## Runners-up\n"]
     for v in ranked[1:]:
         s = by_id.get(v["id"], {})
         md.append(f"- ({s.get('overall','?')}/10) {v['text']}")
     md += ["\n## Brand profile used\n", "```json", profile_s, "```"]
     (outdir / "post.md").write_text("\n".join(md), encoding="utf-8")
+    (outdir / "final.json").write_text(json.dumps({**final, "format": fmt, "draft_score": ws.get("overall"),
+                                                   "editor_fix": ws.get("fix")}, indent=2, ensure_ascii=False), encoding="utf-8")
 
     log(f"done -> {outdir / 'post.md'}")
-    print("\n" + final["text"] + "\n")
+    return {"brand": brand, "slug": slug(brand), "outdir": outdir, "final": final, "format": fmt,
+            "ranked": ranked, "scores": by_id, "profile": profile}
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("url")
+    ap.add_argument("--n", type=int, default=6, help="overlay drafts to generate")
+    ap.add_argument("--out", type=Path, default=ROOT / "out")
+    args = ap.parse_args()
+    res = run(args.url, args.n, args.out)
+    print("\n" + res["final"]["text"] + "\n")
 
 
 if __name__ == "__main__":

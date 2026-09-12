@@ -1,0 +1,6 @@
+open http://localhost:8000
+[    0s] fetching https://www.headspace.com
+[    6s] scraped 14000 chars
+[    6s] building brand profile
+[   21s] choosing format
+[   26s] writing 6 overlay drafts

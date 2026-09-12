@@ -1,0 +1,50 @@
+{
+  "brand_name": "Headspace",
+  "one_liner": "Mental health app for meditation, sleep, coaching and therapy",
+  "niche": "meditation, sleep and mental health app",
+  "product_type": "app",
+  "audience": "Stressed adults roughly 22-45 juggling work, sleep problems and everyday anxiety, plus parents wanting calmer bedtimes and employees whose employer or health plan covers mental health support (inferred age range)",
+  "core_pain": "Lying awake with a racing mind, feeling stressed and anxious all day, and having no idea how to actually switch off or where to start with meditation or therapy",
+  "old_way_objects": [
+    "doomscrolling in bed",
+    "youtube sleep playlists",
+    "white noise machine",
+    "melatonin gummies",
+    "a journal you stopped writing in",
+    "podcasts to fall asleep to",
+    "a therapist waitlist",
+    "a free breathing exercise on your phone's health app"
+  ],
+  "scenes": [
+    "Bedroom at 1am, someone flat on their back, phone face down, eyes open, replaying a conversation from work",
+    "Office car park before a shift, someone sitting in the driver's seat not going in yet, hands on the wheel",
+    "Kid's bedroom at 8pm, a parent on the third bedtime attempt, both of them wired and nobody sleeping"
+  ],
+  "tone": "warm, plain-spoken, science-backed, unfussy",
+  "proof_points": [
+    "Over 1,000 expert-led exercises in a subscription",
+    "Used in 200 countries and regions",
+    "Over 100 million lives touched",
+    "Over 105 million app downloads",
+    "Over 4,000 leading organizations choose Headspace",
+    "Founded in 2010",
+    "Online therapy that accepts insurance",
+    "HSA/FSA eligible",
+    "14-day free trial",
+    "Available on iOS and Android",
+    "Ebb AI companion for personalised content recommendations",
+    "Offers meditation, sleepcasts, soundscapes, sleep music, white noise, coaching, therapy, psychiatry and EAP",
+    "Team includes clinicians, Emmy Award-winning storytellers and AI technologists"
+  ],
+  "do_not_say": [
+    "cures anxiety, depression or insomnia",
+    "replaces medication or tells anyone to stop treatment",
+    "guaranteed sleep or guaranteed results",
+    "clinical claims or statistics not published on the site",
+    "naming rival meditation or therapy apps",
+    "diagnosing viewers or commenters",
+    "crisis or suicide content without proper support framing",
+    "'instant fix', 'miracle', 'anxiety hack'"
+  ],
+  "cta": "Start the 14-day free trial and download the app (or check therapy insurance coverage)"
+}

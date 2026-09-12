@@ -48,3 +48,11 @@ changes the output; the code is plumbing.
 ## Also in the repo
 `generate.py` is the earlier, more general generator (any text input to N hook/format variants with a
 critique pass). `make.py` imports its `call()` and JSON helpers. `inputs/` and `out/sample_*` are from that.
+
+## Web page (for the walkthrough)
+```
+python app.py
+```
+Open http://localhost:8000, paste a URL, click make. About 90 seconds later you see the preview frame,
+the post, base-video spec, caption, the format decision, the brand profile and the runners-up.
+Stdlib only, one request at a time, no polish on purpose (UI was out of scope).
